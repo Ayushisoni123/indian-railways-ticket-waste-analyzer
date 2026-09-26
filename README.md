@@ -24,8 +24,7 @@ A passenger-to-passenger ticket transfer mechanism operating within the existing
 
 3. IRCTC automatically splits the payment:
    -Original passenger receives full fare refund 
-  minus IRCTC convenience fee (₹15-₹30 + GST)
-  - consistent with standard booking processing cost
+  minus IRCTC convenience fee (₹15-₹30 + GST)consistent with standard booking processing cost
 
 4. PNR updates automatically — new passenger details replace original passenger across all systems
    including TTE handheld terminals.
