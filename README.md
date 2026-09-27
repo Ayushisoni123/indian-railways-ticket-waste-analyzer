@@ -61,7 +61,7 @@ UPI payment gateway handle all transactions.
 - Available Seats vs Waitlisted Passengers (Scatter Plot)
 - Cancellation Rate by Class (Bar Chart)
 - Train Type Occupancy Comparison (Bar Chart)
-- Looker Studio Dashboard — [link coming soon]
+- [Looker Studio Dashboard](https://datastudio.google.com/reporting/1dc440e8-b51e-46d7-9625-5a9d5e013af6)
 
 ## Policy Recommendation
 
