@@ -1,0 +1,1001 @@
+PNR_Number,Train_Number,Train_Name,Train_Type,Journey_Date,Day_of_Week,Origin_Station,Destination_Station,Boarding_Station,Deboarding_Station,Class,Total_Capacity,Confirmed_Passengers,Waitlisted_Passengers,Available_Seats,Chart_Prepared,Quota_Type,Zone,Distance_KM,Journey_Duration_Hours,Base_Fare_INR,Tatkal_Fare_INR,Occupancy_Percentage,Season,Holiday_Flag,Cancellation_Count,RAC_Passengers,Pantry_Available,Platform_Number,Delay_Minutes,Punctuality_Status,Passenger_Satisfaction_Score
+PNR2051802512,13119,Sealdah Anvt Express,Express,2024-02-27,Tuesday,Sealdah,Anand Vihar,New Delhi,Raipur,1A,18,18,5,0,Yes,Railway Employee,NR,2468.0,21.1,2453,,100.0,Off-Peak,0.0,3.0,8.0,Yes,9.0,5.0,Slight Delay,3.8
+PNR4460967357,12381,Poorva Express,Express,2024-04-22,Monday,Howrah,New Delhi,Kolkata,Lucknow,SL,72,72,3,0,Yes,Ladies,SR,931.0,46.0,2478,,100.0,Peak,0.0,6.0,1.0,No,14.0,15.0,Slight Delay,4.2
+PNR9928378856,12245,Duronto Express,Duronto,2024-08-23,Friday,Howrah,Pune,Chennai Central,Nagpur,CC,78,15,0,63,Yes,Defense,WR,334.0,3.6,3300,,19.23,Off-Peak,0.0,1.0,3.0,Yes,7.0,10.0,Slight Delay,
+PNR9896606039,12259,Sealdah Duronto,Duronto,2024-07-08,Monday,Sealdah,New Delhi,Puri,Puri,3A,64,26,0,38,Yes,Tatkal,NER,1604.0,14.1,2387,,40.62,Off-Peak,0.0,10.0,5.0,Yes,4.0,0.0,On Time,
+PNR7439149233,12302,New Delhi Rajdhani,Rajdhani,2024-04-18,Thursday,New Delhi,Howrah,Dhanbad,Nagpur,CC,78,78,13,0,No,Tatkal,CR,621.0,13.0,2777,,100.0,Peak,0.0,9.0,6.0,No,6.0,5.0,Slight Delay,1.6
+PNR8217611860,12875,Neelachal Express,Express,2024-02-16,Friday,Howrah,Puri,Bhubaneswar,Patna,GN,120,12,0,108,No,Senior Citizen,NER,2217.0,13.2,1098,,10.0,Off-Peak,0.0,10.0,1.0,No,13.0,120.0,Delayed,2.2
+PNR4272602734,12259,Sealdah Duronto,Duronto,2024-08-20,Tuesday,Sealdah,New Delhi,Ranchi,Ranchi,1A,18,18,5,0,Yes,Railway Employee,WR,676.0,18.9,2357,,100.0,Off-Peak,0.0,9.0,5.0,No,1.0,0.0,On Time,4.5
+PNR5067116918,12311,Kalka Mail,Mail,2024-05-02,Thursday,Howrah,Kalka,Sealdah,Raipur,1A,18,7,0,11,No,General,SR,575.0,32.2,4847,,38.89,Peak,0.0,4.0,8.0,No,4.0,60.0,Delayed,3.8
+PNR7517938612,12245,Duronto Express,Duronto,2024-06-08,Saturday,Howrah,Pune,Sealdah,Asansol,SL,72,72,13,0,Yes,General,SCR,136.0,28.9,3259,,100.0,Off-Peak,0.0,0.0,1.0,Yes,4.0,0.0,On Time,4.4
+PNR3030106617,12302,New Delhi Rajdhani,Rajdhani,2024-09-20,Friday,New Delhi,Howrah,Asansol,Agra,2A,46,17,0,29,No,Tatkal,NR,447.0,32.1,4176,,36.96,Off-Peak,1.0,7.0,0.0,Yes,1.0,30.0,Delayed,4.2
+PNR2926780541,12302,New Delhi Rajdhani,Rajdhani,2024-05-07,Tuesday,New Delhi,Howrah,Hyderabad Deccan,Puri,2A,46,12,0,34,Yes,Senior Citizen,WR,358.0,,4593,,26.09,Peak,0.0,0.0,,Yes,,,Slight Delay,
+PNR4875962612,12875,Neelachal Express,Express,2024-09-03,Tuesday,Howrah,Puri,New Delhi,Allahabad,2A,46,46,9,0,Yes,Senior Citizen,CR,1913.0,14.8,3485,4530.0,100.0,Off-Peak,1.0,2.0,3.0,No,4.0,0.0,On Time,3.2
+PNR3281169403,12245,Duronto Express,Duronto,2024-06-09,Sunday,Howrah,Pune,Howrah,Jaipur,1A,18,1,0,17,Yes,Tatkal,NR,2487.0,4.7,4985,6480.0,5.56,Off-Peak,1.0,1.0,3.0,Yes,10.0,0.0,On Time,3.3
+PNR6320115677,22811,Bhubaneswar Rajdhani,Rajdhani,2024-06-10,Monday,Bhubaneswar,New Delhi,Hyderabad Deccan,Bhubaneswar,3A,64,26,0,38,Yes,Senior Citizen,SCR,347.0,1.9,2773,3604.0,40.62,Off-Peak,0.0,1.0,8.0,Yes,9.0,10.0,Slight Delay,
+PNR5972484792,13049,Amaravati Express,Express,2024-02-05,Monday,Howrah,Amravati,Durgapur,Ahmedabad,2A,46,23,0,23,Yes,Defense,ER,2321.0,15.4,2534,3294.0,50.0,Off-Peak,0.0,4.0,1.0,Yes,12.0,60.0,Delayed,
+PNR7393195616,12311,Kalka Mail,Mail,2024-11-05,Tuesday,Howrah,Kalka,Dhanbad,Hyderabad Deccan,2A,46,45,0,1,Yes,Railway Employee,ECR,1183.0,3.6,3008,,97.83,Peak,0.0,10.0,4.0,Yes,12.0,45.0,Delayed,2.7
+PNR3343292475,12301,Howrah Rajdhani,Rajdhani,2024-02-27,Tuesday,Howrah,New Delhi,Durgapur,Varanasi,1A,18,18,4,0,Yes,Senior Citizen,SR,221.0,15.8,1421,1847.0,100.0,Off-Peak,0.0,5.0,3.0,Yes,11.0,0.0,On Time,3.2
+PNR4713453204,12381,Poorva Express,Express,2024-11-13,Wednesday,Howrah,New Delhi,Asansol,Puri,2S,100,39,0,61,No,General,SR,1410.0,37.9,2139,,39.0,Peak,0.0,4.0,2.0,Yes,7.0,0.0,On Time,1.9
+PNR9691572571,12875,Neelachal Express,Express,2024-06-28,Friday,Howrah,Puri,Mumbai CST,Allahabad,3A,64,29,0,35,Yes,Ladies,NR,1193.0,17.8,2026,,45.31,Off-Peak,0.0,0.0,1.0,No,3.0,90.0,Delayed,2.1
+PNR5791662169,12302,New Delhi Rajdhani,Rajdhani,2024-11-01,Friday,New Delhi,Howrah,Dhanbad,Surat,SL,72,44,0,28,Yes,Ladies,ER,1836.0,1.6,2769,3599.0,61.11,Peak,0.0,5.0,6.0,Yes,11.0,15.0,Slight Delay,3.7
+PNR6695912196,12302,New Delhi Rajdhani,Rajdhani,2024-06-02,Sunday,New Delhi,Howrah,Kolkata,Dhanbad,CC,78,39,0,39,Yes,Tatkal,ECR,1602.0,33.0,3545,4608.0,50.0,Off-Peak,0.0,6.0,8.0,Yes,5.0,10.0,Slight Delay,
+PNR7192423780,12073,Jan Shatabdi,Jan Shatabdi,2024-11-06,Wednesday,Howrah,Patna,Puri,Kolkata,2S,100,82,0,18,No,Railway Employee,SR,397.0,14.7,4009,5211.0,82.0,Peak,0.0,1.0,3.0,No,4.0,5.0,Slight Delay,
+PNR7250964836,12301,Howrah Rajdhani,Rajdhani,2024-05-05,Sunday,Howrah,New Delhi,Dhanbad,Nagpur,SL,72,72,6,0,Yes,Railway Employee,ECR,2074.0,20.1,796,,100.0,Peak,0.0,1.0,6.0,Yes,3.0,60.0,Delayed,3.2
+PNR7852415525,12302,New Delhi Rajdhani,Rajdhani,2024-08-21,Wednesday,New Delhi,Howrah,Asansol,Kanpur,2A,46,46,5,0,No,Defense,NER,701.0,,4006,,100.0,Off-Peak,0.0,3.0,,No,,,Slight Delay,
+PNR1346078411,12311,Kalka Mail,Mail,2024-04-30,Tuesday,Howrah,Kalka,New Delhi,Asansol,3A,64,42,0,22,No,Railway Employee,SR,926.0,4.5,2819,,65.62,Peak,1.0,6.0,0.0,Yes,14.0,30.0,Delayed,4.1
+PNR3048612358,12245,Duronto Express,Duronto,2024-01-11,Thursday,Howrah,Pune,Bangalore City,Dhanbad,GN,120,120,27,0,No,Senior Citizen,WR,2049.0,11.7,3316,,100.0,Off-Peak,0.0,6.0,5.0,No,12.0,0.0,On Time,
+PNR3847562279,12073,Jan Shatabdi,Jan Shatabdi,2024-09-30,Monday,Howrah,Patna,Sealdah,Nagpur,1A,18,12,0,6,No,Tatkal,NER,794.0,3.8,4823,,66.67,Off-Peak,0.0,7.0,5.0,No,13.0,30.0,Delayed,4.8
+PNR9673185158,12381,Poorva Express,Express,2024-05-09,Thursday,Howrah,New Delhi,Ranchi,Hyderabad Deccan,GN,120,20,0,100,Yes,Tatkal,NR,214.0,36.6,4052,5267.0,16.67,Peak,0.0,0.0,2.0,Yes,3.0,45.0,Delayed,3.3
+PNR4518871744,12019,Shatabdi Express,Shatabdi,2024-08-26,Monday,Howrah,Ranchi,Chennai Central,Ranchi,2S,100,65,0,35,Yes,Ladies,ECR,1674.0,45.3,3221,,65.0,Off-Peak,0.0,1.0,4.0,Yes,13.0,90.0,Delayed,2.4
+PNR8076144396,12381,Poorva Express,Express,2024-12-04,Wednesday,Howrah,New Delhi,Howrah,Lucknow,3A,64,8,0,56,No,General,ECR,1533.0,31.1,4344,,12.5,Peak,0.0,6.0,2.0,No,10.0,60.0,Delayed,
+PNR5667181604,12245,Duronto Express,Duronto,2024-10-30,Wednesday,Howrah,Pune,Dhanbad,Kanpur,3A,64,41,0,23,Yes,Senior Citizen,ECR,1427.0,,2211,,64.06,Peak,0.0,7.0,,No,,,Slight Delay,
+PNR5071897791,12245,Duronto Express,Duronto,2024-05-21,Tuesday,Howrah,Pune,Sealdah,Asansol,CC,78,1,0,77,No,Senior Citizen,WR,2000.0,31.5,4432,,1.28,Peak,0.0,1.0,4.0,Yes,7.0,5.0,Slight Delay,
+PNR7658867789,12875,Neelachal Express,Express,2024-10-10,Thursday,Howrah,Puri,Bangalore City,Indore,CC,78,44,0,34,No,Ladies,CR,1079.0,12.2,3685,4790.0,56.41,Peak,0.0,1.0,8.0,Yes,4.0,5.0,Slight Delay,2.1
+PNR4576111591,12073,Jan Shatabdi,Jan Shatabdi,2024-09-25,Wednesday,Howrah,Patna,Chennai Central,Asansol,CC,78,36,0,42,Yes,Tatkal,CR,107.0,34.4,1023,,46.15,Off-Peak,0.0,0.0,8.0,No,12.0,0.0,On Time,
+PNR7351029162,12302,New Delhi Rajdhani,Rajdhani,2024-01-07,Sunday,New Delhi,Howrah,Bangalore City,Puri,CC,78,36,0,42,Yes,Ladies,NER,517.0,39.7,4045,,46.15,Off-Peak,0.0,9.0,0.0,Yes,3.0,90.0,Delayed,1.3
+PNR7539399243,12019,Shatabdi Express,Shatabdi,2024-03-01,Friday,Howrah,Ranchi,Patna,Kanpur,CC,78,78,19,0,Yes,Defense,ECR,1300.0,27.9,3609,,100.0,Off-Peak,0.0,3.0,3.0,No,11.0,0.0,On Time,
+PNR7049536909,12259,Sealdah Duronto,Duronto,2024-10-09,Wednesday,Sealdah,New Delhi,Kolkata,Pune,1A,18,5,0,13,No,Ladies,ER,998.0,14.9,221,,27.78,Peak,1.0,1.0,3.0,No,13.0,120.0,Delayed,4.2
+PNR3781569954,12019,Shatabdi Express,Shatabdi,2024-08-05,Monday,Howrah,Ranchi,Dhanbad,Durgapur,1A,18,17,0,1,Yes,General,ER,729.0,38.4,2041,,94.44,Off-Peak,0.0,7.0,1.0,No,12.0,10.0,Slight Delay,4.8
+PNR3568547910,22811,Bhubaneswar Rajdhani,Rajdhani,2024-10-03,Thursday,Bhubaneswar,New Delhi,Dhanbad,Lucknow,SL,72,56,0,16,Yes,Defense,CR,155.0,5.7,858,1115.0,77.78,Peak,0.0,10.0,4.0,Yes,13.0,0.0,On Time,3.6
+PNR5162060546,12311,Kalka Mail,Mail,2024-04-02,Tuesday,Howrah,Kalka,Patna,Varanasi,CC,78,55,0,23,No,Ladies,SCR,478.0,41.4,4228,,70.51,Peak,1.0,4.0,6.0,Yes,,,On Time,
+PNR7279140605,12381,Poorva Express,Express,2024-09-20,Friday,Howrah,New Delhi,Howrah,Kolkata,GN,120,0,0,120,Yes,Defense,NER,1860.0,36.8,4644,,0.0,Off-Peak,0.0,4.0,7.0,No,2.0,0.0,On Time,3.4
+PNR9648665968,12019,Shatabdi Express,Shatabdi,2024-12-29,Sunday,Howrah,Ranchi,Hyderabad Deccan,Patna,2A,46,19,0,27,Yes,General,NER,531.0,31.6,4712,,41.3,Peak,0.0,8.0,4.0,No,14.0,45.0,Delayed,2.0
+PNR5594799319,22811,Bhubaneswar Rajdhani,Rajdhani,2024-03-15,Friday,Bhubaneswar,New Delhi,Asansol,Lucknow,SL,72,24,0,48,Yes,Defense,CR,60.0,14.7,4363,,33.33,Off-Peak,1.0,2.0,7.0,No,6.0,15.0,Slight Delay,3.2
+PNR7750819485,12875,Neelachal Express,Express,2024-06-13,Thursday,Howrah,Puri,Mumbai CST,Visakhapatnam,GN,120,48,0,72,No,General,SCR,1987.0,34.3,2156,2802.0,40.0,Off-Peak,1.0,10.0,2.0,No,1.0,0.0,On Time,3.4
+PNR9655852024,12302,New Delhi Rajdhani,Rajdhani,2024-08-13,Tuesday,New Delhi,Howrah,New Delhi,Lucknow,1A,18,16,0,2,Yes,General,NER,1135.0,17.2,3943,,88.89,Off-Peak,0.0,5.0,8.0,No,6.0,120.0,Delayed,
+PNR9250327663,22811,Bhubaneswar Rajdhani,Rajdhani,2024-01-19,Friday,Bhubaneswar,New Delhi,Mumbai CST,Raipur,CC,78,8,0,70,Yes,Senior Citizen,NR,461.0,22.1,2123,2759.0,10.26,Off-Peak,0.0,0.0,5.0,Yes,5.0,15.0,Slight Delay,1.6
+PNR1730074215,22811,Bhubaneswar Rajdhani,Rajdhani,2024-07-29,Monday,Bhubaneswar,New Delhi,Sealdah,Pune,CC,78,78,9,0,No,Defense,WR,2088.0,43.9,1675,,100.0,Off-Peak,1.0,10.0,4.0,No,5.0,120.0,Delayed,
+PNR7818568548,12875,Neelachal Express,Express,2024-05-27,Monday,Howrah,Puri,Puri,Lucknow,2S,100,40,0,60,Yes,Senior Citizen,CR,865.0,48.0,805,1046.0,40.0,Peak,0.0,3.0,6.0,No,10.0,10.0,Slight Delay,2.2
+PNR5181592277,13119,Sealdah Anvt Express,Express,2024-07-21,Sunday,Sealdah,Anand Vihar,Dhanbad,Pune,3A,64,1,0,63,No,Ladies,WR,1493.0,11.7,4836,,1.56,Off-Peak,0.0,10.0,2.0,Yes,15.0,120.0,Delayed,2.2
+PNR6562457052,12875,Neelachal Express,Express,2024-01-18,Thursday,Howrah,Puri,Kolkata,Lucknow,CC,78,46,0,32,Yes,Tatkal,SR,2259.0,42.3,1276,,58.97,Off-Peak,0.0,2.0,4.0,No,13.0,10.0,Slight Delay,
+PNR9503787171,12302,New Delhi Rajdhani,Rajdhani,2024-08-27,Tuesday,New Delhi,Howrah,Durgapur,Ahmedabad,1A,18,4,0,14,Yes,General,ECR,107.0,13.8,2048,,22.22,Off-Peak,0.0,10.0,4.0,No,14.0,120.0,Delayed,1.4
+PNR3620283102,12019,Shatabdi Express,Shatabdi,2024-08-29,Thursday,Howrah,Ranchi,Puri,Patna,1A,18,18,1,0,No,Railway Employee,CR,1722.0,6.9,4799,,100.0,Off-Peak,0.0,4.0,7.0,Yes,2.0,5.0,Slight Delay,1.5
+PNR9097790557,12875,Neelachal Express,Express,2024-07-08,Monday,Howrah,Puri,Puri,Ranchi,2S,100,100,7,0,No,Defense,ECR,1195.0,3.0,1465,,100.0,Off-Peak,1.0,7.0,3.0,No,2.0,120.0,Delayed,4.6
+PNR2952996248,13119,Sealdah Anvt Express,Express,2024-07-02,Tuesday,Sealdah,Anand Vihar,Puri,Kolkata,1A,18,12,0,6,Yes,General,SCR,1047.0,47.5,2460,3198.0,66.67,Off-Peak,0.0,1.0,8.0,Yes,10.0,5.0,Slight Delay,1.9
+PNR5241397494,12259,Sealdah Duronto,Duronto,2024-11-01,Friday,Sealdah,New Delhi,Ranchi,Durgapur,1A,18,8,0,10,Yes,General,ER,589.0,,1385,,44.44,Peak,0.0,9.0,5.0,Yes,,,Slight Delay,
+PNR7340428136,12245,Duronto Express,Duronto,2024-08-03,Saturday,Howrah,Pune,Asansol,Varanasi,CC,78,14,0,64,Yes,Senior Citizen,WR,227.0,35.3,720,,17.95,Off-Peak,0.0,7.0,0.0,Yes,8.0,30.0,Delayed,
+PNR3612617557,12245,Duronto Express,Duronto,2024-08-15,Thursday,Howrah,Pune,Sealdah,Bhubaneswar,1A,18,2,0,16,Yes,Defense,SCR,1610.0,47.8,2838,,11.11,Off-Peak,1.0,8.0,6.0,Yes,13.0,0.0,On Time,3.6
+PNR7072283057,22811,Bhubaneswar Rajdhani,Rajdhani,2024-04-20,Saturday,Bhubaneswar,New Delhi,Durgapur,Kanpur,SL,72,57,0,15,No,Senior Citizen,NR,1330.0,21.3,2071,2692.0,79.17,Peak,0.0,2.0,7.0,Yes,2.0,0.0,On Time,
+PNR9847550931,12302,New Delhi Rajdhani,Rajdhani,2024-07-09,Tuesday,New Delhi,Howrah,Ranchi,Ahmedabad,GN,120,33,0,87,Yes,Railway Employee,NR,1732.0,17.9,4757,6184.0,27.5,Off-Peak,1.0,0.0,4.0,No,6.0,0.0,On Time,1.9
+PNR7684109313,13119,Sealdah Anvt Express,Express,2024-09-03,Tuesday,Sealdah,Anand Vihar,,Visakhapatnam,2A,46,46,8,0,Yes,Defense,WR,,,1086,,100.0,Off-Peak,0.0,,,Yes,,,Slight Delay,
+PNR2721355673,13049,Amaravati Express,Express,2024-06-28,Friday,Howrah,Amravati,New Delhi,Raipur,1A,18,5,0,13,Yes,General,WR,1590.0,21.0,1373,,27.78,Off-Peak,0.0,4.0,5.0,Yes,15.0,0.0,On Time,
+PNR7116096874,12073,Jan Shatabdi,Jan Shatabdi,2024-01-26,Friday,Howrah,Patna,Bhubaneswar,Kanpur,2S,100,20,0,80,No,Ladies,WR,2148.0,6.8,2429,,20.0,Off-Peak,0.0,10.0,7.0,No,1.0,5.0,Slight Delay,3.4
+PNR8577013359,12301,Howrah Rajdhani,Rajdhani,2024-04-14,Sunday,Howrah,New Delhi,Chennai Central,Gaya,3A,64,27,0,37,Yes,General,NER,1813.0,9.7,1324,,42.19,Peak,0.0,8.0,8.0,No,2.0,30.0,Delayed,1.2
+PNR8044354825,12301,Howrah Rajdhani,Rajdhani,2024-08-23,Friday,Howrah,New Delhi,Chennai Central,Ranchi,1A,18,10,0,8,No,General,SCR,753.0,38.8,4916,,55.56,Off-Peak,0.0,1.0,6.0,Yes,,30.0,Delayed,
+PNR1722124509,12381,Poorva Express,Express,2024-06-07,Friday,Howrah,New Delhi,Ranchi,Nagpur,2S,100,86,0,14,Yes,Defense,WR,1481.0,17.8,2015,2619.0,86.0,Off-Peak,0.0,3.0,1.0,Yes,5.0,5.0,Slight Delay,
+PNR7783763790,12259,Sealdah Duronto,Duronto,2024-12-01,Sunday,Sealdah,New Delhi,Puri,Surat,1A,18,5,0,13,Yes,Railway Employee,SCR,668.0,21.9,4247,,27.78,Peak,0.0,4.0,0.0,No,9.0,0.0,On Time,
+PNR9977755129,12301,Howrah Rajdhani,Rajdhani,2024-07-07,Sunday,Howrah,New Delhi,Bhubaneswar,Jaipur,GN,120,73,0,47,No,Senior Citizen,ER,1892.0,43.8,828,,60.83,Off-Peak,0.0,5.0,7.0,Yes,,45.0,Delayed,
+PNR1168114160,13049,Amaravati Express,Express,2024-02-13,Tuesday,Howrah,Amravati,Kolkata,Kanpur,CC,78,78,4,0,No,Defense,SR,1540.0,18.8,1613,,100.0,Off-Peak,1.0,5.0,0.0,No,,15.0,Slight Delay,
+PNR2431779064,13119,Sealdah Anvt Express,Express,2024-07-16,Tuesday,Sealdah,Anand Vihar,Bhubaneswar,Bhopal,3A,64,32,0,32,Yes,Ladies,CR,1655.0,7.5,1431,1860.0,50.0,Off-Peak,0.0,4.0,8.0,No,11.0,15.0,Slight Delay,3.7
+PNR7478908722,12245,Duronto Express,Duronto,2024-12-16,Monday,Howrah,Pune,Howrah,Varanasi,CC,78,11,0,67,Yes,Tatkal,WR,1449.0,45.6,3668,,14.1,Peak,0.0,2.0,2.0,Yes,5.0,0.0,On Time,3.2
+PNR3654424954,12245,Duronto Express,Duronto,2024-09-26,Thursday,Howrah,Pune,Bhubaneswar,Allahabad,1A,18,18,3,0,Yes,Tatkal,SR,728.0,,2958,,100.0,Off-Peak,0.0,10.0,3.0,No,,,Slight Delay,
+PNR6128260438,12019,Shatabdi Express,Shatabdi,2024-09-30,Monday,Howrah,Ranchi,Puri,Surat,2A,46,19,0,27,No,Senior Citizen,CR,1614.0,24.9,4042,,41.3,Off-Peak,0.0,3.0,2.0,No,1.0,120.0,Delayed,2.5
+PNR2224336336,12302,New Delhi Rajdhani,Rajdhani,2024-12-30,Monday,New Delhi,Howrah,Asansol,Puri,GN,120,120,12,0,Yes,Senior Citizen,SR,1841.0,5.8,1221,,100.0,Peak,1.0,5.0,0.0,No,1.0,30.0,Delayed,
+PNR4997866845,12302,New Delhi Rajdhani,Rajdhani,2024-07-10,Wednesday,New Delhi,Howrah,Durgapur,Indore,2A,46,1,0,45,Yes,Tatkal,SR,206.0,14.8,2810,3653.0,2.17,Off-Peak,0.0,7.0,7.0,Yes,15.0,0.0,On Time,
+PNR2817865363,12019,Shatabdi Express,Shatabdi,2024-03-17,Sunday,Howrah,Ranchi,Asansol,Dhanbad,CC,78,78,15,0,Yes,Ladies,NR,245.0,12.6,4523,5879.0,100.0,Off-Peak,1.0,1.0,1.0,No,10.0,60.0,Delayed,
+PNR6545970956,22811,Bhubaneswar Rajdhani,Rajdhani,2024-10-21,Monday,Bhubaneswar,New Delhi,Howrah,Pune,2A,46,45,0,1,Yes,Tatkal,ECR,817.0,32.4,1376,,97.83,Peak,0.0,1.0,8.0,Yes,7.0,45.0,Delayed,
+PNR4386667704,12381,Poorva Express,Express,2024-07-10,Wednesday,Howrah,New Delhi,,Asansol,3A,64,2,0,62,Yes,Defense,SCR,,,3125,,3.12,Off-Peak,,,,No,,,On Time,
+PNR4397788197,12875,Neelachal Express,Express,2024-01-19,Friday,Howrah,Puri,Dhanbad,Hyderabad Deccan,3A,64,25,0,39,Yes,Ladies,ECR,2274.0,23.5,558,,39.06,Off-Peak,0.0,4.0,5.0,Yes,14.0,120.0,Delayed,
+PNR6097341120,13049,Amaravati Express,Express,2024-08-11,Sunday,Howrah,Amravati,Kolkata,Agra,SL,72,56,0,16,Yes,Defense,CR,388.0,35.3,3367,,77.78,Off-Peak,0.0,8.0,4.0,No,2.0,0.0,On Time,
+PNR8257484586,12875,Neelachal Express,Express,2024-11-04,Monday,Howrah,Puri,Bangalore City,Kanpur,2S,100,100,9,0,Yes,Railway Employee,SCR,1831.0,14.3,1565,,100.0,Peak,0.0,1.0,6.0,No,9.0,120.0,Delayed,
+PNR1149460439,12301,Howrah Rajdhani,Rajdhani,2024-03-14,Thursday,Howrah,New Delhi,Sealdah,Asansol,GN,120,120,35,0,Yes,Ladies,ECR,2373.0,3.0,3789,,100.0,Off-Peak,1.0,5.0,5.0,No,13.0,0.0,On Time,3.1
+PNR5125402225,12381,Poorva Express,Express,2024-06-09,Sunday,Howrah,New Delhi,Howrah,Raipur,2S,100,71,0,29,Yes,Senior Citizen,ECR,2350.0,7.0,2244,,71.0,Off-Peak,1.0,3.0,4.0,No,4.0,0.0,On Time,
+PNR5283209430,12302,New Delhi Rajdhani,Rajdhani,2024-08-19,Monday,New Delhi,Howrah,Asansol,Bhopal,2A,46,46,11,0,Yes,Railway Employee,SCR,315.0,27.1,3846,,100.0,Off-Peak,0.0,2.0,2.0,No,9.0,5.0,Slight Delay,
+PNR5407856339,12019,Shatabdi Express,Shatabdi,2024-03-12,Tuesday,Howrah,Ranchi,Ranchi,Surat,2A,46,46,4,0,Yes,Senior Citizen,SR,403.0,4.6,4247,,100.0,Off-Peak,1.0,8.0,6.0,No,14.0,90.0,Delayed,
+PNR2479679716,13049,Amaravati Express,Express,2024-11-24,Sunday,Howrah,Amravati,Dhanbad,Visakhapatnam,1A,18,14,0,4,Yes,Tatkal,ECR,2109.0,43.8,4016,,77.78,Peak,0.0,8.0,2.0,No,3.0,0.0,On Time,
+PNR2178758213,13049,Amaravati Express,Express,2024-09-22,Sunday,Howrah,Amravati,Puri,Dhanbad,3A,64,10,0,54,Yes,Defense,SR,2474.0,45.3,2252,,15.62,Off-Peak,0.0,9.0,0.0,Yes,2.0,0.0,On Time,4.1
+PNR3744446292,12311,Kalka Mail,Mail,2024-11-29,Friday,Howrah,Kalka,Patna,Nagpur,2A,46,46,3,0,Yes,Railway Employee,CR,2028.0,12.9,4886,,100.0,Peak,1.0,4.0,7.0,Yes,,0.0,On Time,
+PNR3605585995,12381,Poorva Express,Express,2024-09-04,Wednesday,Howrah,New Delhi,Bangalore City,Indore,SL,72,26,0,46,Yes,Railway Employee,SCR,1683.0,7.6,2986,,36.11,Off-Peak,0.0,5.0,3.0,No,2.0,10.0,Slight Delay,1.6
+PNR2343100352,12301,Howrah Rajdhani,Rajdhani,2024-05-28,Tuesday,Howrah,New Delhi,Asansol,Puri,SL,72,72,6,0,No,Defense,NER,2092.0,42.4,3625,,100.0,Peak,0.0,6.0,8.0,No,,5.0,Slight Delay,
+PNR5756663747,12311,Kalka Mail,Mail,2024-09-10,Tuesday,Howrah,Kalka,New Delhi,Durgapur,CC,78,78,5,0,Yes,Senior Citizen,SCR,235.0,20.1,4055,,100.0,Off-Peak,0.0,5.0,8.0,No,2.0,30.0,Delayed,4.1
+PNR5187948804,12311,Kalka Mail,Mail,2024-11-15,Friday,Howrah,Kalka,Hyderabad Deccan,Varanasi,2S,100,30,0,70,Yes,Defense,SCR,640.0,10.8,1254,,30.0,Peak,0.0,0.0,0.0,Yes,12.0,15.0,Slight Delay,3.1
+PNR2368076065,12259,Sealdah Duronto,Duronto,2024-11-06,Wednesday,Sealdah,New Delhi,Hyderabad Deccan,Pune,CC,78,17,0,61,Yes,Defense,SCR,2127.0,40.0,2886,,21.79,Peak,0.0,7.0,0.0,No,6.0,120.0,Delayed,
+PNR7858674568,12381,Poorva Express,Express,2024-10-25,Friday,Howrah,New Delhi,Chennai Central,Nagpur,3A,64,64,16,0,Yes,Railway Employee,ER,2440.0,23.8,418,,100.0,Peak,1.0,2.0,3.0,Yes,10.0,0.0,On Time,
+PNR3965676060,12875,Neelachal Express,Express,2024-06-09,Sunday,Howrah,Puri,Hyderabad Deccan,Jaipur,SL,72,19,0,53,No,Railway Employee,ER,615.0,25.6,3582,,26.39,Off-Peak,1.0,8.0,6.0,No,3.0,45.0,Delayed,2.4
+PNR6353758928,13049,Amaravati Express,Express,2024-12-12,Thursday,Howrah,Amravati,Ranchi,Dhanbad,GN,120,67,0,53,Yes,Ladies,CR,899.0,33.6,4166,,55.83,Peak,1.0,5.0,8.0,No,5.0,0.0,On Time,3.2
+PNR5475641477,12381,Poorva Express,Express,2024-06-25,Tuesday,Howrah,New Delhi,Kolkata,Patna,GN,120,37,0,83,Yes,Senior Citizen,CR,2012.0,11.5,2579,3352.0,30.83,Off-Peak,0.0,8.0,4.0,Yes,2.0,90.0,Delayed,2.0
+PNR1225447588,12301,Howrah Rajdhani,Rajdhani,2024-12-08,Sunday,Howrah,New Delhi,Hyderabad Deccan,Gaya,CC,78,28,0,50,No,General,SR,,,2107,,35.9,Peak,0.0,,,No,,,Slight Delay,
+PNR4957687327,12311,Kalka Mail,Mail,2024-11-26,Tuesday,Howrah,Kalka,Hyderabad Deccan,Puri,1A,18,2,0,16,Yes,Senior Citizen,NER,813.0,45.1,4903,,11.11,Peak,0.0,0.0,0.0,No,10.0,90.0,Delayed,
+PNR7546898241,13049,Amaravati Express,Express,2024-05-25,Saturday,Howrah,Amravati,Dhanbad,Bhubaneswar,SL,72,72,10,0,No,Ladies,WR,511.0,16.9,4650,6045.0,100.0,Peak,0.0,2.0,0.0,No,13.0,10.0,Slight Delay,4.0
+PNR7508080884,12259,Sealdah Duronto,Duronto,2024-11-08,Friday,Sealdah,New Delhi,Sealdah,Allahabad,GN,120,103,0,17,Yes,Tatkal,SR,2005.0,16.5,3703,,85.83,Peak,0.0,6.0,3.0,No,13.0,10.0,Slight Delay,2.2
+PNR3975418439,12245,Duronto Express,Duronto,2024-10-20,Sunday,Howrah,Pune,Howrah,Bhopal,1A,18,8,0,10,Yes,Senior Citizen,CR,704.0,20.4,3145,,44.44,Peak,0.0,1.0,4.0,No,10.0,5.0,Slight Delay,
+PNR9941564880,12259,Sealdah Duronto,Duronto,2024-09-01,Sunday,Sealdah,New Delhi,,Jaipur,2A,46,29,0,17,Yes,General,NR,,,3260,,63.04,Off-Peak,,,,Yes,,,Slight Delay,
+PNR5533921266,13119,Sealdah Anvt Express,Express,2024-04-15,Monday,Sealdah,Anand Vihar,New Delhi,Jaipur,2S,100,100,25,0,No,Senior Citizen,ER,2338.0,23.0,944,1227.0,100.0,Peak,0.0,6.0,4.0,Yes,12.0,5.0,Slight Delay,1.2
+PNR9305502799,13049,Amaravati Express,Express,2024-12-24,Tuesday,Howrah,Amravati,Howrah,Dhanbad,1A,18,17,0,1,No,Tatkal,SR,1771.0,18.9,693,900.0,94.44,Peak,1.0,6.0,6.0,Yes,11.0,120.0,Delayed,1.5
+PNR3271361431,13049,Amaravati Express,Express,2024-03-01,Friday,Howrah,Amravati,Kolkata,Asansol,2A,46,34,0,12,Yes,General,CR,1946.0,32.8,3419,,73.91,Off-Peak,1.0,3.0,3.0,No,6.0,0.0,On Time,4.7
+PNR4818403515,12245,Duronto Express,Duronto,2024-02-27,Tuesday,Howrah,Pune,Mumbai CST,Kolkata,1A,18,18,3,0,Yes,General,ER,1878.0,29.3,3634,4724.0,100.0,Off-Peak,0.0,3.0,0.0,No,8.0,5.0,Slight Delay,4.0
+PNR2377246195,12301,Howrah Rajdhani,Rajdhani,2024-03-12,Tuesday,Howrah,New Delhi,Chennai Central,Bhubaneswar,CC,78,37,0,41,Yes,Senior Citizen,CR,1177.0,4.3,2118,2753.0,47.44,Off-Peak,0.0,10.0,6.0,No,1.0,15.0,Slight Delay,3.7
+PNR5935852056,22811,Bhubaneswar Rajdhani,Rajdhani,2024-06-12,Wednesday,Bhubaneswar,New Delhi,Hyderabad Deccan,Puri,2S,100,100,6,0,No,Tatkal,WR,1281.0,41.4,3544,,100.0,Off-Peak,1.0,0.0,8.0,No,,,Delayed,
+PNR9255898264,12311,Kalka Mail,Mail,2024-04-14,Sunday,Howrah,Kalka,Durgapur,Varanasi,3A,64,64,18,0,Yes,Defense,WR,261.0,14.0,847,1101.0,100.0,Peak,0.0,1.0,3.0,Yes,8.0,5.0,Slight Delay,2.3
+PNR8534793156,12301,Howrah Rajdhani,Rajdhani,2024-04-18,Thursday,Howrah,New Delhi,Dhanbad,Asansol,2A,46,46,1,0,Yes,Senior Citizen,WR,2311.0,16.5,1161,,100.0,Peak,1.0,8.0,5.0,No,5.0,15.0,Slight Delay,
+PNR6887132821,12302,New Delhi Rajdhani,Rajdhani,2024-08-28,Wednesday,New Delhi,Howrah,Hyderabad Deccan,Hyderabad Deccan,GN,120,81,0,39,Yes,Railway Employee,SR,116.0,13.6,1864,,67.5,Off-Peak,1.0,4.0,2.0,Yes,6.0,5.0,Slight Delay,
+PNR8471499716,12875,Neelachal Express,Express,2024-10-08,Tuesday,Howrah,Puri,Patna,Puri,2S,100,86,0,14,Yes,Tatkal,SR,2288.0,24.2,2308,3000.0,86.0,Peak,0.0,8.0,0.0,Yes,14.0,120.0,Delayed,
+PNR9881854670,12301,Howrah Rajdhani,Rajdhani,2024-07-30,Tuesday,Howrah,New Delhi,New Delhi,Bangalore City,2A,46,46,7,0,Yes,Defense,NER,1578.0,4.3,2095,2723.0,100.0,Off-Peak,1.0,10.0,7.0,Yes,1.0,60.0,Delayed,1.0
+PNR1769945233,22811,Bhubaneswar Rajdhani,Rajdhani,2024-05-20,Monday,Bhubaneswar,New Delhi,Dhanbad,Ranchi,CC,78,36,0,42,Yes,Tatkal,WR,2206.0,13.2,340,,46.15,Peak,1.0,1.0,5.0,No,8.0,90.0,Delayed,
+PNR5696548897,12245,Duronto Express,Duronto,2024-04-25,Thursday,Howrah,Pune,Hyderabad Deccan,Allahabad,3A,64,10,0,54,No,General,ER,751.0,5.3,459,596.0,15.62,Peak,0.0,9.0,1.0,Yes,4.0,5.0,Slight Delay,3.8
+PNR3826557688,12073,Jan Shatabdi,Jan Shatabdi,2024-08-31,Saturday,Howrah,Patna,New Delhi,Gaya,3A,64,5,0,59,Yes,Tatkal,SR,1681.0,44.7,809,,7.81,Off-Peak,0.0,9.0,6.0,No,7.0,0.0,On Time,3.8
+PNR5714524551,12302,New Delhi Rajdhani,Rajdhani,2024-09-13,Friday,New Delhi,Howrah,Mumbai CST,Patna,2S,100,88,0,12,Yes,Defense,ECR,1386.0,2.9,639,,88.0,Off-Peak,1.0,7.0,3.0,No,9.0,30.0,Delayed,3.7
+PNR4427620889,13119,Sealdah Anvt Express,Express,2024-07-13,Saturday,Sealdah,Anand Vihar,Kolkata,Patna,1A,18,18,1,0,Yes,Ladies,SR,1606.0,34.6,2619,3404.0,100.0,Off-Peak,1.0,5.0,5.0,Yes,2.0,0.0,On Time,2.8
+PNR7146010221,12311,Kalka Mail,Mail,2024-02-22,Thursday,Howrah,Kalka,Ranchi,Ahmedabad,2A,46,5,0,41,No,General,ER,417.0,18.0,1735,,10.87,Off-Peak,0.0,6.0,0.0,No,7.0,30.0,Delayed,3.9
+PNR8238377072,22811,Bhubaneswar Rajdhani,Rajdhani,2024-05-04,Saturday,Bhubaneswar,New Delhi,New Delhi,Bhubaneswar,CC,78,66,0,12,Yes,Ladies,CR,2069.0,8.3,1589,,84.62,Peak,0.0,6.0,4.0,No,13.0,0.0,On Time,4.8
+PNR2966500767,12245,Duronto Express,Duronto,2024-11-16,Saturday,Howrah,Pune,New Delhi,Dhanbad,SL,72,72,4,0,Yes,Senior Citizen,SCR,1606.0,38.9,1801,,100.0,Peak,0.0,6.0,2.0,No,6.0,90.0,Delayed,
+PNR8013262671,13049,Amaravati Express,Express,2024-03-31,Sunday,Howrah,Amravati,Bhubaneswar,Asansol,SL,72,40,0,32,Yes,Senior Citizen,CR,1659.0,18.5,2587,3363.0,55.56,Off-Peak,0.0,9.0,8.0,Yes,11.0,60.0,Delayed,
+PNR8721000527,12245,Duronto Express,Duronto,2024-08-24,Saturday,Howrah,Pune,Durgapur,Indore,2S,100,53,0,47,Yes,Senior Citizen,NER,620.0,31.0,3791,,53.0,Off-Peak,0.0,6.0,6.0,Yes,8.0,90.0,Delayed,2.6
+PNR1364994639,22811,Bhubaneswar Rajdhani,Rajdhani,2024-12-20,Friday,Bhubaneswar,New Delhi,Asansol,Asansol,SL,72,69,0,3,Yes,Tatkal,ER,2356.0,47.2,501,651.0,95.83,Peak,1.0,5.0,6.0,Yes,1.0,0.0,On Time,3.0
+PNR6244291385,22811,Bhubaneswar Rajdhani,Rajdhani,2024-10-12,Saturday,Bhubaneswar,New Delhi,Bangalore City,Allahabad,CC,78,78,10,0,No,Railway Employee,SR,1462.0,47.9,4912,,100.0,Peak,0.0,6.0,1.0,Yes,14.0,0.0,On Time,2.4
+PNR5714255033,12019,Shatabdi Express,Shatabdi,2024-09-23,Monday,Howrah,Ranchi,Kolkata,Indore,SL,72,44,0,28,No,Ladies,NR,1279.0,3.6,4100,,61.11,Off-Peak,0.0,5.0,1.0,Yes,15.0,5.0,Slight Delay,3.2
+PNR8721302309,13049,Amaravati Express,Express,2024-10-13,Sunday,Howrah,Amravati,Puri,Puri,SL,72,59,0,13,Yes,Railway Employee,ECR,1670.0,2.9,2099,2728.0,81.94,Peak,0.0,7.0,6.0,No,1.0,5.0,Slight Delay,
+PNR6097953682,12245,Duronto Express,Duronto,2024-02-02,Friday,Howrah,Pune,Bangalore City,Kolkata,CC,78,13,0,65,No,General,CR,2054.0,26.0,4598,5977.0,16.67,Off-Peak,1.0,9.0,6.0,Yes,6.0,15.0,Slight Delay,3.5
+PNR3886690817,13119,Sealdah Anvt Express,Express,2024-12-27,Friday,Sealdah,Anand Vihar,Bangalore City,Ranchi,GN,120,76,0,44,Yes,Ladies,NR,799.0,18.9,894,,63.33,Peak,1.0,6.0,2.0,No,7.0,0.0,On Time,3.1
+PNR2240535933,13119,Sealdah Anvt Express,Express,2024-03-29,Friday,Sealdah,Anand Vihar,New Delhi,Gaya,CC,78,21,0,57,No,Defense,ER,1520.0,45.8,4211,,26.92,Off-Peak,0.0,6.0,8.0,No,7.0,120.0,Delayed,3.8
+PNR4268713302,12875,Neelachal Express,Express,2024-09-07,Saturday,Howrah,Puri,Chennai Central,Hyderabad Deccan,2A,46,5,0,41,Yes,Tatkal,CR,738.0,37.8,4831,,10.87,Off-Peak,1.0,8.0,8.0,Yes,10.0,0.0,On Time,3.2
+PNR3346569443,13049,Amaravati Express,Express,2024-10-04,Friday,Howrah,Amravati,Hyderabad Deccan,Ranchi,GN,120,10,0,110,Yes,Ladies,ER,1892.0,13.7,3815,4959.0,8.33,Peak,0.0,7.0,1.0,Yes,4.0,90.0,Delayed,4.4
+PNR4370902138,12073,Jan Shatabdi,Jan Shatabdi,2024-11-19,Tuesday,Howrah,Patna,Durgapur,Kolkata,SL,72,21,0,51,Yes,Defense,SCR,2230.0,14.6,1340,,29.17,Peak,0.0,4.0,4.0,No,14.0,60.0,Delayed,3.7
+PNR9557663181,12302,New Delhi Rajdhani,Rajdhani,2024-03-10,Sunday,New Delhi,Howrah,Durgapur,Nagpur,GN,120,105,0,15,Yes,Railway Employee,SR,1072.0,8.3,685,,87.5,Off-Peak,0.0,10.0,6.0,No,3.0,90.0,Delayed,3.5
+PNR8515344013,12381,Poorva Express,Express,2024-08-19,Monday,Howrah,New Delhi,Kolkata,Varanasi,1A,18,18,2,0,No,Senior Citizen,SCR,2433.0,1.6,962,1250.0,100.0,Off-Peak,0.0,7.0,5.0,Yes,13.0,60.0,Delayed,4.9
+PNR3482206102,12019,Shatabdi Express,Shatabdi,2024-09-10,Tuesday,Howrah,Ranchi,Bhubaneswar,Agra,3A,64,41,0,23,Yes,Railway Employee,ER,238.0,6.1,2523,3279.0,64.06,Off-Peak,1.0,0.0,1.0,Yes,8.0,45.0,Delayed,
+PNR2176904638,12381,Poorva Express,Express,2024-04-13,Saturday,Howrah,New Delhi,,Varanasi,2S,100,33,0,67,Yes,General,SCR,,,2672,,33.0,Peak,,,,Yes,,,Slight Delay,
+PNR9624563057,12019,Shatabdi Express,Shatabdi,2024-09-22,Sunday,Howrah,Ranchi,Bangalore City,Ranchi,2S,100,100,13,0,No,Railway Employee,SR,2006.0,4.8,276,,100.0,Off-Peak,0.0,1.0,5.0,No,15.0,10.0,Slight Delay,
+PNR9626333315,12259,Sealdah Duronto,Duronto,2024-11-24,Sunday,Sealdah,New Delhi,Puri,Puri,2S,100,36,0,64,No,Ladies,WR,670.0,44.3,760,988.0,36.0,Peak,1.0,3.0,1.0,Yes,3.0,0.0,On Time,2.5
+PNR1361845490,12381,Poorva Express,Express,2024-06-10,Monday,Howrah,New Delhi,,Pune,GN,120,35,0,85,Yes,Railway Employee,ER,,,2229,,29.17,Off-Peak,0.0,,,Yes,,,Slight Delay,
+PNR2359239702,12875,Neelachal Express,Express,2024-11-22,Friday,Howrah,Puri,Hyderabad Deccan,Surat,CC,78,9,0,69,No,Ladies,SR,1979.0,45.9,4527,5885.0,11.54,Peak,0.0,9.0,1.0,Yes,5.0,5.0,Slight Delay,
+PNR8589679668,12301,Howrah Rajdhani,Rajdhani,2024-07-22,Monday,Howrah,New Delhi,Hyderabad Deccan,Indore,CC,78,36,0,42,No,General,SR,1186.0,5.4,4304,,46.15,Off-Peak,0.0,2.0,8.0,No,7.0,90.0,Delayed,
+PNR4635552887,13119,Sealdah Anvt Express,Express,2024-11-25,Monday,Sealdah,Anand Vihar,Howrah,Asansol,1A,18,9,0,9,Yes,Senior Citizen,NR,1907.0,30.0,3783,,50.0,Peak,0.0,1.0,0.0,Yes,12.0,0.0,On Time,
+PNR6012067717,13049,Amaravati Express,Express,2024-09-24,Tuesday,Howrah,Amravati,New Delhi,Raipur,CC,78,78,22,0,Yes,Railway Employee,NR,170.0,17.1,2323,,100.0,Off-Peak,0.0,4.0,1.0,No,8.0,60.0,Delayed,3.0
+PNR4321422584,12073,Jan Shatabdi,Jan Shatabdi,2024-03-26,Tuesday,Howrah,Patna,Dhanbad,Surat,3A,64,20,0,44,Yes,Tatkal,ER,230.0,41.4,2289,,31.25,Off-Peak,0.0,7.0,5.0,No,15.0,0.0,On Time,
+PNR2382129132,12301,Howrah Rajdhani,Rajdhani,2024-10-10,Thursday,Howrah,New Delhi,Hyderabad Deccan,Raipur,GN,120,107,0,13,Yes,Ladies,NR,2391.0,18.8,2039,,89.17,Peak,0.0,2.0,3.0,Yes,7.0,0.0,On Time,4.5
+PNR5329194647,12311,Kalka Mail,Mail,2024-06-16,Sunday,Howrah,Kalka,Mumbai CST,Dhanbad,1A,18,17,0,1,Yes,Railway Employee,WR,1950.0,18.6,3941,5123.0,94.44,Off-Peak,0.0,8.0,3.0,Yes,1.0,30.0,Delayed,
+PNR8118065825,22811,Bhubaneswar Rajdhani,Rajdhani,2024-06-26,Wednesday,Bhubaneswar,New Delhi,Durgapur,Raipur,2S,100,2,0,98,Yes,General,WR,2220.0,47.2,2944,,2.0,Off-Peak,0.0,2.0,4.0,Yes,1.0,5.0,Slight Delay,3.1
+PNR8816681105,12245,Duronto Express,Duronto,2024-07-09,Tuesday,Howrah,Pune,Sealdah,Surat,SL,72,10,0,62,Yes,Senior Citizen,SR,1019.0,15.1,4957,,13.89,Off-Peak,1.0,5.0,5.0,No,5.0,5.0,Slight Delay,
+PNR1667483244,12019,Shatabdi Express,Shatabdi,2024-03-10,Sunday,Howrah,Ranchi,New Delhi,Kanpur,GN,120,120,29,0,No,Ladies,ECR,544.0,26.4,1092,1419.0,100.0,Off-Peak,0.0,7.0,4.0,No,5.0,0.0,On Time,
+PNR8973921474,13119,Sealdah Anvt Express,Express,2024-06-04,Tuesday,Sealdah,Anand Vihar,New Delhi,Patna,GN,120,120,34,0,Yes,Ladies,ECR,2153.0,3.8,530,,100.0,Off-Peak,0.0,0.0,6.0,No,9.0,60.0,Delayed,
+PNR1051354601,12875,Neelachal Express,Express,2024-02-22,Thursday,Howrah,Puri,Durgapur,Visakhapatnam,GN,120,35,0,85,Yes,Tatkal,WR,1690.0,18.8,1194,1552.0,29.17,Off-Peak,0.0,9.0,4.0,Yes,1.0,0.0,On Time,
+PNR2423995953,13119,Sealdah Anvt Express,Express,2024-08-15,Thursday,Sealdah,Anand Vihar,Howrah,Kanpur,GN,120,32,0,88,Yes,Tatkal,ECR,1667.0,24.6,953,,26.67,Off-Peak,1.0,2.0,5.0,Yes,15.0,0.0,On Time,2.8
+PNR8075006851,12259,Sealdah Duronto,Duronto,2024-01-18,Thursday,Sealdah,New Delhi,Patna,Lucknow,CC,78,78,1,0,No,General,NR,1195.0,19.3,2213,,100.0,Off-Peak,0.0,10.0,8.0,Yes,7.0,15.0,Slight Delay,4.1
+PNR2161512446,13049,Amaravati Express,Express,2024-10-16,Wednesday,Howrah,Amravati,Howrah,Gaya,CC,78,41,0,37,Yes,General,CR,289.0,39.1,3381,,52.56,Peak,0.0,9.0,3.0,Yes,2.0,5.0,Slight Delay,2.1
+PNR8719734235,12245,Duronto Express,Duronto,2024-01-29,Monday,Howrah,Pune,Bangalore City,Puri,GN,120,56,0,64,Yes,Tatkal,SCR,1519.0,44.0,4916,,46.67,Off-Peak,0.0,9.0,2.0,Yes,14.0,45.0,Delayed,1.7
+PNR9675524665,12301,Howrah Rajdhani,Rajdhani,2024-02-16,Friday,Howrah,New Delhi,Patna,Bangalore City,1A,18,7,0,11,Yes,Defense,WR,584.0,17.3,1992,,38.89,Off-Peak,0.0,0.0,0.0,Yes,10.0,0.0,On Time,4.4
+PNR5728897164,13049,Amaravati Express,Express,2024-02-07,Wednesday,Howrah,Amravati,Chennai Central,Gaya,3A,64,50,0,14,Yes,Tatkal,ECR,2045.0,31.7,5000,,78.12,Off-Peak,0.0,3.0,2.0,No,5.0,10.0,Slight Delay,
+PNR1139082827,12245,Duronto Express,Duronto,2024-01-01,Monday,Howrah,Pune,Bhubaneswar,Gaya,2S,100,100,0,0,Yes,Railway Employee,NR,2082.0,8.0,4848,,100.0,Off-Peak,0.0,5.0,5.0,Yes,11.0,0.0,On Time,
+PNR1900587144,12245,Duronto Express,Duronto,2024-06-20,Thursday,Howrah,Pune,Kolkata,Patna,SL,72,1,0,71,Yes,Ladies,NR,55.0,3.7,2372,,1.39,Off-Peak,1.0,2.0,6.0,No,15.0,30.0,Delayed,2.5
+PNR2938264714,12875,Neelachal Express,Express,2024-10-22,Tuesday,Howrah,Puri,Asansol,Hyderabad Deccan,2S,100,57,0,43,Yes,General,SCR,1119.0,45.8,1532,,57.0,Peak,0.0,6.0,2.0,Yes,9.0,0.0,On Time,4.9
+PNR2864876473,12875,Neelachal Express,Express,2024-12-26,Thursday,Howrah,Puri,Howrah,Ranchi,1A,18,13,0,5,Yes,Tatkal,WR,1726.0,33.9,1551,2016.0,72.22,Peak,0.0,10.0,4.0,No,4.0,0.0,On Time,
+PNR5529063864,12073,Jan Shatabdi,Jan Shatabdi,2024-10-08,Tuesday,Howrah,Patna,Howrah,Lucknow,GN,120,120,5,0,Yes,Ladies,NER,867.0,6.0,1458,,100.0,Peak,0.0,1.0,7.0,Yes,5.0,30.0,Delayed,4.6
+PNR6933261892,12311,Kalka Mail,Mail,2024-02-16,Friday,Howrah,Kalka,New Delhi,Kanpur,2S,100,99,0,1,Yes,Ladies,NER,1954.0,13.7,1714,2228.0,99.0,Off-Peak,0.0,2.0,1.0,Yes,11.0,15.0,Slight Delay,2.7
+PNR4786674545,12073,Jan Shatabdi,Jan Shatabdi,2024-04-26,Friday,Howrah,Patna,Patna,Dhanbad,CC,78,7,0,71,Yes,Senior Citizen,ER,2106.0,28.1,3371,,8.97,Peak,0.0,1.0,7.0,Yes,3.0,5.0,Slight Delay,1.5
+PNR3693916084,12381,Poorva Express,Express,2024-02-10,Saturday,Howrah,New Delhi,Durgapur,Pune,2S,100,100,11,0,Yes,Ladies,NR,406.0,19.5,1854,,100.0,Off-Peak,0.0,4.0,8.0,No,15.0,0.0,On Time,
+PNR5035765954,22811,Bhubaneswar Rajdhani,Rajdhani,2024-08-02,Friday,Bhubaneswar,New Delhi,Dhanbad,Ranchi,1A,18,13,0,5,Yes,Ladies,SCR,1733.0,13.8,1425,1852.0,72.22,Off-Peak,1.0,0.0,2.0,No,7.0,0.0,On Time,3.7
+PNR9801637712,12381,Poorva Express,Express,2024-01-20,Saturday,Howrah,New Delhi,Patna,Durgapur,SL,72,42,0,30,Yes,General,SCR,1291.0,16.0,2146,2789.0,58.33,Off-Peak,0.0,3.0,2.0,No,12.0,45.0,Delayed,2.3
+PNR6102144947,12245,Duronto Express,Duronto,2024-08-01,Thursday,Howrah,Pune,Mumbai CST,Lucknow,CC,78,78,4,0,No,Defense,SCR,280.0,25.5,931,,100.0,Off-Peak,0.0,8.0,6.0,Yes,,60.0,Delayed,
+PNR5437006340,12019,Shatabdi Express,Shatabdi,2024-04-12,Friday,Howrah,Ranchi,Howrah,Varanasi,GN,120,14,0,106,Yes,Ladies,SCR,1951.0,25.0,2243,2915.0,11.67,Peak,0.0,10.0,0.0,Yes,6.0,45.0,Delayed,1.7
+PNR9136780852,12875,Neelachal Express,Express,2024-10-27,Sunday,Howrah,Puri,Kolkata,Indore,CC,78,44,0,34,Yes,Ladies,ER,1633.0,3.8,3020,3926.0,56.41,Peak,0.0,3.0,3.0,Yes,5.0,120.0,Delayed,1.1
+PNR1036351450,13119,Sealdah Anvt Express,Express,2024-01-05,Friday,Sealdah,Anand Vihar,Chennai Central,Pune,SL,72,16,0,56,Yes,Railway Employee,CR,1785.0,43.1,1618,2103.0,22.22,Off-Peak,1.0,4.0,3.0,No,5.0,120.0,Delayed,3.5
+PNR6509055260,12073,Jan Shatabdi,Jan Shatabdi,2024-02-22,Thursday,Howrah,Patna,Puri,Ranchi,1A,18,16,0,2,No,General,SCR,1182.0,31.3,3265,,88.89,Off-Peak,0.0,10.0,4.0,Yes,3.0,60.0,Delayed,4.6
+PNR4097887746,12073,Jan Shatabdi,Jan Shatabdi,2024-07-25,Thursday,Howrah,Patna,Puri,Agra,2S,100,81,0,19,Yes,Ladies,ECR,1707.0,19.6,1346,,81.0,Off-Peak,0.0,5.0,3.0,No,15.0,120.0,Delayed,2.2
+PNR5714169271,12259,Sealdah Duronto,Duronto,2024-12-02,Monday,Sealdah,New Delhi,,Raipur,CC,78,23,0,55,Yes,Railway Employee,SR,,,2606,,29.49,Peak,,,,No,,,Slight Delay,
+PNR3665691647,12302,New Delhi Rajdhani,Rajdhani,2024-08-28,Wednesday,New Delhi,Howrah,Patna,Kolkata,1A,18,18,2,0,Yes,Railway Employee,ECR,2220.0,15.4,4980,,100.0,Off-Peak,0.0,2.0,3.0,No,7.0,90.0,Delayed,4.9
+PNR7389111087,12259,Sealdah Duronto,Duronto,2024-06-10,Monday,Sealdah,New Delhi,Puri,Puri,GN,120,46,0,74,Yes,Railway Employee,ER,69.0,22.5,862,,38.33,Off-Peak,0.0,9.0,2.0,No,13.0,0.0,On Time,
+PNR9441018790,12381,Poorva Express,Express,2024-11-20,Wednesday,Howrah,New Delhi,Hyderabad Deccan,Bangalore City,SL,72,51,0,21,Yes,Defense,WR,1578.0,45.7,3714,4828.0,70.83,Peak,0.0,0.0,0.0,Yes,4.0,15.0,Slight Delay,1.4
+PNR4538382315,22811,Bhubaneswar Rajdhani,Rajdhani,2024-10-28,Monday,Bhubaneswar,New Delhi,Chennai Central,Dhanbad,3A,64,21,0,43,No,Railway Employee,SCR,1826.0,42.8,734,954.0,32.81,Peak,0.0,7.0,5.0,Yes,3.0,30.0,Delayed,
+PNR1725783958,12019,Shatabdi Express,Shatabdi,2024-03-08,Friday,Howrah,Ranchi,Bangalore City,Indore,2A,46,46,0,0,Yes,Senior Citizen,CR,2240.0,30.5,379,,100.0,Off-Peak,0.0,10.0,1.0,Yes,1.0,0.0,On Time,2.5
+PNR5334930042,22811,Bhubaneswar Rajdhani,Rajdhani,2024-05-09,Thursday,Bhubaneswar,New Delhi,Hyderabad Deccan,Bhopal,SL,72,72,17,0,Yes,Railway Employee,CR,611.0,21.0,1454,1890.0,100.0,Peak,0.0,4.0,1.0,Yes,8.0,5.0,Slight Delay,4.1
+PNR1688799369,22811,Bhubaneswar Rajdhani,Rajdhani,2024-04-13,Saturday,Bhubaneswar,New Delhi,Ranchi,Agra,3A,64,52,0,12,Yes,Railway Employee,NER,1404.0,12.4,2619,,81.25,Peak,0.0,1.0,7.0,Yes,2.0,60.0,Delayed,
+PNR9492399988,12245,Duronto Express,Duronto,2024-02-21,Wednesday,Howrah,Pune,Chennai Central,Kanpur,3A,64,64,18,0,Yes,General,SR,211.0,41.1,2093,,100.0,Off-Peak,0.0,6.0,1.0,Yes,14.0,0.0,On Time,
+PNR7965608188,12259,Sealdah Duronto,Duronto,2024-12-05,Thursday,Sealdah,New Delhi,Dhanbad,Raipur,2S,100,43,0,57,Yes,Ladies,SCR,799.0,6.8,2892,,43.0,Peak,1.0,4.0,6.0,No,13.0,30.0,Delayed,4.2
+PNR5740411708,12302,New Delhi Rajdhani,Rajdhani,2024-03-08,Friday,New Delhi,Howrah,Dhanbad,Surat,2S,100,15,0,85,No,Defense,NER,792.0,29.9,1505,,15.0,Off-Peak,0.0,10.0,2.0,No,,45.0,Delayed,
+PNR8108057356,12381,Poorva Express,Express,2024-08-13,Tuesday,Howrah,New Delhi,Howrah,Indore,1A,18,2,0,16,Yes,Railway Employee,SCR,2176.0,25.8,2343,3045.0,11.11,Off-Peak,0.0,6.0,3.0,No,6.0,120.0,Delayed,2.5
+PNR1710404224,22811,Bhubaneswar Rajdhani,Rajdhani,2024-11-09,Saturday,Bhubaneswar,New Delhi,Asansol,Agra,1A,18,0,0,18,Yes,Tatkal,SCR,1189.0,3.8,1485,,0.0,Peak,1.0,6.0,3.0,Yes,8.0,45.0,Delayed,2.8
+PNR1076317824,12875,Neelachal Express,Express,2024-08-16,Friday,Howrah,Puri,Hyderabad Deccan,Lucknow,3A,64,15,0,49,Yes,Defense,ER,422.0,38.3,4274,5556.0,23.44,Off-Peak,0.0,8.0,8.0,Yes,11.0,120.0,Delayed,2.4
+PNR8117478955,12301,Howrah Rajdhani,Rajdhani,2024-04-24,Wednesday,Howrah,New Delhi,Kolkata,Kanpur,GN,120,116,0,4,Yes,General,WR,58.0,17.4,2919,3794.0,96.67,Peak,0.0,8.0,8.0,No,12.0,0.0,On Time,
+PNR5754363475,12259,Sealdah Duronto,Duronto,2024-09-09,Monday,Sealdah,New Delhi,Bhubaneswar,Kolkata,2A,46,46,6,0,Yes,General,ECR,933.0,22.8,3552,4617.0,100.0,Off-Peak,0.0,1.0,6.0,Yes,15.0,120.0,Delayed,3.4
+PNR9434691954,12875,Neelachal Express,Express,2024-08-22,Thursday,Howrah,Puri,Howrah,Jaipur,2S,100,100,29,0,Yes,Defense,ECR,2446.0,24.0,1302,,100.0,Off-Peak,0.0,9.0,2.0,Yes,2.0,30.0,Delayed,3.4
+PNR6470052645,13049,Amaravati Express,Express,2024-09-15,Sunday,Howrah,Amravati,Bangalore City,Dhanbad,SL,72,53,0,19,No,Tatkal,SR,1740.0,29.5,2233,2902.0,73.61,Off-Peak,0.0,8.0,5.0,Yes,4.0,5.0,Slight Delay,2.2
+PNR8934097788,13049,Amaravati Express,Express,2024-12-10,Tuesday,Howrah,Amravati,Asansol,Bangalore City,2A,46,45,0,1,Yes,General,ECR,645.0,4.0,1656,,97.83,Peak,0.0,2.0,4.0,No,3.0,0.0,On Time,
+PNR2670255496,22811,Bhubaneswar Rajdhani,Rajdhani,2024-01-17,Wednesday,Bhubaneswar,New Delhi,Ranchi,Indore,3A,64,57,0,7,Yes,Railway Employee,ER,1612.0,19.5,1039,1350.0,89.06,Off-Peak,0.0,8.0,0.0,Yes,12.0,10.0,Slight Delay,
+PNR6126033644,12875,Neelachal Express,Express,2024-04-25,Thursday,Howrah,Puri,Patna,Puri,2S,100,94,0,6,Yes,Tatkal,SR,2154.0,7.0,4677,,94.0,Peak,0.0,8.0,4.0,Yes,3.0,90.0,Delayed,1.0
+PNR9283395204,12875,Neelachal Express,Express,2024-12-29,Sunday,Howrah,Puri,Bhubaneswar,Hyderabad Deccan,2A,46,2,0,44,Yes,Senior Citizen,SCR,348.0,38.0,1459,,4.35,Peak,0.0,2.0,8.0,Yes,13.0,60.0,Delayed,
+PNR6720396142,22811,Bhubaneswar Rajdhani,Rajdhani,2024-10-01,Tuesday,Bhubaneswar,New Delhi,Bangalore City,Dhanbad,SL,72,11,0,61,Yes,Defense,NER,2349.0,39.8,3062,,15.28,Peak,0.0,1.0,5.0,No,4.0,120.0,Delayed,3.5
+PNR6952291828,12301,Howrah Rajdhani,Rajdhani,2024-12-15,Sunday,Howrah,New Delhi,Ranchi,Raipur,3A,64,48,0,16,Yes,General,SCR,2156.0,38.8,1128,,75.0,Peak,0.0,4.0,3.0,No,9.0,0.0,On Time,1.7
+PNR8238760130,22811,Bhubaneswar Rajdhani,Rajdhani,2024-09-30,Monday,Bhubaneswar,New Delhi,,Ranchi,1A,18,18,2,0,Yes,Defense,ECR,,,736,,100.0,Off-Peak,1.0,,,Yes,,,On Time,
+PNR9207624837,12311,Kalka Mail,Mail,2024-10-12,Saturday,Howrah,Kalka,Hyderabad Deccan,Allahabad,1A,18,18,0,0,No,Railway Employee,ECR,1823.0,16.2,2064,,100.0,Peak,0.0,8.0,0.0,Yes,13.0,90.0,Delayed,
+PNR5666504394,12302,New Delhi Rajdhani,Rajdhani,2024-07-02,Tuesday,New Delhi,Howrah,Asansol,Kanpur,CC,78,13,0,65,No,Senior Citizen,ER,1991.0,8.8,2574,,16.67,Off-Peak,1.0,8.0,4.0,Yes,5.0,120.0,Delayed,4.9
+PNR1607196157,12245,Duronto Express,Duronto,2024-11-27,Wednesday,Howrah,Pune,Howrah,Bangalore City,3A,64,1,0,63,No,Defense,NR,1298.0,11.3,4734,6154.0,1.56,Peak,0.0,3.0,6.0,Yes,3.0,0.0,On Time,
+PNR4660390742,12311,Kalka Mail,Mail,2024-04-09,Tuesday,Howrah,Kalka,Durgapur,Visakhapatnam,1A,18,5,0,13,No,Railway Employee,NR,1240.0,32.7,4847,,27.78,Peak,0.0,9.0,7.0,No,6.0,0.0,On Time,1.9
+PNR7381725407,12311,Kalka Mail,Mail,2024-11-13,Wednesday,Howrah,Kalka,Bangalore City,Pune,1A,18,6,0,12,Yes,Railway Employee,SR,2366.0,27.9,2803,3643.0,33.33,Peak,1.0,2.0,0.0,No,4.0,5.0,Slight Delay,3.6
+PNR9065458220,12311,Kalka Mail,Mail,2024-07-03,Wednesday,Howrah,Kalka,Patna,Kanpur,2A,46,43,0,3,Yes,Ladies,NER,2309.0,6.6,2916,,93.48,Off-Peak,0.0,4.0,2.0,Yes,5.0,120.0,Delayed,
+PNR7781327255,12302,New Delhi Rajdhani,Rajdhani,2024-01-10,Wednesday,New Delhi,Howrah,Asansol,Surat,GN,120,120,9,0,Yes,General,CR,2276.0,43.1,455,,100.0,Off-Peak,0.0,5.0,6.0,Yes,15.0,90.0,Delayed,2.2
+PNR9635425513,12875,Neelachal Express,Express,2024-09-13,Friday,Howrah,Puri,Mumbai CST,Pune,CC,78,11,0,67,Yes,Defense,SR,1877.0,8.9,3450,,14.1,Off-Peak,0.0,7.0,5.0,Yes,4.0,45.0,Delayed,
+PNR8694264068,12311,Kalka Mail,Mail,2024-07-08,Monday,Howrah,Kalka,Hyderabad Deccan,Agra,2A,46,2,0,44,No,General,ER,1377.0,6.3,1893,2460.0,4.35,Off-Peak,0.0,4.0,8.0,Yes,7.0,120.0,Delayed,3.4
+PNR7512767226,12302,New Delhi Rajdhani,Rajdhani,2024-09-21,Saturday,New Delhi,Howrah,Bangalore City,Varanasi,3A,64,48,0,16,No,Senior Citizen,ER,2105.0,42.5,2025,,75.0,Off-Peak,0.0,1.0,8.0,No,4.0,0.0,On Time,
+PNR5781753301,13049,Amaravati Express,Express,2024-11-04,Monday,Howrah,Amravati,Puri,Agra,2S,100,30,0,70,No,Tatkal,SR,1733.0,,2086,,30.0,Peak,0.0,2.0,8.0,Yes,,,Delayed,
+PNR1368287033,12259,Sealdah Duronto,Duronto,2024-05-12,Sunday,Sealdah,New Delhi,,Pune,2A,46,33,0,13,No,Senior Citizen,SR,,,3521,,71.74,Peak,,,,No,,,Delayed,
+PNR1567851370,12073,Jan Shatabdi,Jan Shatabdi,2024-02-05,Monday,Howrah,Patna,Howrah,Kolkata,2A,46,24,0,22,No,Tatkal,NR,776.0,23.6,3357,,52.17,Off-Peak,0.0,8.0,8.0,Yes,2.0,45.0,Delayed,4.6
+PNR7101791420,22811,Bhubaneswar Rajdhani,Rajdhani,2024-01-01,Monday,Bhubaneswar,New Delhi,Durgapur,Hyderabad Deccan,GN,120,110,0,10,No,Tatkal,NER,1611.0,17.8,4476,,91.67,Off-Peak,0.0,6.0,2.0,No,8.0,5.0,Slight Delay,1.3
+PNR9613425697,12073,Jan Shatabdi,Jan Shatabdi,2024-10-05,Saturday,Howrah,Patna,Kolkata,Bangalore City,SL,72,32,0,40,Yes,Defense,ER,1586.0,31.9,1748,,44.44,Peak,0.0,6.0,5.0,Yes,3.0,30.0,Delayed,
+PNR6169824924,22811,Bhubaneswar Rajdhani,Rajdhani,2024-08-04,Sunday,Bhubaneswar,New Delhi,Ranchi,Ahmedabad,CC,78,46,0,32,No,Tatkal,SCR,2340.0,27.3,2457,,58.97,Off-Peak,0.0,9.0,5.0,No,12.0,0.0,On Time,3.6
+PNR1430693397,12245,Duronto Express,Duronto,2024-04-27,Saturday,Howrah,Pune,Ranchi,Allahabad,SL,72,72,17,0,Yes,Defense,ER,708.0,19.6,1525,,100.0,Peak,0.0,2.0,7.0,No,2.0,0.0,On Time,
+PNR7532669066,12073,Jan Shatabdi,Jan Shatabdi,2024-01-20,Saturday,Howrah,Patna,Kolkata,Pune,2S,100,98,0,2,Yes,Tatkal,NER,1848.0,2.0,3482,4526.0,98.0,Off-Peak,0.0,3.0,0.0,Yes,10.0,0.0,On Time,2.4
+PNR8643636805,13119,Sealdah Anvt Express,Express,2024-01-01,Monday,Sealdah,Anand Vihar,Bangalore City,Bhopal,2A,46,5,0,41,No,Senior Citizen,WR,2170.0,2.2,2460,3198.0,10.87,Off-Peak,0.0,8.0,4.0,No,6.0,10.0,Slight Delay,
+PNR2121448210,12019,Shatabdi Express,Shatabdi,2024-08-20,Tuesday,Howrah,Ranchi,Hyderabad Deccan,Jaipur,SL,72,72,1,0,Yes,Defense,NR,2110.0,15.2,238,,100.0,Off-Peak,0.0,8.0,4.0,No,,90.0,Delayed,
+PNR3070046110,13049,Amaravati Express,Express,2024-08-22,Thursday,Howrah,Amravati,Chennai Central,Patna,2S,100,100,17,0,No,Railway Employee,WR,991.0,38.7,424,,100.0,Off-Peak,0.0,8.0,8.0,Yes,12.0,10.0,Slight Delay,
+PNR6061557739,12302,New Delhi Rajdhani,Rajdhani,2024-07-23,Tuesday,New Delhi,Howrah,Bangalore City,Varanasi,2S,100,87,0,13,Yes,Defense,CR,798.0,45.5,822,1068.0,87.0,Off-Peak,0.0,7.0,3.0,Yes,12.0,5.0,Slight Delay,1.8
+PNR4345515321,12019,Shatabdi Express,Shatabdi,2024-05-07,Tuesday,Howrah,Ranchi,Sealdah,Patna,GN,120,91,0,29,No,Defense,ER,2267.0,,1477,,75.83,Peak,0.0,9.0,,No,,,Delayed,
+PNR1550812184,22811,Bhubaneswar Rajdhani,Rajdhani,2024-05-23,Thursday,Bhubaneswar,New Delhi,Ranchi,Lucknow,SL,72,28,0,44,No,Defense,ER,2108.0,17.6,4924,6401.0,38.89,Peak,0.0,7.0,1.0,No,6.0,0.0,On Time,
+PNR8996550604,12019,Shatabdi Express,Shatabdi,2024-07-13,Saturday,Howrah,Ranchi,New Delhi,Ahmedabad,CC,78,12,0,66,Yes,Tatkal,CR,1980.0,46.1,2865,,15.38,Off-Peak,0.0,7.0,6.0,Yes,7.0,15.0,Slight Delay,2.6
+PNR3946398734,12875,Neelachal Express,Express,2024-04-02,Tuesday,Howrah,Puri,Durgapur,Ranchi,CC,78,16,0,62,Yes,Tatkal,ECR,1610.0,10.6,4917,6392.0,20.51,Peak,0.0,7.0,0.0,Yes,7.0,45.0,Delayed,
+PNR8667946580,13119,Sealdah Anvt Express,Express,2024-09-21,Saturday,Sealdah,Anand Vihar,Chennai Central,Durgapur,CC,78,78,14,0,Yes,Senior Citizen,NR,719.0,4.3,2786,3621.0,100.0,Off-Peak,1.0,10.0,1.0,No,12.0,15.0,Slight Delay,2.4
+PNR5815678365,22811,Bhubaneswar Rajdhani,Rajdhani,2024-05-11,Saturday,Bhubaneswar,New Delhi,Durgapur,Bhopal,3A,64,2,0,62,Yes,Defense,SR,1215.0,18.0,3573,4644.0,3.12,Peak,1.0,7.0,1.0,No,10.0,10.0,Slight Delay,4.8
+PNR7750131975,12259,Sealdah Duronto,Duronto,2024-11-23,Saturday,Sealdah,New Delhi,Durgapur,Patna,GN,120,86,0,34,Yes,Tatkal,SCR,984.0,16.1,3655,,71.67,Peak,0.0,9.0,6.0,No,15.0,45.0,Delayed,4.8
+PNR1718625803,12245,Duronto Express,Duronto,2024-10-27,Sunday,Howrah,Pune,Durgapur,Bangalore City,CC,78,57,0,21,Yes,Railway Employee,WR,1080.0,45.2,3591,,73.08,Peak,0.0,3.0,2.0,No,2.0,0.0,On Time,
+PNR5277846424,12875,Neelachal Express,Express,2024-10-07,Monday,Howrah,Puri,Sealdah,Durgapur,1A,18,0,0,18,Yes,General,ECR,1317.0,12.2,3452,4487.0,0.0,Peak,1.0,10.0,2.0,Yes,9.0,0.0,On Time,
+PNR9310149998,13119,Sealdah Anvt Express,Express,2024-07-01,Monday,Sealdah,Anand Vihar,Ranchi,Kanpur,GN,120,83,0,37,Yes,Railway Employee,SR,2470.0,29.3,4100,5330.0,69.17,Off-Peak,1.0,8.0,8.0,No,15.0,15.0,Slight Delay,1.9
+PNR2115862756,12302,New Delhi Rajdhani,Rajdhani,2024-08-14,Wednesday,New Delhi,Howrah,Chennai Central,Bangalore City,3A,64,46,0,18,Yes,Defense,SR,1458.0,14.8,3576,,71.88,Off-Peak,1.0,7.0,4.0,Yes,13.0,30.0,Delayed,
+PNR7172324849,12301,Howrah Rajdhani,Rajdhani,2024-10-07,Monday,Howrah,New Delhi,Mumbai CST,Puri,3A,64,24,0,40,No,Senior Citizen,WR,1127.0,5.2,3572,4643.0,37.5,Peak,0.0,4.0,8.0,No,7.0,5.0,Slight Delay,1.7
+PNR7969674420,12311,Kalka Mail,Mail,2024-02-26,Monday,Howrah,Kalka,Mumbai CST,Gaya,2S,100,100,16,0,Yes,Tatkal,ER,2241.0,2.5,3909,5081.0,100.0,Off-Peak,0.0,4.0,2.0,No,12.0,0.0,On Time,
+PNR7099897373,12259,Sealdah Duronto,Duronto,2024-01-08,Monday,Sealdah,New Delhi,Asansol,Agra,SL,72,27,0,45,Yes,Senior Citizen,ER,1402.0,5.2,3000,3900.0,37.5,Off-Peak,0.0,0.0,4.0,No,2.0,60.0,Delayed,1.8
+PNR4069538076,12311,Kalka Mail,Mail,2024-07-14,Sunday,Howrah,Kalka,,Visakhapatnam,GN,120,3,0,117,No,Tatkal,ER,,,1199,,2.5,Off-Peak,,,,No,,,Slight Delay,
+PNR2283392443,12245,Duronto Express,Duronto,2024-01-22,Monday,Howrah,Pune,Bangalore City,Hyderabad Deccan,2S,100,31,0,69,Yes,General,WR,1828.0,16.6,2275,,31.0,Off-Peak,0.0,9.0,1.0,No,13.0,5.0,Slight Delay,
+PNR1384313264,12301,Howrah Rajdhani,Rajdhani,2024-10-24,Thursday,Howrah,New Delhi,New Delhi,Agra,GN,120,120,1,0,Yes,Railway Employee,SCR,295.0,4.3,1469,,100.0,Peak,0.0,2.0,7.0,Yes,6.0,60.0,Delayed,
+PNR5873637580,12875,Neelachal Express,Express,2024-04-08,Monday,Howrah,Puri,Dhanbad,Hyderabad Deccan,1A,18,18,4,0,No,Railway Employee,NER,2339.0,15.2,3294,4282.0,100.0,Peak,0.0,9.0,2.0,No,6.0,45.0,Delayed,4.3
+PNR7225057758,22811,Bhubaneswar Rajdhani,Rajdhani,2024-03-23,Saturday,Bhubaneswar,New Delhi,Durgapur,Durgapur,1A,18,16,0,2,Yes,Senior Citizen,ER,2122.0,19.1,1469,,88.89,Off-Peak,0.0,9.0,5.0,Yes,6.0,0.0,On Time,3.2
+PNR6510997463,12381,Poorva Express,Express,2024-04-07,Sunday,Howrah,New Delhi,Hyderabad Deccan,Nagpur,CC,78,78,9,0,Yes,General,NR,2193.0,32.1,4275,,100.0,Peak,0.0,2.0,0.0,Yes,2.0,45.0,Delayed,
+PNR2099247629,12301,Howrah Rajdhani,Rajdhani,2024-10-19,Saturday,Howrah,New Delhi,Bangalore City,Asansol,2S,100,99,0,1,Yes,General,WR,2062.0,44.7,4213,5476.0,99.0,Peak,1.0,10.0,0.0,No,9.0,30.0,Delayed,4.2
+PNR4153795953,12301,Howrah Rajdhani,Rajdhani,2024-11-11,Monday,Howrah,New Delhi,Durgapur,Dhanbad,3A,64,64,3,0,Yes,Tatkal,NR,464.0,35.2,533,,100.0,Peak,0.0,3.0,8.0,Yes,10.0,120.0,Delayed,3.2
+PNR8152161448,22811,Bhubaneswar Rajdhani,Rajdhani,2024-07-31,Wednesday,Bhubaneswar,New Delhi,Dhanbad,Ranchi,2S,100,27,0,73,Yes,Tatkal,ECR,2117.0,17.2,4923,,27.0,Off-Peak,1.0,5.0,5.0,No,14.0,15.0,Slight Delay,3.5
+PNR3343446878,12245,Duronto Express,Duronto,2024-06-14,Friday,Howrah,Pune,Hyderabad Deccan,Visakhapatnam,CC,78,30,0,48,Yes,Ladies,NER,1882.0,46.1,4813,,38.46,Off-Peak,0.0,4.0,0.0,Yes,15.0,10.0,Slight Delay,
+PNR8826879784,12019,Shatabdi Express,Shatabdi,2024-04-19,Friday,Howrah,Ranchi,Dhanbad,Ahmedabad,GN,120,80,0,40,Yes,General,ER,1935.0,18.0,377,,66.67,Peak,0.0,9.0,3.0,Yes,5.0,10.0,Slight Delay,
+PNR8402722005,12381,Poorva Express,Express,2024-10-18,Friday,Howrah,New Delhi,Asansol,Agra,2A,46,46,0,0,Yes,Senior Citizen,NR,2488.0,31.4,832,,100.0,Peak,1.0,1.0,0.0,No,6.0,30.0,Delayed,4.5
+PNR8010218218,12019,Shatabdi Express,Shatabdi,2024-11-30,Saturday,Howrah,Ranchi,Howrah,Dhanbad,GN,120,120,34,0,Yes,Ladies,SR,1388.0,24.9,293,,100.0,Peak,0.0,10.0,6.0,No,13.0,90.0,Delayed,
+PNR5862714930,12381,Poorva Express,Express,2024-05-28,Tuesday,Howrah,New Delhi,Sealdah,Agra,GN,120,100,0,20,Yes,Defense,ECR,1125.0,5.5,1412,,83.33,Peak,0.0,2.0,7.0,Yes,8.0,30.0,Delayed,1.8
+PNR7142085555,12073,Jan Shatabdi,Jan Shatabdi,2024-09-25,Wednesday,Howrah,Patna,Puri,Surat,2A,46,15,0,31,Yes,General,ECR,1784.0,18.5,786,,32.61,Off-Peak,0.0,9.0,0.0,No,3.0,15.0,Slight Delay,
+PNR2002830207,12875,Neelachal Express,Express,2024-11-15,Friday,Howrah,Puri,Puri,Varanasi,2A,46,28,0,18,Yes,Railway Employee,NR,510.0,35.9,567,,60.87,Peak,0.0,4.0,0.0,No,12.0,0.0,On Time,2.9
+PNR8517718126,13049,Amaravati Express,Express,2024-04-17,Wednesday,Howrah,Amravati,Ranchi,Agra,2S,100,54,0,46,Yes,Railway Employee,ER,1592.0,28.6,1869,2429.0,54.0,Peak,0.0,4.0,2.0,Yes,5.0,5.0,Slight Delay,3.5
+PNR8130076816,12301,Howrah Rajdhani,Rajdhani,2024-08-26,Monday,Howrah,New Delhi,Durgapur,Ranchi,2S,100,2,0,98,Yes,Ladies,ECR,996.0,47.1,745,,2.0,Off-Peak,0.0,5.0,7.0,Yes,3.0,5.0,Slight Delay,2.8
+PNR6604621025,12245,Duronto Express,Duronto,2024-01-12,Friday,Howrah,Pune,Patna,Allahabad,1A,18,7,0,11,Yes,General,SCR,1491.0,18.0,4536,,38.89,Off-Peak,0.0,0.0,4.0,No,15.0,0.0,On Time,4.8
+PNR9967011296,12019,Shatabdi Express,Shatabdi,2024-03-18,Monday,Howrah,Ranchi,Hyderabad Deccan,Jaipur,3A,64,50,0,14,Yes,Senior Citizen,WR,2396.0,8.6,1324,,78.12,Off-Peak,0.0,7.0,8.0,Yes,4.0,120.0,Delayed,
+PNR5875872347,22811,Bhubaneswar Rajdhani,Rajdhani,2024-12-16,Monday,Bhubaneswar,New Delhi,Dhanbad,Visakhapatnam,GN,120,51,0,69,Yes,Railway Employee,SR,1350.0,4.7,1331,,42.5,Peak,0.0,2.0,5.0,Yes,12.0,0.0,On Time,4.5
+PNR1807168703,12381,Poorva Express,Express,2024-07-29,Monday,Howrah,New Delhi,New Delhi,Puri,3A,64,56,0,8,Yes,Defense,CR,2372.0,30.0,2442,,87.5,Off-Peak,0.0,10.0,0.0,No,,45.0,Delayed,
+PNR8954835349,12073,Jan Shatabdi,Jan Shatabdi,2024-08-28,Wednesday,Howrah,Patna,Patna,Agra,2S,100,95,0,5,Yes,Tatkal,WR,976.0,3.0,1707,2219.0,95.0,Off-Peak,0.0,4.0,6.0,Yes,12.0,120.0,Delayed,4.0
+PNR8249315123,12302,New Delhi Rajdhani,Rajdhani,2024-03-31,Sunday,New Delhi,Howrah,Durgapur,Kanpur,SL,72,72,6,0,Yes,Senior Citizen,ECR,221.0,29.8,4213,5476.0,100.0,Off-Peak,0.0,6.0,8.0,Yes,9.0,0.0,On Time,4.3
+PNR9758519013,12301,Howrah Rajdhani,Rajdhani,2024-05-05,Sunday,Howrah,New Delhi,Hyderabad Deccan,Jaipur,CC,78,68,0,10,Yes,Tatkal,CR,1850.0,20.0,3440,,87.18,Peak,0.0,7.0,2.0,No,5.0,90.0,Delayed,
+PNR1486068287,12259,Sealdah Duronto,Duronto,2024-08-25,Sunday,Sealdah,New Delhi,Asansol,Surat,GN,120,115,0,5,Yes,Senior Citizen,ECR,1374.0,22.5,940,,95.83,Off-Peak,0.0,7.0,1.0,No,6.0,120.0,Delayed,
+PNR8018287603,12245,Duronto Express,Duronto,2024-03-04,Monday,Howrah,Pune,Sealdah,Jaipur,1A,18,3,0,15,No,Railway Employee,SR,1601.0,,3881,,16.67,Off-Peak,0.0,5.0,,Yes,,,On Time,
+PNR9422285317,12245,Duronto Express,Duronto,2024-01-27,Saturday,Howrah,Pune,Chennai Central,Nagpur,SL,72,39,0,33,Yes,General,SR,880.0,1.7,2735,3555.0,54.17,Off-Peak,0.0,7.0,7.0,No,9.0,0.0,On Time,3.0
+PNR7056554007,12019,Shatabdi Express,Shatabdi,2024-10-28,Monday,Howrah,Ranchi,Sealdah,Pune,2S,100,100,21,0,Yes,Tatkal,CR,2333.0,39.6,3917,,100.0,Peak,0.0,2.0,0.0,No,1.0,0.0,On Time,3.7
+PNR5762636174,12073,Jan Shatabdi,Jan Shatabdi,2024-06-01,Saturday,Howrah,Patna,New Delhi,Puri,3A,64,11,0,53,Yes,Defense,SR,1915.0,36.3,601,,17.19,Off-Peak,0.0,1.0,4.0,No,6.0,30.0,Delayed,4.0
+PNR8986096303,22811,Bhubaneswar Rajdhani,Rajdhani,2024-02-03,Saturday,Bhubaneswar,New Delhi,Bangalore City,Jaipur,3A,64,60,0,4,No,Defense,WR,906.0,30.0,1302,,93.75,Off-Peak,0.0,7.0,4.0,No,10.0,15.0,Slight Delay,
+PNR7432749100,12073,Jan Shatabdi,Jan Shatabdi,2024-06-30,Sunday,Howrah,Patna,Asansol,Puri,2A,46,39,0,7,Yes,Railway Employee,CR,842.0,1.6,4809,,84.78,Off-Peak,0.0,3.0,6.0,No,1.0,15.0,Slight Delay,4.2
+PNR5586320975,12019,Shatabdi Express,Shatabdi,2024-01-06,Saturday,Howrah,Ranchi,Chennai Central,Jaipur,2S,100,51,0,49,Yes,General,NR,1415.0,17.4,2507,3259.0,51.0,Off-Peak,0.0,2.0,3.0,No,14.0,15.0,Slight Delay,2.9
+PNR9142951341,12875,Neelachal Express,Express,2024-01-19,Friday,Howrah,Puri,Patna,Lucknow,2S,100,34,0,66,Yes,Defense,CR,2364.0,35.2,4144,,34.0,Off-Peak,0.0,3.0,5.0,No,2.0,0.0,On Time,1.1
+PNR7896382125,12381,Poorva Express,Express,2024-11-16,Saturday,Howrah,New Delhi,New Delhi,Pune,CC,78,21,0,57,Yes,Ladies,SCR,179.0,14.1,4877,,26.92,Peak,0.0,5.0,7.0,No,4.0,60.0,Delayed,1.4
+PNR3147716902,12301,Howrah Rajdhani,Rajdhani,2024-04-13,Saturday,Howrah,New Delhi,Mumbai CST,Gaya,1A,18,14,0,4,No,Railway Employee,CR,1390.0,8.2,4345,5648.0,77.78,Peak,0.0,3.0,0.0,No,7.0,60.0,Delayed,
+PNR1198168828,12311,Kalka Mail,Mail,2024-01-23,Tuesday,Howrah,Kalka,Ranchi,Visakhapatnam,2S,100,22,0,78,Yes,General,CR,909.0,16.4,2930,,22.0,Off-Peak,0.0,8.0,5.0,No,11.0,0.0,On Time,1.6
+PNR1439698549,12302,New Delhi Rajdhani,Rajdhani,2024-01-08,Monday,New Delhi,Howrah,Ranchi,Varanasi,CC,78,71,0,7,Yes,Ladies,SR,1210.0,28.2,4411,,91.03,Off-Peak,0.0,9.0,5.0,No,1.0,0.0,On Time,
+PNR5664848084,13119,Sealdah Anvt Express,Express,2024-01-26,Friday,Sealdah,Anand Vihar,Hyderabad Deccan,Puri,1A,18,12,0,6,No,Defense,SCR,1329.0,17.0,640,,66.67,Off-Peak,0.0,7.0,2.0,Yes,14.0,45.0,Delayed,
+PNR1961189885,12311,Kalka Mail,Mail,2024-12-16,Monday,Howrah,Kalka,Durgapur,Pune,2S,100,100,19,0,Yes,Ladies,ECR,801.0,34.0,4054,5270.0,100.0,Peak,0.0,7.0,7.0,Yes,2.0,45.0,Delayed,
+PNR8593250984,12875,Neelachal Express,Express,2024-08-24,Saturday,Howrah,Puri,Bhubaneswar,Surat,GN,120,43,0,77,Yes,Defense,NR,1711.0,39.5,2512,,35.83,Off-Peak,0.0,8.0,1.0,No,,45.0,Delayed,
+PNR2648479139,12073,Jan Shatabdi,Jan Shatabdi,2024-05-04,Saturday,Howrah,Patna,Bangalore City,Kolkata,CC,78,20,0,58,No,Senior Citizen,SCR,2280.0,33.8,4151,,25.64,Peak,0.0,9.0,7.0,Yes,10.0,90.0,Delayed,3.2
+PNR3569503643,12875,Neelachal Express,Express,2024-03-31,Sunday,Howrah,Puri,Puri,Pune,3A,64,51,0,13,No,Ladies,NER,,,770,,79.69,Off-Peak,0.0,,,No,,,Slight Delay,
+PNR9973421080,12019,Shatabdi Express,Shatabdi,2024-04-15,Monday,Howrah,Ranchi,Howrah,Pune,2S,100,81,0,19,No,Tatkal,CR,305.0,18.7,2655,,81.0,Peak,0.0,0.0,8.0,No,2.0,10.0,Slight Delay,1.9
+PNR8352011852,12245,Duronto Express,Duronto,2024-10-29,Tuesday,Howrah,Pune,Hyderabad Deccan,Allahabad,SL,72,72,8,0,No,Defense,WR,760.0,23.6,2806,,100.0,Peak,1.0,5.0,6.0,Yes,5.0,120.0,Delayed,
+PNR5252952412,12301,Howrah Rajdhani,Rajdhani,2024-02-06,Tuesday,Howrah,New Delhi,,Bhubaneswar,2S,100,4,0,96,No,Senior Citizen,ECR,,,1379,,4.0,Off-Peak,,,,Yes,,,Delayed,
+PNR2576124271,12245,Duronto Express,Duronto,2024-05-01,Wednesday,Howrah,Pune,Howrah,Surat,2S,100,100,28,0,No,Railway Employee,SCR,513.0,28.5,2405,,100.0,Peak,0.0,2.0,8.0,No,8.0,60.0,Delayed,
+PNR7784452486,12073,Jan Shatabdi,Jan Shatabdi,2024-02-15,Thursday,Howrah,Patna,Bhubaneswar,Hyderabad Deccan,2A,46,30,0,16,Yes,Defense,ER,1970.0,22.6,839,1090.0,65.22,Off-Peak,0.0,6.0,5.0,No,5.0,0.0,On Time,
+PNR7997790446,12073,Jan Shatabdi,Jan Shatabdi,2024-06-04,Tuesday,Howrah,Patna,Bhubaneswar,Puri,2S,100,66,0,34,Yes,Railway Employee,CR,161.0,14.8,703,,66.0,Off-Peak,0.0,4.0,4.0,Yes,10.0,10.0,Slight Delay,2.0
+PNR8126019200,12245,Duronto Express,Duronto,2024-02-27,Tuesday,Howrah,Pune,Bangalore City,Puri,CC,78,22,0,56,Yes,Railway Employee,WR,2036.0,9.9,1438,,28.21,Off-Peak,0.0,5.0,1.0,Yes,10.0,0.0,On Time,4.0
+PNR1718476143,12381,Poorva Express,Express,2024-07-15,Monday,Howrah,New Delhi,Bhubaneswar,Raipur,2A,46,42,0,4,Yes,General,CR,525.0,3.9,3805,,91.3,Off-Peak,1.0,4.0,7.0,Yes,7.0,120.0,Delayed,2.9
+PNR8719383556,12259,Sealdah Duronto,Duronto,2024-09-28,Saturday,Sealdah,New Delhi,Hyderabad Deccan,Bhopal,GN,120,111,0,9,Yes,Defense,ER,448.0,44.2,297,,92.5,Off-Peak,1.0,9.0,4.0,No,5.0,10.0,Slight Delay,
+PNR6067703428,12073,Jan Shatabdi,Jan Shatabdi,2024-07-19,Friday,Howrah,Patna,Ranchi,Bangalore City,SL,72,72,14,0,Yes,General,ER,1734.0,6.0,2180,,100.0,Off-Peak,1.0,5.0,3.0,No,5.0,5.0,Slight Delay,
+PNR3740545127,12073,Jan Shatabdi,Jan Shatabdi,2024-02-17,Saturday,Howrah,Patna,Kolkata,Ranchi,1A,18,18,1,0,Yes,Defense,SR,1589.0,32.0,1976,2568.0,100.0,Off-Peak,0.0,1.0,2.0,No,5.0,45.0,Delayed,1.3
+PNR2105252271,12875,Neelachal Express,Express,2024-05-21,Tuesday,Howrah,Puri,Asansol,Patna,GN,120,109,0,11,Yes,General,ECR,1641.0,17.0,2849,,90.83,Peak,0.0,2.0,7.0,Yes,,,Slight Delay,
+PNR3763116394,12875,Neelachal Express,Express,2024-02-25,Sunday,Howrah,Puri,Dhanbad,Kanpur,2A,46,34,0,12,Yes,General,ER,348.0,4.8,3732,,73.91,Off-Peak,1.0,0.0,7.0,Yes,11.0,120.0,Delayed,
+PNR8301681475,12301,Howrah Rajdhani,Rajdhani,2024-12-06,Friday,Howrah,New Delhi,Dhanbad,Allahabad,SL,72,34,0,38,Yes,Defense,NER,2008.0,21.8,1441,1873.0,47.22,Peak,0.0,8.0,3.0,Yes,7.0,45.0,Delayed,
+PNR9826993893,22811,Bhubaneswar Rajdhani,Rajdhani,2024-07-02,Tuesday,Bhubaneswar,New Delhi,Puri,Patna,3A,64,38,0,26,Yes,Defense,SCR,379.0,40.6,3481,,59.38,Off-Peak,0.0,10.0,3.0,Yes,,,On Time,
+PNR3089516830,12311,Kalka Mail,Mail,2024-12-22,Sunday,Howrah,Kalka,Dhanbad,Nagpur,SL,72,13,0,59,No,Railway Employee,WR,623.0,3.2,3143,,18.06,Peak,0.0,7.0,6.0,Yes,13.0,60.0,Delayed,3.0
+PNR4096722936,12875,Neelachal Express,Express,2024-01-09,Tuesday,Howrah,Puri,Hyderabad Deccan,Ranchi,1A,18,10,0,8,Yes,Railway Employee,NER,2247.0,8.4,659,,55.56,Off-Peak,0.0,0.0,2.0,No,,0.0,On Time,
+PNR4408903107,12301,Howrah Rajdhani,Rajdhani,2024-05-04,Saturday,Howrah,New Delhi,Patna,Pune,2S,100,33,0,67,Yes,Defense,NR,485.0,6.8,317,,33.0,Peak,0.0,1.0,3.0,No,6.0,120.0,Delayed,1.5
+PNR4406345733,13119,Sealdah Anvt Express,Express,2024-10-21,Monday,Sealdah,Anand Vihar,Asansol,Hyderabad Deccan,CC,78,17,0,61,Yes,Ladies,NR,544.0,,2834,,21.79,Peak,0.0,5.0,8.0,Yes,,,Slight Delay,
+PNR3091509391,12302,New Delhi Rajdhani,Rajdhani,2024-11-19,Tuesday,New Delhi,Howrah,Howrah,Bangalore City,CC,78,48,0,30,Yes,General,CR,1754.0,33.7,1492,1939.0,61.54,Peak,1.0,2.0,3.0,Yes,11.0,10.0,Slight Delay,2.6
+PNR8375312491,12259,Sealdah Duronto,Duronto,2024-11-08,Friday,Sealdah,New Delhi,Bhubaneswar,Patna,2S,100,9,0,91,Yes,Ladies,ECR,68.0,27.4,1674,,9.0,Peak,0.0,9.0,5.0,Yes,8.0,120.0,Delayed,
+PNR3136809970,12019,Shatabdi Express,Shatabdi,2024-02-27,Tuesday,Howrah,Ranchi,New Delhi,Bhopal,GN,120,38,0,82,Yes,General,SCR,,,4086,,31.67,Off-Peak,1.0,,,Yes,,,Delayed,
+PNR4844335785,12301,Howrah Rajdhani,Rajdhani,2024-09-05,Thursday,Howrah,New Delhi,Kolkata,Kanpur,CC,78,14,0,64,Yes,Senior Citizen,WR,1384.0,12.2,780,,17.95,Off-Peak,0.0,1.0,3.0,No,14.0,5.0,Slight Delay,1.9
+PNR1622518030,12875,Neelachal Express,Express,2024-10-26,Saturday,Howrah,Puri,Dhanbad,Pune,SL,72,6,0,66,No,Tatkal,ECR,1579.0,7.8,3770,4901.0,8.33,Peak,0.0,4.0,3.0,No,3.0,0.0,On Time,1.2
+PNR2796257670,12259,Sealdah Duronto,Duronto,2024-02-26,Monday,Sealdah,New Delhi,Asansol,Gaya,GN,120,119,0,1,Yes,Ladies,SR,746.0,28.4,3956,,99.17,Off-Peak,0.0,1.0,6.0,No,14.0,5.0,Slight Delay,4.3
+PNR6359395246,12311,Kalka Mail,Mail,2024-01-08,Monday,Howrah,Kalka,Hyderabad Deccan,Surat,2S,100,100,9,0,Yes,Defense,SR,2399.0,43.3,2220,,100.0,Off-Peak,0.0,0.0,7.0,Yes,7.0,60.0,Delayed,4.2
+PNR9946809956,12245,Duronto Express,Duronto,2024-02-20,Tuesday,Howrah,Pune,Asansol,Bangalore City,SL,72,63,0,9,No,Tatkal,SR,1518.0,15.3,2170,2821.0,87.5,Off-Peak,0.0,0.0,7.0,No,3.0,45.0,Delayed,4.0
+PNR9038253771,12301,Howrah Rajdhani,Rajdhani,2024-08-20,Tuesday,Howrah,New Delhi,Puri,Kanpur,SL,72,17,0,55,Yes,Railway Employee,NR,1626.0,43.0,3520,,23.61,Off-Peak,0.0,4.0,6.0,No,12.0,90.0,Delayed,
+PNR1221459606,13119,Sealdah Anvt Express,Express,2024-02-11,Sunday,Sealdah,Anand Vihar,Hyderabad Deccan,Varanasi,CC,78,42,0,36,No,Defense,ER,1547.0,18.5,649,,53.85,Off-Peak,0.0,8.0,3.0,Yes,6.0,5.0,Slight Delay,
+PNR6671348907,12245,Duronto Express,Duronto,2024-10-24,Thursday,Howrah,Pune,Dhanbad,Durgapur,GN,120,53,0,67,No,Ladies,ER,309.0,18.8,2046,,44.17,Peak,0.0,7.0,8.0,No,,,Delayed,
+PNR1374988236,12245,Duronto Express,Duronto,2024-02-03,Saturday,Howrah,Pune,Hyderabad Deccan,Puri,2A,46,46,11,0,Yes,General,NR,724.0,14.3,3950,5135.0,100.0,Off-Peak,1.0,2.0,3.0,Yes,5.0,30.0,Delayed,3.2
+PNR5387233056,12259,Sealdah Duronto,Duronto,2024-08-30,Friday,Sealdah,New Delhi,Mumbai CST,Patna,3A,64,53,0,11,Yes,Tatkal,SCR,1736.0,28.4,3836,,82.81,Off-Peak,0.0,7.0,8.0,No,8.0,10.0,Slight Delay,
+PNR7374775639,12311,Kalka Mail,Mail,2024-03-28,Thursday,Howrah,Kalka,Chennai Central,Visakhapatnam,GN,120,66,0,54,Yes,Tatkal,SCR,1214.0,22.7,2057,,55.0,Off-Peak,0.0,8.0,4.0,Yes,3.0,120.0,Delayed,
+PNR7188569596,12302,New Delhi Rajdhani,Rajdhani,2024-01-22,Monday,New Delhi,Howrah,Bangalore City,Puri,3A,64,64,9,0,Yes,Defense,ER,1348.0,47.0,1236,,100.0,Off-Peak,1.0,8.0,2.0,No,2.0,0.0,On Time,3.0
+PNR7474272494,12259,Sealdah Duronto,Duronto,2024-08-22,Thursday,Sealdah,New Delhi,Puri,Indore,3A,64,19,0,45,Yes,Senior Citizen,CR,,,235,,29.69,Off-Peak,1.0,,,No,,,On Time,
+PNR6241426889,22811,Bhubaneswar Rajdhani,Rajdhani,2024-02-29,Thursday,Bhubaneswar,New Delhi,Bangalore City,Patna,3A,64,3,0,61,Yes,General,WR,2439.0,26.0,3490,4537.0,4.69,Off-Peak,0.0,3.0,0.0,Yes,9.0,45.0,Delayed,4.8
+PNR8158707130,22811,Bhubaneswar Rajdhani,Rajdhani,2024-07-20,Saturday,Bhubaneswar,New Delhi,Hyderabad Deccan,Bhubaneswar,2A,46,31,0,15,No,Ladies,ECR,1577.0,2.1,2803,,67.39,Off-Peak,0.0,7.0,8.0,Yes,4.0,45.0,Delayed,
+PNR2778948768,12875,Neelachal Express,Express,2024-05-27,Monday,Howrah,Puri,Durgapur,Surat,2A,46,46,5,0,Yes,Tatkal,WR,1292.0,23.6,3672,4773.0,100.0,Peak,0.0,1.0,6.0,Yes,1.0,30.0,Delayed,2.1
+PNR1588097152,12259,Sealdah Duronto,Duronto,2024-10-11,Friday,Sealdah,New Delhi,New Delhi,Allahabad,SL,72,72,18,0,Yes,Defense,NER,222.0,39.8,4852,,100.0,Peak,0.0,7.0,8.0,No,4.0,0.0,On Time,1.6
+PNR9129026739,12311,Kalka Mail,Mail,2024-11-23,Saturday,Howrah,Kalka,Hyderabad Deccan,Puri,GN,120,120,0,0,No,Railway Employee,WR,166.0,7.0,1217,,100.0,Peak,0.0,9.0,5.0,No,10.0,30.0,Delayed,3.5
+PNR3470738735,12875,Neelachal Express,Express,2024-12-21,Saturday,Howrah,Puri,Durgapur,Durgapur,GN,120,30,0,90,Yes,Defense,ER,648.0,16.4,3257,,25.0,Peak,0.0,5.0,2.0,Yes,,15.0,Slight Delay,
+PNR9919902664,13049,Amaravati Express,Express,2024-01-25,Thursday,Howrah,Amravati,,Visakhapatnam,3A,64,37,0,27,Yes,General,SR,,,4538,,57.81,Off-Peak,,,,Yes,,,Delayed,
+PNR7064470209,12259,Sealdah Duronto,Duronto,2024-09-22,Sunday,Sealdah,New Delhi,Dhanbad,Puri,3A,64,47,0,17,Yes,Tatkal,SR,2111.0,11.8,4172,,73.44,Off-Peak,0.0,6.0,7.0,Yes,2.0,0.0,On Time,2.9
+PNR2469072661,12311,Kalka Mail,Mail,2024-12-19,Thursday,Howrah,Kalka,Kolkata,Dhanbad,3A,64,17,0,47,Yes,Railway Employee,NR,960.0,7.5,3820,,26.56,Peak,0.0,4.0,2.0,Yes,3.0,0.0,On Time,
+PNR1182608864,12302,New Delhi Rajdhani,Rajdhani,2024-02-09,Friday,New Delhi,Howrah,Sealdah,Hyderabad Deccan,1A,18,15,0,3,Yes,Senior Citizen,NR,1086.0,3.5,3732,,83.33,Off-Peak,0.0,1.0,1.0,Yes,10.0,5.0,Slight Delay,
+PNR6788913862,13049,Amaravati Express,Express,2024-01-15,Monday,Howrah,Amravati,New Delhi,Jaipur,1A,18,4,0,14,Yes,Defense,NR,455.0,39.6,2472,,22.22,Off-Peak,0.0,3.0,4.0,Yes,15.0,60.0,Delayed,
+PNR7333854872,12245,Duronto Express,Duronto,2024-02-20,Tuesday,Howrah,Pune,Kolkata,Surat,2A,46,46,12,0,Yes,Senior Citizen,NR,790.0,40.3,4330,5629.0,100.0,Off-Peak,1.0,3.0,8.0,Yes,7.0,0.0,On Time,2.3
+PNR8568907829,12875,Neelachal Express,Express,2024-02-26,Monday,Howrah,Puri,Kolkata,Dhanbad,CC,78,17,0,61,Yes,General,SCR,2072.0,6.9,4261,,21.79,Off-Peak,0.0,10.0,7.0,Yes,9.0,30.0,Delayed,4.4
+PNR1770075995,12019,Shatabdi Express,Shatabdi,2024-02-05,Monday,Howrah,Ranchi,Puri,Agra,GN,120,120,1,0,Yes,Senior Citizen,NER,2190.0,32.1,3210,,100.0,Off-Peak,0.0,6.0,6.0,Yes,12.0,0.0,On Time,
+PNR1527259496,12019,Shatabdi Express,Shatabdi,2024-06-22,Saturday,Howrah,Ranchi,Durgapur,Lucknow,2A,46,38,0,8,No,Ladies,CR,1689.0,18.1,3511,,82.61,Off-Peak,1.0,7.0,8.0,No,,45.0,Delayed,
+PNR1127661542,12311,Kalka Mail,Mail,2024-09-07,Saturday,Howrah,Kalka,Kolkata,Hyderabad Deccan,SL,72,29,0,43,Yes,Senior Citizen,ER,,,1302,,40.28,Off-Peak,0.0,,,Yes,,,Delayed,
+PNR7463044261,12019,Shatabdi Express,Shatabdi,2024-05-30,Thursday,Howrah,Ranchi,Ranchi,Gaya,2S,100,100,27,0,Yes,General,ECR,537.0,19.3,4216,,100.0,Peak,1.0,7.0,7.0,Yes,1.0,0.0,On Time,4.4
+PNR5872589903,12311,Kalka Mail,Mail,2024-12-27,Friday,Howrah,Kalka,Kolkata,Allahabad,2A,46,31,0,15,No,General,NER,2318.0,33.4,3728,,67.39,Peak,1.0,8.0,2.0,Yes,7.0,10.0,Slight Delay,4.9
+PNR1263813981,12073,Jan Shatabdi,Jan Shatabdi,2024-12-12,Thursday,Howrah,Patna,Bhubaneswar,Hyderabad Deccan,3A,64,36,0,28,Yes,Ladies,SCR,2441.0,2.8,2825,,56.25,Peak,0.0,6.0,1.0,No,6.0,15.0,Slight Delay,
+PNR3544904142,12019,Shatabdi Express,Shatabdi,2024-05-06,Monday,Howrah,Ranchi,Dhanbad,Indore,2A,46,41,0,5,Yes,Ladies,NR,1432.0,9.4,2756,,89.13,Peak,0.0,7.0,6.0,No,5.0,0.0,On Time,
+PNR3459034771,13049,Amaravati Express,Express,2024-07-12,Friday,Howrah,Amravati,Asansol,Agra,CC,78,49,0,29,Yes,Railway Employee,WR,1426.0,24.6,2841,,62.82,Off-Peak,0.0,2.0,4.0,No,7.0,5.0,Slight Delay,
+PNR5499112932,12302,New Delhi Rajdhani,Rajdhani,2024-10-01,Tuesday,New Delhi,Howrah,Bhubaneswar,Allahabad,2A,46,18,0,28,Yes,Defense,NR,2418.0,5.9,2372,,39.13,Peak,0.0,9.0,8.0,No,7.0,5.0,Slight Delay,1.3
+PNR2345840745,12311,Kalka Mail,Mail,2024-09-15,Sunday,Howrah,Kalka,Hyderabad Deccan,Allahabad,GN,120,76,0,44,Yes,Defense,NER,2292.0,9.9,3746,,63.33,Off-Peak,0.0,9.0,7.0,Yes,11.0,45.0,Delayed,3.6
+PNR3243130794,12073,Jan Shatabdi,Jan Shatabdi,2024-08-10,Saturday,Howrah,Patna,Bangalore City,Kanpur,CC,78,78,15,0,Yes,Tatkal,SR,1279.0,40.8,690,,100.0,Off-Peak,0.0,10.0,3.0,No,5.0,10.0,Slight Delay,2.0
+PNR1644082961,12073,Jan Shatabdi,Jan Shatabdi,2024-04-30,Tuesday,Howrah,Patna,Howrah,Asansol,SL,72,30,0,42,Yes,Senior Citizen,NER,2343.0,47.6,1130,,41.67,Peak,0.0,3.0,2.0,No,3.0,0.0,On Time,4.2
+PNR1085507405,13119,Sealdah Anvt Express,Express,2024-10-08,Tuesday,Sealdah,Anand Vihar,Durgapur,Patna,2A,46,41,0,5,Yes,Defense,CR,310.0,43.4,545,,89.13,Peak,0.0,10.0,1.0,No,14.0,0.0,On Time,
+PNR6376474657,12073,Jan Shatabdi,Jan Shatabdi,2024-09-13,Friday,Howrah,Patna,Dhanbad,Patna,1A,18,16,0,2,Yes,Defense,NR,1333.0,16.8,4954,,88.89,Off-Peak,1.0,3.0,6.0,Yes,3.0,0.0,On Time,
+PNR5074682264,12311,Kalka Mail,Mail,2024-08-13,Tuesday,Howrah,Kalka,Bangalore City,Ahmedabad,SL,72,32,0,40,No,Senior Citizen,WR,1187.0,42.4,658,855.0,44.44,Off-Peak,0.0,7.0,5.0,No,1.0,120.0,Delayed,3.4
+PNR6947199197,12245,Duronto Express,Duronto,2024-12-05,Thursday,Howrah,Pune,Puri,Indore,GN,120,13,0,107,Yes,Railway Employee,NR,2240.0,41.8,2163,2811.0,10.83,Peak,1.0,0.0,6.0,No,5.0,0.0,On Time,4.0
+PNR8006606505,12311,Kalka Mail,Mail,2024-04-17,Wednesday,Howrah,Kalka,Dhanbad,Visakhapatnam,GN,120,41,0,79,No,General,CR,378.0,39.8,3795,,34.17,Peak,1.0,6.0,5.0,No,15.0,0.0,On Time,3.8
+PNR8463731970,22811,Bhubaneswar Rajdhani,Rajdhani,2024-02-03,Saturday,Bhubaneswar,New Delhi,Patna,Indore,3A,64,53,0,11,Yes,General,SR,1866.0,38.3,4686,,82.81,Off-Peak,1.0,3.0,4.0,No,10.0,0.0,On Time,
+PNR6666776123,12019,Shatabdi Express,Shatabdi,2024-09-21,Saturday,Howrah,Ranchi,Patna,Raipur,2S,100,33,0,67,Yes,Ladies,SR,2479.0,39.9,3561,,33.0,Off-Peak,0.0,1.0,6.0,No,3.0,30.0,Delayed,
+PNR3691344010,12073,Jan Shatabdi,Jan Shatabdi,2024-04-24,Wednesday,Howrah,Patna,Dhanbad,Patna,1A,18,0,0,18,No,Tatkal,CR,741.0,3.8,4775,6207.0,0.0,Peak,0.0,2.0,1.0,No,3.0,90.0,Delayed,
+PNR1509006662,12245,Duronto Express,Duronto,2024-09-26,Thursday,Howrah,Pune,,Kolkata,SL,72,58,0,14,Yes,Ladies,CR,,,4248,,80.56,Off-Peak,0.0,,,No,,,Delayed,
+PNR2124420145,12259,Sealdah Duronto,Duronto,2024-07-28,Sunday,Sealdah,New Delhi,Bhubaneswar,Kanpur,GN,120,37,0,83,Yes,Ladies,NER,401.0,2.0,435,,30.83,Off-Peak,0.0,6.0,3.0,No,12.0,30.0,Delayed,2.0
+PNR4998892039,12302,New Delhi Rajdhani,Rajdhani,2024-10-12,Saturday,New Delhi,Howrah,Patna,Varanasi,1A,18,1,0,17,Yes,General,CR,2116.0,30.3,2926,,5.56,Peak,1.0,10.0,5.0,Yes,15.0,60.0,Delayed,
+PNR9290691086,12259,Sealdah Duronto,Duronto,2024-05-13,Monday,Sealdah,New Delhi,Dhanbad,Kanpur,2A,46,32,0,14,Yes,General,SCR,2222.0,21.6,4237,,69.57,Peak,0.0,0.0,2.0,No,14.0,10.0,Slight Delay,4.7
+PNR7515348075,12311,Kalka Mail,Mail,2024-05-14,Tuesday,Howrah,Kalka,Hyderabad Deccan,Puri,CC,78,78,19,0,Yes,Railway Employee,NER,669.0,27.3,2360,,100.0,Peak,1.0,0.0,3.0,Yes,1.0,5.0,Slight Delay,
+PNR2874452023,12875,Neelachal Express,Express,2024-05-13,Monday,Howrah,Puri,Dhanbad,Agra,2A,46,45,0,1,Yes,Senior Citizen,SCR,2347.0,24.1,4026,,97.83,Peak,0.0,1.0,5.0,Yes,,10.0,Slight Delay,
+PNR3515465308,12259,Sealdah Duronto,Duronto,2024-09-17,Tuesday,Sealdah,New Delhi,Bhubaneswar,Bangalore City,GN,120,69,0,51,Yes,Senior Citizen,NR,1058.0,37.2,4814,,57.5,Off-Peak,0.0,0.0,4.0,Yes,7.0,15.0,Slight Delay,4.8
+PNR8127667126,13049,Amaravati Express,Express,2024-03-19,Tuesday,Howrah,Amravati,Patna,Nagpur,1A,18,2,0,16,Yes,Defense,ER,1399.0,46.6,3970,5161.0,11.11,Off-Peak,1.0,5.0,2.0,Yes,14.0,0.0,On Time,2.1
+PNR5692470851,12301,Howrah Rajdhani,Rajdhani,2024-02-06,Tuesday,Howrah,New Delhi,Chennai Central,Puri,CC,78,77,0,1,Yes,Senior Citizen,NR,134.0,41.1,3324,,98.72,Off-Peak,1.0,4.0,2.0,Yes,5.0,45.0,Delayed,3.9
+PNR3858387914,12311,Kalka Mail,Mail,2024-12-16,Monday,Howrah,Kalka,Durgapur,Varanasi,CC,78,16,0,62,Yes,Senior Citizen,NER,1639.0,23.7,3141,,20.51,Peak,1.0,1.0,6.0,No,10.0,0.0,On Time,
+PNR4065041081,12301,Howrah Rajdhani,Rajdhani,2024-09-19,Thursday,Howrah,New Delhi,Dhanbad,Agra,3A,64,59,0,5,Yes,Ladies,NER,1841.0,5.2,2036,2646.0,92.19,Off-Peak,0.0,2.0,2.0,No,14.0,5.0,Slight Delay,2.2
+PNR7119956976,12301,Howrah Rajdhani,Rajdhani,2024-10-09,Wednesday,Howrah,New Delhi,Sealdah,Kanpur,1A,18,1,0,17,Yes,Ladies,CR,2448.0,5.3,4405,,5.56,Peak,0.0,10.0,7.0,Yes,13.0,0.0,On Time,1.2
+PNR8764588206,12381,Poorva Express,Express,2024-12-26,Thursday,Howrah,New Delhi,Bangalore City,Puri,3A,64,40,0,24,Yes,Tatkal,NR,1112.0,42.0,3927,,62.5,Peak,0.0,0.0,6.0,Yes,1.0,0.0,On Time,2.8
+PNR2299900457,12381,Poorva Express,Express,2024-12-02,Monday,Howrah,New Delhi,New Delhi,Bhubaneswar,2S,100,100,24,0,Yes,Tatkal,NR,115.0,33.9,2680,,100.0,Peak,0.0,3.0,7.0,Yes,11.0,5.0,Slight Delay,3.5
+PNR5931333903,22811,Bhubaneswar Rajdhani,Rajdhani,2024-04-07,Sunday,Bhubaneswar,New Delhi,Hyderabad Deccan,Bangalore City,1A,18,9,0,9,Yes,Tatkal,SR,1873.0,46.3,3996,,50.0,Peak,1.0,9.0,3.0,Yes,5.0,90.0,Delayed,2.6
+PNR9501831663,13049,Amaravati Express,Express,2024-01-05,Friday,Howrah,Amravati,Durgapur,Agra,1A,18,18,2,0,Yes,General,NER,1687.0,24.1,3737,,100.0,Off-Peak,1.0,3.0,0.0,Yes,7.0,90.0,Delayed,
+PNR8070288470,13119,Sealdah Anvt Express,Express,2024-08-01,Thursday,Sealdah,Anand Vihar,Patna,Indore,SL,72,14,0,58,No,General,SR,1229.0,35.3,4253,,19.44,Off-Peak,1.0,3.0,8.0,Yes,10.0,120.0,Delayed,3.4
+PNR6184921425,12245,Duronto Express,Duronto,2024-12-02,Monday,Howrah,Pune,Kolkata,Raipur,SL,72,16,0,56,Yes,Railway Employee,NER,578.0,9.6,2603,,22.22,Peak,1.0,1.0,6.0,No,5.0,5.0,Slight Delay,
+PNR3907383020,12301,Howrah Rajdhani,Rajdhani,2024-01-10,Wednesday,Howrah,New Delhi,New Delhi,Jaipur,3A,64,33,0,31,Yes,General,SCR,1813.0,6.8,3124,,51.56,Off-Peak,0.0,7.0,4.0,No,13.0,15.0,Slight Delay,4.1
+PNR9359156230,22811,Bhubaneswar Rajdhani,Rajdhani,2024-05-16,Thursday,Bhubaneswar,New Delhi,Asansol,Kanpur,2A,46,46,8,0,Yes,General,NR,2353.0,3.5,4422,,100.0,Peak,0.0,3.0,5.0,Yes,12.0,10.0,Slight Delay,
+PNR1591728242,12875,Neelachal Express,Express,2024-02-20,Tuesday,Howrah,Puri,Durgapur,Kolkata,2A,46,41,0,5,No,Senior Citizen,ER,1054.0,40.3,3179,,89.13,Off-Peak,0.0,8.0,2.0,Yes,5.0,15.0,Slight Delay,2.7
+PNR1980034265,13119,Sealdah Anvt Express,Express,2024-12-06,Friday,Sealdah,Anand Vihar,Asansol,Lucknow,2A,46,9,0,37,No,Senior Citizen,NER,2164.0,38.4,4538,,19.57,Peak,0.0,7.0,2.0,Yes,12.0,60.0,Delayed,1.3
+PNR5558971767,13049,Amaravati Express,Express,2024-07-24,Wednesday,Howrah,Amravati,Asansol,Hyderabad Deccan,GN,120,42,0,78,Yes,Defense,ER,2179.0,46.7,3755,,35.0,Off-Peak,0.0,5.0,5.0,Yes,14.0,10.0,Slight Delay,3.4
+PNR8081357418,12259,Sealdah Duronto,Duronto,2024-12-24,Tuesday,Sealdah,New Delhi,Asansol,Kolkata,SL,72,57,0,15,Yes,General,ER,2251.0,17.1,1880,2444.0,79.17,Peak,0.0,8.0,8.0,No,4.0,0.0,On Time,2.2
+PNR2111065867,13049,Amaravati Express,Express,2024-11-21,Thursday,Howrah,Amravati,,Visakhapatnam,2A,46,1,0,45,Yes,Railway Employee,ECR,,,428,,2.17,Peak,0.0,,,No,,,On Time,
+PNR7241219521,12875,Neelachal Express,Express,2024-06-01,Saturday,Howrah,Puri,,Raipur,CC,78,78,16,0,Yes,Ladies,CR,,,242,,100.0,Off-Peak,,,,Yes,,,Slight Delay,
+PNR8853079811,13049,Amaravati Express,Express,2024-08-20,Tuesday,Howrah,Amravati,Sealdah,Patna,1A,18,4,0,14,Yes,Senior Citizen,SR,2000.0,11.5,3687,,22.22,Off-Peak,1.0,9.0,8.0,No,14.0,10.0,Slight Delay,3.5
+PNR4538244882,12875,Neelachal Express,Express,2024-12-18,Wednesday,Howrah,Puri,New Delhi,Jaipur,SL,72,72,21,0,Yes,Senior Citizen,NER,579.0,46.5,3615,,100.0,Peak,0.0,3.0,7.0,No,1.0,0.0,On Time,2.5
+PNR5814084647,12302,New Delhi Rajdhani,Rajdhani,2024-11-04,Monday,New Delhi,Howrah,Bhubaneswar,Dhanbad,GN,120,104,0,16,Yes,Defense,SR,532.0,18.8,1103,1433.0,86.67,Peak,0.0,4.0,7.0,Yes,13.0,0.0,On Time,
+PNR1925915326,12073,Jan Shatabdi,Jan Shatabdi,2024-08-03,Saturday,Howrah,Patna,Durgapur,Raipur,1A,18,9,0,9,No,General,NR,2292.0,17.7,2522,3278.0,50.0,Off-Peak,1.0,7.0,4.0,No,15.0,15.0,Slight Delay,2.9
+PNR2928761313,12245,Duronto Express,Duronto,2024-11-06,Wednesday,Howrah,Pune,Durgapur,Raipur,2A,46,46,2,0,Yes,General,ECR,1636.0,12.3,1334,,100.0,Peak,0.0,10.0,7.0,No,11.0,0.0,On Time,3.8
+PNR3770939734,12073,Jan Shatabdi,Jan Shatabdi,2024-11-18,Monday,Howrah,Patna,Puri,Ahmedabad,GN,120,79,0,41,Yes,Tatkal,ER,2385.0,25.8,4796,,65.83,Peak,0.0,1.0,8.0,Yes,1.0,10.0,Slight Delay,
+PNR7901388916,12245,Duronto Express,Duronto,2024-10-23,Wednesday,Howrah,Pune,Hyderabad Deccan,Surat,SL,72,10,0,62,Yes,Senior Citizen,ER,1442.0,21.8,4570,,13.89,Peak,0.0,6.0,4.0,Yes,2.0,0.0,On Time,2.1
+PNR1726670039,12259,Sealdah Duronto,Duronto,2024-05-10,Friday,Sealdah,New Delhi,Bhubaneswar,Gaya,GN,120,22,0,98,Yes,General,ER,1270.0,19.6,1463,,18.33,Peak,1.0,5.0,4.0,No,14.0,0.0,On Time,
+PNR7461440081,12019,Shatabdi Express,Shatabdi,2024-11-01,Friday,Howrah,Ranchi,Sealdah,Durgapur,CC,78,30,0,48,Yes,Ladies,NER,2315.0,20.4,4238,,38.46,Peak,1.0,10.0,3.0,Yes,5.0,60.0,Delayed,3.7
+PNR7735563741,12019,Shatabdi Express,Shatabdi,2024-10-11,Friday,Howrah,Ranchi,Patna,Patna,2S,100,32,0,68,Yes,Tatkal,SCR,2263.0,47.3,2695,,32.0,Peak,1.0,8.0,7.0,Yes,1.0,45.0,Delayed,3.5
+PNR8215535604,13119,Sealdah Anvt Express,Express,2024-03-26,Tuesday,Sealdah,Anand Vihar,Bangalore City,Nagpur,1A,18,1,0,17,Yes,Defense,CR,236.0,9.0,4150,,5.56,Off-Peak,0.0,4.0,1.0,No,,0.0,On Time,
+PNR7239376653,12311,Kalka Mail,Mail,2024-08-09,Friday,Howrah,Kalka,Mumbai CST,Bhopal,2A,46,39,0,7,Yes,Ladies,WR,1933.0,46.1,4335,,84.78,Off-Peak,0.0,10.0,0.0,No,1.0,0.0,On Time,2.7
+PNR3797168211,12245,Duronto Express,Duronto,2024-12-26,Thursday,Howrah,Pune,Ranchi,Bangalore City,SL,72,50,0,22,No,Railway Employee,NR,1495.0,46.7,4608,,69.44,Peak,0.0,6.0,2.0,Yes,2.0,45.0,Delayed,1.8
+PNR8340948569,12301,Howrah Rajdhani,Rajdhani,2024-04-23,Tuesday,Howrah,New Delhi,Mumbai CST,Patna,2S,100,5,0,95,Yes,Railway Employee,WR,1009.0,47.1,2503,3253.0,5.0,Peak,0.0,4.0,7.0,Yes,1.0,5.0,Slight Delay,3.6
+PNR1753890647,12302,New Delhi Rajdhani,Rajdhani,2024-05-22,Wednesday,New Delhi,Howrah,Bhubaneswar,Bhubaneswar,CC,78,64,0,14,Yes,Tatkal,CR,2384.0,41.3,4246,5519.0,82.05,Peak,0.0,3.0,0.0,No,11.0,60.0,Delayed,1.0
+PNR9568917078,12381,Poorva Express,Express,2024-11-24,Sunday,Howrah,New Delhi,Chennai Central,Ranchi,2S,100,13,0,87,No,Senior Citizen,SCR,2168.0,36.8,2846,3699.0,13.0,Peak,0.0,0.0,4.0,No,9.0,45.0,Delayed,2.6
+PNR2073673810,13049,Amaravati Express,Express,2024-02-11,Sunday,Howrah,Amravati,New Delhi,Gaya,CC,78,3,0,75,Yes,General,NR,164.0,23.8,2048,2662.0,3.85,Off-Peak,0.0,4.0,3.0,Yes,8.0,5.0,Slight Delay,4.3
+PNR7955985378,13049,Amaravati Express,Express,2024-09-23,Monday,Howrah,Amravati,Asansol,Ranchi,GN,120,60,0,60,No,Defense,NR,400.0,46.8,797,1036.0,50.0,Off-Peak,1.0,5.0,1.0,Yes,1.0,45.0,Delayed,
+PNR3910117187,12073,Jan Shatabdi,Jan Shatabdi,2024-11-16,Saturday,Howrah,Patna,Ranchi,Hyderabad Deccan,SL,72,8,0,64,Yes,Senior Citizen,ECR,442.0,30.2,1034,,11.11,Peak,0.0,7.0,6.0,No,13.0,30.0,Delayed,3.5
+PNR7516379744,13049,Amaravati Express,Express,2024-11-29,Friday,Howrah,Amravati,Bhubaneswar,Kolkata,2S,100,6,0,94,Yes,General,ER,2487.0,34.7,3919,,6.0,Peak,0.0,9.0,2.0,No,6.0,30.0,Delayed,3.5
+PNR1259807661,12259,Sealdah Duronto,Duronto,2024-05-04,Saturday,Sealdah,New Delhi,Chennai Central,Surat,2A,46,46,5,0,No,Defense,SCR,1324.0,28.6,561,,100.0,Peak,0.0,2.0,7.0,No,10.0,15.0,Slight Delay,4.9
+PNR5529503814,22811,Bhubaneswar Rajdhani,Rajdhani,2024-10-27,Sunday,Bhubaneswar,New Delhi,Bangalore City,Kolkata,2S,100,37,0,63,Yes,Railway Employee,WR,330.0,17.4,669,869.0,37.0,Peak,1.0,9.0,5.0,No,10.0,10.0,Slight Delay,1.6
+PNR3743483601,12875,Neelachal Express,Express,2024-01-22,Monday,Howrah,Puri,Kolkata,Asansol,SL,72,28,0,44,No,Defense,WR,1029.0,23.9,230,,38.89,Off-Peak,0.0,6.0,3.0,No,3.0,0.0,On Time,1.3
+PNR2891538480,12301,Howrah Rajdhani,Rajdhani,2024-10-11,Friday,Howrah,New Delhi,Puri,Surat,1A,18,4,0,14,Yes,General,ER,865.0,10.7,2580,,22.22,Peak,0.0,2.0,5.0,Yes,3.0,5.0,Slight Delay,
+PNR5771575572,12311,Kalka Mail,Mail,2024-02-21,Wednesday,Howrah,Kalka,Dhanbad,Kolkata,1A,18,18,3,0,Yes,Senior Citizen,WR,1564.0,39.1,1324,1721.0,100.0,Off-Peak,1.0,1.0,1.0,Yes,15.0,0.0,On Time,1.8
+PNR7594786332,12381,Poorva Express,Express,2024-12-21,Saturday,Howrah,New Delhi,Asansol,Bhubaneswar,3A,64,40,0,24,Yes,Tatkal,ER,1197.0,42.1,3718,4833.0,62.5,Peak,1.0,3.0,1.0,No,13.0,120.0,Delayed,1.7
+PNR2994012789,12381,Poorva Express,Express,2024-11-26,Tuesday,Howrah,New Delhi,Bangalore City,Indore,GN,120,120,10,0,Yes,Defense,NER,2076.0,23.5,3265,,100.0,Peak,0.0,3.0,3.0,Yes,8.0,5.0,Slight Delay,2.2
+PNR1364036788,12381,Poorva Express,Express,2024-10-19,Saturday,Howrah,New Delhi,Asansol,Patna,2A,46,46,13,0,Yes,Senior Citizen,SCR,992.0,28.7,3264,,100.0,Peak,0.0,6.0,7.0,No,7.0,30.0,Delayed,3.0
+PNR6299089429,12311,Kalka Mail,Mail,2024-07-14,Sunday,Howrah,Kalka,Puri,Patna,1A,18,5,0,13,Yes,General,CR,2105.0,25.3,3818,4963.0,27.78,Off-Peak,0.0,3.0,1.0,Yes,2.0,15.0,Slight Delay,
+PNR6368810686,12019,Shatabdi Express,Shatabdi,2024-06-19,Wednesday,Howrah,Ranchi,Kolkata,Visakhapatnam,2A,46,43,0,3,Yes,Tatkal,SR,2274.0,43.9,2897,,93.48,Off-Peak,0.0,4.0,5.0,No,7.0,90.0,Delayed,1.0
+PNR1977442187,13119,Sealdah Anvt Express,Express,2024-09-19,Thursday,Sealdah,Anand Vihar,Kolkata,Raipur,GN,120,38,0,82,Yes,Senior Citizen,WR,2162.0,28.8,3456,,31.67,Off-Peak,1.0,7.0,5.0,Yes,6.0,5.0,Slight Delay,4.8
+PNR5424263300,12381,Poorva Express,Express,2024-04-17,Wednesday,Howrah,New Delhi,New Delhi,Surat,SL,72,57,0,15,Yes,Ladies,ER,2097.0,39.2,4774,6206.0,79.17,Peak,0.0,3.0,6.0,No,11.0,30.0,Delayed,3.8
+PNR4373086122,12311,Kalka Mail,Mail,2024-06-15,Saturday,Howrah,Kalka,Dhanbad,Bhubaneswar,CC,78,2,0,76,Yes,Ladies,ECR,1611.0,11.0,4849,,2.56,Off-Peak,1.0,3.0,7.0,Yes,6.0,90.0,Delayed,3.6
+PNR1762941246,12311,Kalka Mail,Mail,2024-02-17,Saturday,Howrah,Kalka,Durgapur,Indore,2A,46,6,0,40,No,General,SR,865.0,4.7,4729,6147.0,13.04,Off-Peak,0.0,3.0,3.0,No,11.0,60.0,Delayed,
+PNR9202582000,12301,Howrah Rajdhani,Rajdhani,2024-07-07,Sunday,Howrah,New Delhi,Hyderabad Deccan,Puri,CC,78,1,0,77,Yes,Tatkal,ECR,2008.0,36.1,1607,,1.28,Off-Peak,0.0,2.0,3.0,No,7.0,120.0,Delayed,3.4
+PNR2183009989,12311,Kalka Mail,Mail,2024-10-27,Sunday,Howrah,Kalka,Howrah,Bhubaneswar,2A,46,32,0,14,No,General,ECR,1061.0,26.0,3959,5146.0,69.57,Peak,1.0,7.0,7.0,Yes,12.0,0.0,On Time,4.5
+PNR6047128978,12875,Neelachal Express,Express,2024-06-26,Wednesday,Howrah,Puri,Mumbai CST,Puri,2S,100,76,0,24,No,Senior Citizen,ECR,801.0,34.0,3403,,76.0,Off-Peak,0.0,3.0,2.0,No,15.0,120.0,Delayed,
+PNR2583692176,12302,New Delhi Rajdhani,Rajdhani,2024-12-23,Monday,New Delhi,Howrah,Asansol,Ranchi,2S,100,55,0,45,Yes,Senior Citizen,NER,725.0,13.3,4242,,55.0,Peak,1.0,0.0,1.0,No,7.0,15.0,Slight Delay,4.4
+PNR5881146883,12381,Poorva Express,Express,2024-01-20,Saturday,Howrah,New Delhi,Puri,Raipur,1A,18,8,0,10,No,Senior Citizen,NER,329.0,5.3,1139,1480.0,44.44,Off-Peak,1.0,2.0,7.0,No,14.0,0.0,On Time,
+PNR8479455700,12301,Howrah Rajdhani,Rajdhani,2024-11-06,Wednesday,Howrah,New Delhi,,Patna,1A,18,5,0,13,Yes,Railway Employee,CR,,,2609,,27.78,Peak,,,,Yes,,,On Time,
+PNR8259983843,13119,Sealdah Anvt Express,Express,2024-12-05,Thursday,Sealdah,Anand Vihar,Patna,Hyderabad Deccan,2S,100,26,0,74,Yes,General,ECR,876.0,44.7,3399,,26.0,Peak,0.0,3.0,1.0,Yes,7.0,0.0,On Time,2.3
+PNR3852325403,12019,Shatabdi Express,Shatabdi,2024-12-14,Saturday,Howrah,Ranchi,Kolkata,Puri,2S,100,16,0,84,Yes,Senior Citizen,NR,1389.0,16.5,2006,2607.0,16.0,Peak,0.0,8.0,6.0,No,2.0,5.0,Slight Delay,
+PNR8103844811,13049,Amaravati Express,Express,2024-06-14,Friday,Howrah,Amravati,Howrah,Allahabad,2A,46,0,0,46,Yes,Senior Citizen,WR,320.0,32.1,3494,,0.0,Off-Peak,0.0,0.0,1.0,Yes,7.0,10.0,Slight Delay,3.0
+PNR6031378588,12302,New Delhi Rajdhani,Rajdhani,2024-12-30,Monday,New Delhi,Howrah,Sealdah,Pune,CC,78,78,23,0,Yes,Railway Employee,ECR,594.0,16.9,4862,6320.0,100.0,Peak,0.0,10.0,7.0,Yes,6.0,0.0,On Time,3.3
+PNR5245063515,12381,Poorva Express,Express,2024-09-18,Wednesday,Howrah,New Delhi,Mumbai CST,Bangalore City,2S,100,59,0,41,Yes,Ladies,WR,1805.0,36.7,4324,5621.0,59.0,Off-Peak,0.0,2.0,5.0,No,5.0,5.0,Slight Delay,
+PNR2411712184,12019,Shatabdi Express,Shatabdi,2024-11-24,Sunday,Howrah,Ranchi,Chennai Central,Gaya,1A,18,7,0,11,Yes,Defense,ECR,1231.0,36.4,3835,,38.89,Peak,0.0,5.0,3.0,Yes,9.0,0.0,On Time,3.7
+PNR7534672190,12019,Shatabdi Express,Shatabdi,2024-12-17,Tuesday,Howrah,Ranchi,New Delhi,Kanpur,2S,100,56,0,44,Yes,General,NER,336.0,45.8,3325,,56.0,Peak,0.0,3.0,2.0,Yes,3.0,90.0,Delayed,4.2
+PNR8408771795,12019,Shatabdi Express,Shatabdi,2024-04-30,Tuesday,Howrah,Ranchi,Chennai Central,Puri,CC,78,10,0,68,Yes,Tatkal,ECR,772.0,29.7,3691,,12.82,Peak,1.0,10.0,3.0,No,14.0,45.0,Delayed,
+PNR7190663073,13049,Amaravati Express,Express,2024-07-22,Monday,Howrah,Amravati,Ranchi,Pune,SL,72,21,0,51,No,Tatkal,NER,131.0,36.9,4056,,29.17,Off-Peak,0.0,4.0,8.0,Yes,9.0,0.0,On Time,2.9
+PNR5603945749,12875,Neelachal Express,Express,2024-05-25,Saturday,Howrah,Puri,New Delhi,Indore,SL,72,71,0,1,No,Tatkal,SR,826.0,1.7,4139,5380.0,98.61,Peak,0.0,7.0,6.0,No,7.0,15.0,Slight Delay,2.2
+PNR3429270402,12073,Jan Shatabdi,Jan Shatabdi,2024-02-06,Tuesday,Howrah,Patna,Mumbai CST,Visakhapatnam,SL,72,4,0,68,No,Ladies,SCR,2137.0,34.5,1219,,5.56,Off-Peak,0.0,0.0,6.0,No,12.0,5.0,Slight Delay,
+PNR3925158297,12301,Howrah Rajdhani,Rajdhani,2024-07-04,Thursday,Howrah,New Delhi,Chennai Central,Asansol,2S,100,7,0,93,Yes,General,NR,428.0,31.5,1411,1834.0,7.0,Off-Peak,1.0,9.0,1.0,Yes,15.0,30.0,Delayed,
+PNR1381708520,12381,Poorva Express,Express,2024-05-09,Thursday,Howrah,New Delhi,Puri,Surat,2S,100,77,0,23,Yes,Tatkal,CR,908.0,44.7,4301,,77.0,Peak,0.0,0.0,2.0,No,1.0,0.0,On Time,
+PNR8443359717,12245,Duronto Express,Duronto,2024-08-01,Thursday,Howrah,Pune,New Delhi,Puri,CC,78,53,0,25,Yes,Tatkal,SR,861.0,24.1,2562,,67.95,Off-Peak,0.0,7.0,3.0,Yes,4.0,0.0,On Time,
+PNR3681869740,12019,Shatabdi Express,Shatabdi,2024-05-12,Sunday,Howrah,Ranchi,Durgapur,Nagpur,GN,120,104,0,16,Yes,General,CR,401.0,19.1,3810,,86.67,Peak,0.0,0.0,3.0,No,8.0,120.0,Delayed,1.0
+PNR4400697308,12311,Kalka Mail,Mail,2024-01-04,Thursday,Howrah,Kalka,Hyderabad Deccan,Pune,2S,100,10,0,90,Yes,Senior Citizen,NER,1430.0,29.6,993,,10.0,Off-Peak,0.0,5.0,3.0,No,11.0,30.0,Delayed,1.2
+PNR8294178468,13049,Amaravati Express,Express,2024-06-18,Tuesday,Howrah,Amravati,Kolkata,Bhubaneswar,GN,120,25,0,95,Yes,Defense,NR,2223.0,14.5,225,,20.83,Off-Peak,0.0,5.0,7.0,No,9.0,30.0,Delayed,1.0
+PNR4751372582,13119,Sealdah Anvt Express,Express,2024-06-13,Thursday,Sealdah,Anand Vihar,Asansol,Raipur,1A,18,18,2,0,Yes,Railway Employee,NER,1006.0,29.7,3150,,100.0,Off-Peak,0.0,5.0,6.0,No,11.0,0.0,On Time,
+PNR1136346958,12019,Shatabdi Express,Shatabdi,2024-12-30,Monday,Howrah,Ranchi,Patna,Patna,2A,46,46,9,0,Yes,Railway Employee,NER,738.0,43.2,4460,,100.0,Peak,1.0,10.0,8.0,Yes,4.0,5.0,Slight Delay,
+PNR1125506598,13119,Sealdah Anvt Express,Express,2024-12-24,Tuesday,Sealdah,Anand Vihar,Dhanbad,Gaya,1A,18,3,0,15,No,Ladies,WR,1105.0,32.5,3762,4890.0,16.67,Peak,0.0,10.0,2.0,No,2.0,15.0,Slight Delay,4.7
+PNR8408939222,12073,Jan Shatabdi,Jan Shatabdi,2024-02-03,Saturday,Howrah,Patna,Puri,Nagpur,2S,100,87,0,13,No,Tatkal,WR,1111.0,6.9,3288,,87.0,Off-Peak,0.0,5.0,3.0,Yes,,15.0,Slight Delay,
+PNR2334871184,13049,Amaravati Express,Express,2024-07-13,Saturday,Howrah,Amravati,Bhubaneswar,Ahmedabad,CC,78,78,16,0,Yes,Senior Citizen,ECR,1359.0,37.4,213,276.0,100.0,Off-Peak,0.0,8.0,3.0,Yes,7.0,0.0,On Time,2.8
+PNR8215463132,12259,Sealdah Duronto,Duronto,2024-05-31,Friday,Sealdah,New Delhi,New Delhi,Pune,GN,120,56,0,64,Yes,Tatkal,ER,1361.0,15.9,4294,5582.0,46.67,Peak,0.0,4.0,7.0,Yes,8.0,10.0,Slight Delay,2.5
+PNR6977769260,13049,Amaravati Express,Express,2024-03-19,Tuesday,Howrah,Amravati,Durgapur,Bhopal,GN,120,53,0,67,Yes,General,ECR,1432.0,21.1,2043,,44.17,Off-Peak,0.0,6.0,6.0,Yes,9.0,10.0,Slight Delay,4.7
+PNR6600955228,12245,Duronto Express,Duronto,2024-10-07,Monday,Howrah,Pune,Puri,Puri,SL,72,12,0,60,Yes,Senior Citizen,NER,1242.0,43.2,1272,,16.67,Peak,0.0,10.0,0.0,No,,90.0,Delayed,
+PNR4977076759,12259,Sealdah Duronto,Duronto,2024-07-11,Thursday,Sealdah,New Delhi,Sealdah,Varanasi,SL,72,72,14,0,No,Tatkal,ER,530.0,47.1,1578,2051.0,100.0,Off-Peak,1.0,2.0,6.0,Yes,1.0,0.0,On Time,
+PNR6936078258,12875,Neelachal Express,Express,2024-06-03,Monday,Howrah,Puri,Puri,Nagpur,2S,100,44,0,56,No,Ladies,ER,541.0,6.9,3275,,44.0,Off-Peak,0.0,0.0,7.0,No,12.0,0.0,On Time,1.7
+PNR3454243528,12875,Neelachal Express,Express,2024-11-26,Tuesday,Howrah,Puri,Sealdah,Gaya,2S,100,100,11,0,Yes,Railway Employee,SR,,,2644,,100.0,Peak,1.0,,,Yes,,,Slight Delay,
+PNR7677479152,12259,Sealdah Duronto,Duronto,2024-11-02,Saturday,Sealdah,New Delhi,Asansol,Gaya,2S,100,46,0,54,Yes,General,SR,2405.0,11.1,243,,46.0,Peak,0.0,0.0,1.0,Yes,9.0,10.0,Slight Delay,3.2
+PNR7588919626,12381,Poorva Express,Express,2024-12-02,Monday,Howrah,New Delhi,New Delhi,Surat,1A,18,7,0,11,No,Railway Employee,SCR,2190.0,43.9,2662,3460.0,38.89,Peak,0.0,1.0,0.0,Yes,1.0,5.0,Slight Delay,
+PNR7836656538,12019,Shatabdi Express,Shatabdi,2024-03-09,Saturday,Howrah,Ranchi,Chennai Central,Bhubaneswar,CC,78,70,0,8,No,General,CR,1117.0,19.3,1969,2559.0,89.74,Off-Peak,1.0,7.0,1.0,No,11.0,30.0,Delayed,1.6
+PNR8363485082,12019,Shatabdi Express,Shatabdi,2024-02-06,Tuesday,Howrah,Ranchi,Bhubaneswar,Bhopal,2S,100,68,0,32,Yes,Senior Citizen,SR,1345.0,47.6,1778,,68.0,Off-Peak,0.0,9.0,3.0,Yes,5.0,0.0,On Time,3.7
+PNR2173612708,12381,Poorva Express,Express,2024-02-03,Saturday,Howrah,New Delhi,Durgapur,Asansol,3A,64,64,17,0,Yes,General,NR,1594.0,47.0,928,,100.0,Off-Peak,0.0,1.0,2.0,No,10.0,45.0,Delayed,
+PNR1206000737,13049,Amaravati Express,Express,2024-12-24,Tuesday,Howrah,Amravati,Bangalore City,Visakhapatnam,CC,78,36,0,42,No,Tatkal,SCR,2227.0,27.2,4718,,46.15,Peak,1.0,7.0,2.0,No,1.0,120.0,Delayed,
+PNR9480412265,12259,Sealdah Duronto,Duronto,2024-03-14,Thursday,Sealdah,New Delhi,Kolkata,Visakhapatnam,SL,72,72,0,0,Yes,Railway Employee,ECR,1925.0,10.0,2390,3107.0,100.0,Off-Peak,1.0,8.0,4.0,No,7.0,60.0,Delayed,4.5
+PNR9977085483,12019,Shatabdi Express,Shatabdi,2024-06-05,Wednesday,Howrah,Ranchi,Sealdah,Patna,2S,100,22,0,78,Yes,General,SR,2406.0,4.2,2703,3513.0,22.0,Off-Peak,1.0,0.0,6.0,Yes,8.0,45.0,Delayed,5.0
+PNR3646930819,22811,Bhubaneswar Rajdhani,Rajdhani,2024-12-23,Monday,Bhubaneswar,New Delhi,Dhanbad,Raipur,1A,18,12,0,6,Yes,Railway Employee,ECR,2238.0,36.4,313,,66.67,Peak,0.0,9.0,7.0,Yes,11.0,60.0,Delayed,1.7
+PNR7110545602,13049,Amaravati Express,Express,2024-03-09,Saturday,Howrah,Amravati,Hyderabad Deccan,Puri,CC,78,45,0,33,Yes,General,SCR,1073.0,40.2,617,,57.69,Off-Peak,0.0,4.0,4.0,No,5.0,10.0,Slight Delay,
+PNR9259464192,12245,Duronto Express,Duronto,2024-11-19,Tuesday,Howrah,Pune,Dhanbad,Nagpur,CC,78,50,0,28,Yes,Senior Citizen,NER,285.0,18.0,1981,2575.0,64.1,Peak,0.0,4.0,5.0,Yes,1.0,15.0,Slight Delay,1.7
+PNR1848446906,13049,Amaravati Express,Express,2024-01-05,Friday,Howrah,Amravati,Ranchi,Jaipur,1A,18,13,0,5,Yes,Senior Citizen,NR,2046.0,1.8,4230,,72.22,Off-Peak,0.0,3.0,7.0,No,,10.0,Slight Delay,
+PNR1695073055,22811,Bhubaneswar Rajdhani,Rajdhani,2024-05-17,Friday,Bhubaneswar,New Delhi,Bangalore City,Raipur,1A,18,14,0,4,No,General,SCR,862.0,6.6,3799,,77.78,Peak,0.0,6.0,6.0,No,15.0,0.0,On Time,
+PNR7103557930,12019,Shatabdi Express,Shatabdi,2024-09-02,Monday,Howrah,Ranchi,Ranchi,Agra,2S,100,68,0,32,Yes,Ladies,ECR,2105.0,35.3,1173,,68.0,Off-Peak,1.0,2.0,1.0,Yes,13.0,0.0,On Time,
+PNR9813443977,13049,Amaravati Express,Express,2024-09-13,Friday,Howrah,Amravati,Durgapur,Gaya,1A,18,18,3,0,No,Defense,ER,1829.0,23.8,2137,,100.0,Off-Peak,0.0,6.0,3.0,Yes,12.0,60.0,Delayed,
+PNR2843223554,12311,Kalka Mail,Mail,2024-02-28,Wednesday,Howrah,Kalka,Patna,Indore,GN,120,67,0,53,Yes,Railway Employee,SR,822.0,47.7,2226,,55.83,Off-Peak,0.0,3.0,1.0,Yes,7.0,0.0,On Time,1.8
+PNR5513818912,12259,Sealdah Duronto,Duronto,2024-08-06,Tuesday,Sealdah,New Delhi,Hyderabad Deccan,Jaipur,1A,18,18,1,0,Yes,Railway Employee,WR,958.0,17.1,1835,,100.0,Off-Peak,1.0,10.0,0.0,No,2.0,10.0,Slight Delay,4.8
+PNR1780617297,12245,Duronto Express,Duronto,2024-08-02,Friday,Howrah,Pune,Howrah,Hyderabad Deccan,2A,46,20,0,26,Yes,Tatkal,CR,1983.0,14.5,589,765.0,43.48,Off-Peak,1.0,2.0,4.0,No,6.0,15.0,Slight Delay,1.4
+PNR6717510876,12301,Howrah Rajdhani,Rajdhani,2024-12-15,Sunday,Howrah,New Delhi,Kolkata,Varanasi,CC,78,78,20,0,Yes,Tatkal,CR,910.0,28.7,1267,,100.0,Peak,0.0,2.0,1.0,Yes,10.0,120.0,Delayed,1.8
+PNR4268418626,12875,Neelachal Express,Express,2024-02-20,Tuesday,Howrah,Puri,Ranchi,Raipur,1A,18,17,0,1,Yes,General,SR,835.0,20.9,3009,3911.0,94.44,Off-Peak,0.0,5.0,7.0,Yes,15.0,30.0,Delayed,
+PNR5155324773,12381,Poorva Express,Express,2024-09-25,Wednesday,Howrah,New Delhi,Chennai Central,Hyderabad Deccan,CC,78,78,23,0,Yes,Railway Employee,WR,1678.0,24.5,379,,100.0,Off-Peak,0.0,2.0,7.0,No,9.0,30.0,Delayed,2.1
+PNR7497407953,12259,Sealdah Duronto,Duronto,2024-01-02,Tuesday,Sealdah,New Delhi,Ranchi,Indore,2A,46,36,0,10,Yes,Ladies,WR,1263.0,34.4,1984,,78.26,Off-Peak,0.0,3.0,0.0,Yes,5.0,0.0,On Time,4.8
+PNR1499010108,12311,Kalka Mail,Mail,2024-03-09,Saturday,Howrah,Kalka,Puri,Varanasi,3A,64,6,0,58,Yes,Ladies,NR,2299.0,13.8,2239,,9.38,Off-Peak,0.0,5.0,0.0,Yes,14.0,15.0,Slight Delay,
+PNR3505087861,12311,Kalka Mail,Mail,2024-03-31,Sunday,Howrah,Kalka,Kolkata,Raipur,3A,64,2,0,62,No,Railway Employee,CR,2306.0,11.1,4602,,3.12,Off-Peak,0.0,4.0,3.0,No,3.0,45.0,Delayed,
+PNR5697367349,12245,Duronto Express,Duronto,2024-08-10,Saturday,Howrah,Pune,New Delhi,Kanpur,3A,64,18,0,46,Yes,Tatkal,WR,2383.0,24.3,4124,,28.12,Off-Peak,0.0,0.0,4.0,Yes,15.0,0.0,On Time,3.7
+PNR6348324494,12019,Shatabdi Express,Shatabdi,2024-02-05,Monday,Howrah,Ranchi,Dhanbad,Nagpur,2A,46,4,0,42,No,General,SR,98.0,29.6,3693,,8.7,Off-Peak,0.0,1.0,0.0,Yes,3.0,5.0,Slight Delay,2.1
+PNR8809347296,13119,Sealdah Anvt Express,Express,2024-11-03,Sunday,Sealdah,Anand Vihar,Durgapur,Indore,1A,18,0,0,18,Yes,Tatkal,SR,2017.0,36.8,1071,1392.0,0.0,Peak,0.0,4.0,5.0,No,3.0,5.0,Slight Delay,
+PNR4543025495,12245,Duronto Express,Duronto,2024-05-16,Thursday,Howrah,Pune,Sealdah,Ahmedabad,2S,100,31,0,69,Yes,General,ECR,630.0,1.6,373,,31.0,Peak,0.0,6.0,6.0,Yes,6.0,120.0,Delayed,4.7
+PNR1473029049,13119,Sealdah Anvt Express,Express,2024-07-15,Monday,Sealdah,Anand Vihar,Sealdah,Dhanbad,2S,100,28,0,72,Yes,General,SCR,534.0,18.3,4228,,28.0,Off-Peak,0.0,0.0,2.0,Yes,7.0,60.0,Delayed,1.7
+PNR5741311316,12381,Poorva Express,Express,2024-03-17,Sunday,Howrah,New Delhi,Dhanbad,Agra,2S,100,77,0,23,Yes,Ladies,NR,58.0,41.6,2551,3316.0,77.0,Off-Peak,0.0,5.0,2.0,No,8.0,45.0,Delayed,1.5
+PNR5272511859,12381,Poorva Express,Express,2024-05-22,Wednesday,Howrah,New Delhi,New Delhi,Visakhapatnam,2A,46,5,0,41,No,Ladies,SCR,2074.0,21.2,2846,3699.0,10.87,Peak,1.0,9.0,5.0,Yes,13.0,120.0,Delayed,2.5
+PNR4527904178,22811,Bhubaneswar Rajdhani,Rajdhani,2024-09-11,Wednesday,Bhubaneswar,New Delhi,Hyderabad Deccan,Patna,CC,78,68,0,10,No,Defense,WR,407.0,12.4,4235,,87.18,Off-Peak,0.0,5.0,8.0,No,3.0,0.0,On Time,
+PNR2977353085,13049,Amaravati Express,Express,2024-07-03,Wednesday,Howrah,Amravati,Durgapur,Ahmedabad,GN,120,35,0,85,No,Tatkal,WR,969.0,4.1,2614,,29.17,Off-Peak,0.0,6.0,0.0,No,6.0,0.0,On Time,3.7
+PNR1129646731,12302,New Delhi Rajdhani,Rajdhani,2024-09-01,Sunday,New Delhi,Howrah,Bangalore City,Bhubaneswar,GN,120,120,32,0,Yes,Tatkal,NR,101.0,28.0,1495,1943.0,100.0,Off-Peak,0.0,2.0,7.0,Yes,12.0,60.0,Delayed,2.2
+PNR2231663777,12381,Poorva Express,Express,2024-06-21,Friday,Howrah,New Delhi,New Delhi,Hyderabad Deccan,SL,72,72,10,0,Yes,Defense,SR,2111.0,9.0,308,,100.0,Off-Peak,1.0,10.0,7.0,No,15.0,90.0,Delayed,3.8
+PNR5084827615,12381,Poorva Express,Express,2024-03-21,Thursday,Howrah,New Delhi,Kolkata,Kolkata,3A,64,11,0,53,No,Defense,ER,946.0,19.7,4472,5813.0,17.19,Off-Peak,0.0,7.0,7.0,No,11.0,120.0,Delayed,2.5
+PNR2159295684,12301,Howrah Rajdhani,Rajdhani,2024-07-09,Tuesday,Howrah,New Delhi,Sealdah,Patna,2S,100,100,8,0,Yes,Defense,SCR,164.0,12.6,1795,,100.0,Off-Peak,0.0,1.0,3.0,Yes,13.0,10.0,Slight Delay,
+PNR9782669254,12019,Shatabdi Express,Shatabdi,2024-11-22,Friday,Howrah,Ranchi,Asansol,Agra,1A,18,7,0,11,Yes,General,SCR,431.0,45.4,2405,,38.89,Peak,0.0,4.0,6.0,Yes,6.0,30.0,Delayed,4.9
+PNR3162852783,12245,Duronto Express,Duronto,2024-12-11,Wednesday,Howrah,Pune,Ranchi,Visakhapatnam,1A,18,10,0,8,Yes,General,ECR,2003.0,28.8,3536,4596.0,55.56,Peak,0.0,2.0,2.0,No,2.0,120.0,Delayed,
+PNR6761334796,12245,Duronto Express,Duronto,2024-04-28,Sunday,Howrah,Pune,Asansol,Bhubaneswar,2A,46,46,5,0,Yes,Ladies,SCR,1814.0,3.4,1353,,100.0,Peak,1.0,3.0,3.0,Yes,3.0,90.0,Delayed,
+PNR4844574882,12301,Howrah Rajdhani,Rajdhani,2024-03-14,Thursday,Howrah,New Delhi,Patna,Ranchi,GN,120,79,0,41,No,Ladies,SR,1260.0,9.0,4682,,65.83,Off-Peak,0.0,5.0,1.0,Yes,3.0,45.0,Delayed,2.9
+PNR3097056432,12311,Kalka Mail,Mail,2024-08-14,Wednesday,Howrah,Kalka,Bangalore City,Dhanbad,2S,100,35,0,65,No,Senior Citizen,SR,1855.0,18.6,1215,,35.0,Off-Peak,0.0,5.0,1.0,No,9.0,45.0,Delayed,
+PNR1034114705,13119,Sealdah Anvt Express,Express,2024-01-22,Monday,Sealdah,Anand Vihar,Durgapur,Ranchi,CC,78,78,4,0,Yes,Senior Citizen,SR,2385.0,20.1,667,,100.0,Off-Peak,1.0,7.0,1.0,No,8.0,45.0,Delayed,4.6
+PNR9257034899,12875,Neelachal Express,Express,2024-02-25,Sunday,Howrah,Puri,Asansol,Lucknow,1A,18,5,0,13,Yes,Senior Citizen,SCR,314.0,16.3,1087,1413.0,27.78,Off-Peak,1.0,3.0,7.0,Yes,5.0,45.0,Delayed,
+PNR2633310909,12259,Sealdah Duronto,Duronto,2024-08-28,Wednesday,Sealdah,New Delhi,Dhanbad,Varanasi,2A,46,40,0,6,No,Senior Citizen,WR,271.0,11.3,1948,,86.96,Off-Peak,1.0,4.0,4.0,Yes,2.0,0.0,On Time,
+PNR3253904127,12381,Poorva Express,Express,2024-02-11,Sunday,Howrah,New Delhi,Puri,Durgapur,3A,64,57,0,7,Yes,General,NR,1805.0,17.4,3638,,89.06,Off-Peak,0.0,3.0,5.0,No,8.0,45.0,Delayed,4.1
+PNR4534825528,12245,Duronto Express,Duronto,2024-08-11,Sunday,Howrah,Pune,Ranchi,Pune,3A,64,64,9,0,Yes,General,SR,1376.0,32.4,3387,,100.0,Off-Peak,0.0,0.0,2.0,No,15.0,0.0,On Time,
+PNR9539419788,13119,Sealdah Anvt Express,Express,2024-07-27,Saturday,Sealdah,Anand Vihar,Durgapur,Bhubaneswar,3A,64,64,2,0,No,Railway Employee,NR,199.0,11.7,230,299.0,100.0,Off-Peak,1.0,8.0,2.0,No,4.0,15.0,Slight Delay,
+PNR8790122996,12019,Shatabdi Express,Shatabdi,2024-12-13,Friday,Howrah,Ranchi,Howrah,Dhanbad,CC,78,1,0,77,Yes,Defense,NR,2094.0,31.7,3233,,1.28,Peak,1.0,5.0,5.0,No,9.0,15.0,Slight Delay,
+PNR7167041161,12259,Sealdah Duronto,Duronto,2024-08-22,Thursday,Sealdah,New Delhi,Chennai Central,Bhopal,SL,72,47,0,25,No,Railway Employee,CR,456.0,47.8,1649,2143.0,65.28,Off-Peak,0.0,1.0,0.0,No,2.0,45.0,Delayed,3.5
+PNR9730103138,22811,Bhubaneswar Rajdhani,Rajdhani,2024-02-21,Wednesday,Bhubaneswar,New Delhi,Chennai Central,Lucknow,2S,100,100,13,0,Yes,Tatkal,NER,2309.0,19.2,4323,,100.0,Off-Peak,1.0,1.0,5.0,No,7.0,120.0,Delayed,4.0
+PNR6513039012,12301,Howrah Rajdhani,Rajdhani,2024-07-10,Wednesday,Howrah,New Delhi,Dhanbad,Bhopal,GN,120,57,0,63,Yes,Ladies,ECR,1039.0,1.7,4357,5664.0,47.5,Off-Peak,0.0,0.0,0.0,Yes,13.0,15.0,Slight Delay,3.1
+PNR9559135932,12245,Duronto Express,Duronto,2024-11-03,Sunday,Howrah,Pune,Mumbai CST,Ahmedabad,3A,64,42,0,22,No,Tatkal,ECR,261.0,38.8,1596,,65.62,Peak,0.0,10.0,6.0,Yes,7.0,15.0,Slight Delay,2.7
+PNR9232015048,12302,New Delhi Rajdhani,Rajdhani,2024-12-29,Sunday,New Delhi,Howrah,Durgapur,Ahmedabad,GN,120,32,0,88,Yes,Ladies,WR,431.0,5.8,4330,,26.67,Peak,0.0,0.0,8.0,Yes,,,Delayed,
+PNR1801248380,12245,Duronto Express,Duronto,2024-03-07,Thursday,Howrah,Pune,Puri,Asansol,SL,72,72,9,0,Yes,Tatkal,WR,1598.0,37.3,3133,,100.0,Off-Peak,0.0,1.0,2.0,Yes,11.0,90.0,Delayed,
+PNR1775790050,12073,Jan Shatabdi,Jan Shatabdi,2024-03-03,Sunday,Howrah,Patna,Sealdah,Agra,1A,18,4,0,14,Yes,Tatkal,ECR,462.0,24.3,2513,,22.22,Off-Peak,0.0,7.0,1.0,Yes,11.0,30.0,Delayed,
+PNR4881096387,12875,Neelachal Express,Express,2024-03-23,Saturday,Howrah,Puri,Puri,Surat,2A,46,19,0,27,Yes,General,SCR,1470.0,24.0,283,367.0,41.3,Off-Peak,0.0,2.0,8.0,No,15.0,0.0,On Time,
+PNR4268302525,12301,Howrah Rajdhani,Rajdhani,2024-10-01,Tuesday,Howrah,New Delhi,Mumbai CST,Varanasi,1A,18,16,0,2,Yes,Tatkal,ER,1391.0,7.9,4392,,88.89,Peak,0.0,4.0,4.0,No,4.0,0.0,On Time,3.2
+PNR6124128956,12311,Kalka Mail,Mail,2024-08-27,Tuesday,Howrah,Kalka,New Delhi,Kolkata,2S,100,100,26,0,Yes,Senior Citizen,NR,2440.0,38.4,3772,,100.0,Off-Peak,0.0,3.0,7.0,No,15.0,45.0,Delayed,4.0
+PNR2843885186,13049,Amaravati Express,Express,2024-11-14,Thursday,Howrah,Amravati,,Varanasi,1A,18,18,1,0,Yes,Railway Employee,NR,,,3337,,100.0,Peak,0.0,,,No,,,Delayed,
+PNR6093465668,12381,Poorva Express,Express,2024-01-16,Tuesday,Howrah,New Delhi,Mumbai CST,Patna,1A,18,5,0,13,Yes,Railway Employee,SCR,1573.0,8.2,2843,,27.78,Off-Peak,0.0,5.0,0.0,No,4.0,45.0,Delayed,2.3
+PNR3584719544,12019,Shatabdi Express,Shatabdi,2024-10-14,Monday,Howrah,Ranchi,Ranchi,Kolkata,1A,18,12,0,6,Yes,Defense,CR,356.0,28.2,2523,,66.67,Peak,1.0,5.0,5.0,Yes,4.0,0.0,On Time,3.0
+PNR2644360541,12311,Kalka Mail,Mail,2024-08-03,Saturday,Howrah,Kalka,Bhubaneswar,Bangalore City,1A,18,3,0,15,Yes,General,ER,1941.0,14.7,3909,5081.0,16.67,Off-Peak,1.0,0.0,8.0,Yes,6.0,120.0,Delayed,
+PNR6474681203,12875,Neelachal Express,Express,2024-02-18,Sunday,Howrah,Puri,Asansol,Varanasi,GN,120,106,0,14,No,General,SCR,2072.0,30.0,2665,,88.33,Off-Peak,1.0,7.0,1.0,No,10.0,0.0,On Time,
+PNR8405611782,12301,Howrah Rajdhani,Rajdhani,2024-01-06,Saturday,Howrah,New Delhi,Mumbai CST,Puri,2A,46,6,0,40,Yes,Tatkal,SCR,2251.0,47.5,2844,3697.0,13.04,Off-Peak,0.0,4.0,0.0,Yes,1.0,10.0,Slight Delay,
+PNR2978664640,13049,Amaravati Express,Express,2024-12-18,Wednesday,Howrah,Amravati,New Delhi,Gaya,CC,78,78,23,0,Yes,Defense,ECR,1880.0,32.6,3309,,100.0,Peak,0.0,9.0,7.0,No,5.0,15.0,Slight Delay,2.9
+PNR4675905639,12302,New Delhi Rajdhani,Rajdhani,2024-05-15,Wednesday,New Delhi,Howrah,Kolkata,Patna,GN,120,75,0,45,Yes,Senior Citizen,ER,920.0,2.1,878,,62.5,Peak,1.0,3.0,7.0,Yes,6.0,5.0,Slight Delay,4.0
+PNR3814446299,22811,Bhubaneswar Rajdhani,Rajdhani,2024-06-09,Sunday,Bhubaneswar,New Delhi,Durgapur,Jaipur,GN,120,79,0,41,Yes,Tatkal,WR,1539.0,19.4,3919,,65.83,Off-Peak,0.0,6.0,3.0,Yes,5.0,30.0,Delayed,
+PNR1473301871,12311,Kalka Mail,Mail,2024-10-22,Tuesday,Howrah,Kalka,Howrah,Kanpur,2S,100,26,0,74,Yes,Ladies,ER,2000.0,32.3,1406,,26.0,Peak,0.0,1.0,8.0,Yes,6.0,30.0,Delayed,
+PNR5523275189,12381,Poorva Express,Express,2024-09-14,Saturday,Howrah,New Delhi,Chennai Central,Varanasi,SL,72,65,0,7,Yes,General,ECR,1780.0,10.5,2933,,90.28,Off-Peak,0.0,9.0,4.0,No,9.0,30.0,Delayed,
+PNR1494728301,12301,Howrah Rajdhani,Rajdhani,2024-11-26,Tuesday,Howrah,New Delhi,Dhanbad,Hyderabad Deccan,2A,46,7,0,39,Yes,Tatkal,NR,2229.0,6.2,1998,,15.22,Peak,1.0,6.0,6.0,Yes,4.0,10.0,Slight Delay,1.7
+PNR4152000372,12019,Shatabdi Express,Shatabdi,2024-06-26,Wednesday,Howrah,Ranchi,Sealdah,Puri,2S,100,73,0,27,No,Railway Employee,CR,1027.0,9.4,2559,3326.0,73.0,Off-Peak,0.0,2.0,5.0,No,3.0,0.0,On Time,2.7
+PNR4663992245,12301,Howrah Rajdhani,Rajdhani,2024-03-31,Sunday,Howrah,New Delhi,Bhubaneswar,Varanasi,3A,64,9,0,55,No,Defense,ER,2050.0,42.1,1598,,14.06,Off-Peak,0.0,0.0,4.0,Yes,9.0,60.0,Delayed,
+PNR7238939734,12259,Sealdah Duronto,Duronto,2024-02-18,Sunday,Sealdah,New Delhi,,Varanasi,1A,18,9,0,9,Yes,Railway Employee,NER,,,2949,,50.0,Off-Peak,,,,No,,,Slight Delay,
+PNR6829105597,12301,Howrah Rajdhani,Rajdhani,2024-03-16,Saturday,Howrah,New Delhi,Howrah,Asansol,SL,72,28,0,44,No,Ladies,WR,415.0,10.5,1360,,38.89,Off-Peak,0.0,4.0,8.0,No,15.0,60.0,Delayed,
+PNR6481439687,13119,Sealdah Anvt Express,Express,2024-06-27,Thursday,Sealdah,Anand Vihar,Mumbai CST,Hyderabad Deccan,3A,64,50,0,14,Yes,Defense,NR,1825.0,38.5,3618,,78.12,Off-Peak,0.0,4.0,1.0,Yes,8.0,120.0,Delayed,
+PNR3853234069,13119,Sealdah Anvt Express,Express,2024-03-17,Sunday,Sealdah,Anand Vihar,Chennai Central,Agra,CC,78,37,0,41,Yes,General,CR,113.0,22.6,4772,,47.44,Off-Peak,0.0,0.0,7.0,No,1.0,30.0,Delayed,4.3
+PNR3408399111,12301,Howrah Rajdhani,Rajdhani,2024-05-08,Wednesday,Howrah,New Delhi,Sealdah,Indore,2A,46,22,0,24,Yes,Tatkal,WR,1819.0,28.7,2520,,47.83,Peak,0.0,0.0,7.0,No,4.0,120.0,Delayed,2.7
+PNR9057068336,12302,New Delhi Rajdhani,Rajdhani,2024-05-13,Monday,New Delhi,Howrah,Asansol,Surat,3A,64,64,12,0,Yes,Railway Employee,WR,1074.0,7.8,2745,,100.0,Peak,0.0,4.0,1.0,No,10.0,120.0,Delayed,1.7
+PNR8276247494,12381,Poorva Express,Express,2024-02-19,Monday,Howrah,New Delhi,Ranchi,Bhopal,2A,46,33,0,13,Yes,Senior Citizen,SCR,1801.0,23.2,3820,,71.74,Off-Peak,1.0,0.0,8.0,Yes,13.0,30.0,Delayed,
+PNR7494878720,12259,Sealdah Duronto,Duronto,2024-11-10,Sunday,Sealdah,New Delhi,New Delhi,Pune,3A,64,31,0,33,Yes,General,ECR,565.0,20.2,4954,,48.44,Peak,1.0,0.0,1.0,Yes,5.0,120.0,Delayed,
+PNR1261412194,12073,Jan Shatabdi,Jan Shatabdi,2024-02-19,Monday,Howrah,Patna,,Surat,GN,120,74,0,46,Yes,Railway Employee,WR,,,4832,,61.67,Off-Peak,,,,Yes,,,Delayed,
+PNR1492670821,12301,Howrah Rajdhani,Rajdhani,2024-09-05,Thursday,Howrah,New Delhi,Howrah,Bhubaneswar,CC,78,78,10,0,Yes,Defense,NR,1062.0,11.0,1844,,100.0,Off-Peak,1.0,6.0,0.0,Yes,,30.0,Delayed,
+PNR3650675666,12019,Shatabdi Express,Shatabdi,2024-10-06,Sunday,Howrah,Ranchi,Hyderabad Deccan,Bhubaneswar,3A,64,64,14,0,Yes,Tatkal,SR,1035.0,9.4,3797,,100.0,Peak,0.0,7.0,7.0,No,5.0,120.0,Delayed,
+PNR4435351920,12073,Jan Shatabdi,Jan Shatabdi,2024-09-09,Monday,Howrah,Patna,Patna,Lucknow,3A,64,35,0,29,No,Tatkal,ER,1210.0,22.8,3404,,54.69,Off-Peak,0.0,9.0,4.0,Yes,11.0,120.0,Delayed,3.5
+PNR2189293820,12301,Howrah Rajdhani,Rajdhani,2024-06-30,Sunday,Howrah,New Delhi,New Delhi,Varanasi,2A,46,29,0,17,Yes,Ladies,ECR,2151.0,4.4,3954,5140.0,63.04,Off-Peak,0.0,10.0,5.0,No,12.0,0.0,On Time,4.1
+PNR3830262384,12311,Kalka Mail,Mail,2024-07-20,Saturday,Howrah,Kalka,Bhubaneswar,Indore,1A,18,18,2,0,Yes,Tatkal,SCR,2461.0,45.9,4162,,100.0,Off-Peak,1.0,1.0,0.0,Yes,14.0,0.0,On Time,
+PNR4417097158,13119,Sealdah Anvt Express,Express,2024-02-24,Saturday,Sealdah,Anand Vihar,,Puri,SL,72,72,14,0,No,Senior Citizen,NR,,,4102,,100.0,Off-Peak,,,,Yes,,,On Time,
+PNR6379424827,12381,Poorva Express,Express,2024-03-09,Saturday,Howrah,New Delhi,Patna,Bhopal,2S,100,51,0,49,Yes,Tatkal,WR,713.0,21.7,1803,,51.0,Off-Peak,0.0,1.0,0.0,Yes,,0.0,On Time,
+PNR2463343954,13049,Amaravati Express,Express,2024-07-27,Saturday,Howrah,Amravati,Puri,Raipur,CC,78,69,0,9,No,Tatkal,WR,2386.0,40.0,789,,88.46,Off-Peak,0.0,9.0,8.0,Yes,13.0,0.0,On Time,
+PNR2280875150,12302,New Delhi Rajdhani,Rajdhani,2024-10-18,Friday,New Delhi,Howrah,Sealdah,Agra,1A,18,4,0,14,Yes,General,SCR,142.0,11.9,4437,,22.22,Peak,0.0,6.0,5.0,Yes,14.0,0.0,On Time,1.3
+PNR6636024977,12073,Jan Shatabdi,Jan Shatabdi,2024-05-03,Friday,Howrah,Patna,Bhubaneswar,Hyderabad Deccan,GN,120,120,12,0,Yes,Defense,NER,1127.0,31.9,4296,,100.0,Peak,1.0,4.0,3.0,No,15.0,0.0,On Time,
+PNR3119803089,22811,Bhubaneswar Rajdhani,Rajdhani,2024-06-17,Monday,Bhubaneswar,New Delhi,Asansol,Surat,GN,120,15,0,105,Yes,Ladies,NR,1754.0,29.3,2130,,12.5,Off-Peak,0.0,8.0,7.0,Yes,5.0,0.0,On Time,
+PNR7148312531,12875,Neelachal Express,Express,2024-09-16,Monday,Howrah,Puri,Chennai Central,Asansol,2A,46,41,0,5,Yes,General,ER,853.0,26.3,3069,3989.0,89.13,Off-Peak,0.0,8.0,7.0,Yes,7.0,30.0,Delayed,2.7
+PNR9175690539,12381,Poorva Express,Express,2024-10-08,Tuesday,Howrah,New Delhi,Bangalore City,Kolkata,2A,46,7,0,39,Yes,Senior Citizen,ER,1025.0,12.3,3787,,15.22,Peak,0.0,6.0,8.0,Yes,,0.0,On Time,
+PNR6070610390,12301,Howrah Rajdhani,Rajdhani,2024-02-09,Friday,Howrah,New Delhi,Howrah,Gaya,1A,18,4,0,14,Yes,Defense,WR,1247.0,7.5,3792,,22.22,Off-Peak,0.0,10.0,1.0,Yes,5.0,60.0,Delayed,
+PNR8357853916,12245,Duronto Express,Duronto,2024-07-01,Monday,Howrah,Pune,Bangalore City,Visakhapatnam,GN,120,56,0,64,Yes,Railway Employee,WR,2207.0,43.0,3833,,46.67,Off-Peak,0.0,0.0,5.0,No,12.0,90.0,Delayed,
+PNR1905248698,12259,Sealdah Duronto,Duronto,2024-09-23,Monday,Sealdah,New Delhi,Bangalore City,Raipur,2A,46,19,0,27,Yes,General,WR,1853.0,31.7,4729,,41.3,Off-Peak,0.0,0.0,7.0,Yes,5.0,10.0,Slight Delay,2.2
+PNR3127544262,12302,New Delhi Rajdhani,Rajdhani,2024-01-31,Wednesday,New Delhi,Howrah,Durgapur,Allahabad,3A,64,64,14,0,No,Senior Citizen,ER,969.0,11.1,3345,,100.0,Off-Peak,1.0,8.0,0.0,No,1.0,60.0,Delayed,4.7
+PNR4252373514,12073,Jan Shatabdi,Jan Shatabdi,2024-06-21,Friday,Howrah,Patna,Bangalore City,Raipur,GN,120,67,0,53,No,Senior Citizen,ER,497.0,27.2,1973,2564.0,55.83,Off-Peak,0.0,8.0,7.0,No,10.0,90.0,Delayed,2.0
+PNR4898595925,12381,Poorva Express,Express,2024-08-27,Tuesday,Howrah,New Delhi,Chennai Central,Bhopal,2S,100,60,0,40,Yes,General,WR,2273.0,15.3,1280,,60.0,Off-Peak,0.0,9.0,4.0,No,5.0,120.0,Delayed,3.6
+PNR8132980658,12073,Jan Shatabdi,Jan Shatabdi,2024-01-07,Sunday,Howrah,Patna,Durgapur,Durgapur,1A,18,9,0,9,Yes,Senior Citizen,NER,120.0,22.0,4856,,50.0,Off-Peak,0.0,7.0,8.0,Yes,7.0,0.0,On Time,1.3
+PNR6067219231,12073,Jan Shatabdi,Jan Shatabdi,2024-10-09,Wednesday,Howrah,Patna,Asansol,Durgapur,3A,64,8,0,56,Yes,Senior Citizen,SR,981.0,,3808,,12.5,Peak,0.0,3.0,1.0,Yes,,,Delayed,
+PNR2105718202,13049,Amaravati Express,Express,2024-01-22,Monday,Howrah,Amravati,Puri,Varanasi,CC,78,78,13,0,Yes,Defense,WR,1482.0,,2067,,100.0,Off-Peak,0.0,8.0,1.0,Yes,,,Slight Delay,
+PNR9056727891,13119,Sealdah Anvt Express,Express,2024-07-31,Wednesday,Sealdah,Anand Vihar,New Delhi,Bangalore City,1A,18,18,2,0,Yes,Defense,SCR,1422.0,46.8,3693,,100.0,Off-Peak,0.0,7.0,4.0,Yes,3.0,15.0,Slight Delay,
+PNR8765447816,12259,Sealdah Duronto,Duronto,2024-10-29,Tuesday,Sealdah,New Delhi,Ranchi,Indore,1A,18,3,0,15,Yes,Tatkal,ECR,2436.0,3.0,1932,2511.0,16.67,Peak,1.0,10.0,1.0,Yes,15.0,5.0,Slight Delay,5.0
+PNR4148407142,13119,Sealdah Anvt Express,Express,2024-10-07,Monday,Sealdah,Anand Vihar,Durgapur,Jaipur,2S,100,100,7,0,Yes,Defense,NER,2198.0,25.7,4615,,100.0,Peak,0.0,9.0,4.0,Yes,6.0,5.0,Slight Delay,4.9
+PNR7055585266,12019,Shatabdi Express,Shatabdi,2024-08-21,Wednesday,Howrah,Ranchi,Sealdah,Varanasi,3A,64,14,0,50,Yes,Ladies,NER,993.0,22.4,2174,,21.88,Off-Peak,0.0,8.0,3.0,No,11.0,90.0,Delayed,3.4
+PNR7049473418,12311,Kalka Mail,Mail,2024-06-23,Sunday,Howrah,Kalka,Ranchi,Bhubaneswar,3A,64,15,0,49,No,Railway Employee,WR,786.0,42.3,867,,23.44,Off-Peak,0.0,6.0,4.0,No,,0.0,On Time,
+PNR5251731939,12301,Howrah Rajdhani,Rajdhani,2024-08-08,Thursday,Howrah,New Delhi,,Jaipur,1A,18,18,4,0,No,Senior Citizen,SCR,,,1567,,100.0,Off-Peak,,,,No,,,Delayed,
+PNR9206283313,12301,Howrah Rajdhani,Rajdhani,2024-02-07,Wednesday,Howrah,New Delhi,Puri,Kanpur,2S,100,90,0,10,No,Ladies,NER,601.0,35.6,3877,5040.0,90.0,Off-Peak,0.0,2.0,0.0,No,11.0,120.0,Delayed,2.3
+PNR6292531626,12259,Sealdah Duronto,Duronto,2024-09-17,Tuesday,Sealdah,New Delhi,Patna,Gaya,2S,100,71,0,29,Yes,Defense,ECR,1218.0,16.5,993,,71.0,Off-Peak,0.0,2.0,0.0,Yes,7.0,60.0,Delayed,4.5
+PNR5804140319,13049,Amaravati Express,Express,2024-02-20,Tuesday,Howrah,Amravati,Chennai Central,Agra,3A,64,36,0,28,No,Tatkal,SR,1231.0,45.2,1556,,56.25,Off-Peak,0.0,3.0,4.0,Yes,2.0,5.0,Slight Delay,3.0
+PNR1838088426,12259,Sealdah Duronto,Duronto,2024-01-15,Monday,Sealdah,New Delhi,Patna,Bangalore City,CC,78,5,0,73,Yes,Tatkal,CR,2389.0,21.3,4622,,6.41,Off-Peak,0.0,7.0,4.0,Yes,12.0,0.0,On Time,2.7
+PNR9929525100,12311,Kalka Mail,Mail,2024-02-14,Wednesday,Howrah,Kalka,Asansol,Asansol,GN,120,35,0,85,Yes,Ladies,SR,2126.0,17.1,2481,,29.17,Off-Peak,0.0,5.0,0.0,No,,60.0,Delayed,
+PNR2056191455,13119,Sealdah Anvt Express,Express,2024-11-16,Saturday,Sealdah,Anand Vihar,Bhubaneswar,Allahabad,1A,18,18,2,0,Yes,Railway Employee,WR,1136.0,23.4,265,,100.0,Peak,0.0,7.0,4.0,Yes,4.0,120.0,Delayed,4.8
+PNR3625157854,12245,Duronto Express,Duronto,2024-04-19,Friday,Howrah,Pune,Kolkata,Puri,1A,18,13,0,5,Yes,Senior Citizen,CR,1607.0,30.8,751,,72.22,Peak,0.0,7.0,8.0,Yes,15.0,10.0,Slight Delay,4.5
+PNR7862679594,13119,Sealdah Anvt Express,Express,2024-09-05,Thursday,Sealdah,Anand Vihar,Ranchi,Agra,SL,72,72,8,0,Yes,General,WR,510.0,46.3,3412,,100.0,Off-Peak,0.0,6.0,7.0,No,4.0,120.0,Delayed,
+PNR4027173701,13049,Amaravati Express,Express,2024-12-04,Wednesday,Howrah,Amravati,Asansol,Agra,1A,18,11,0,7,No,Defense,ECR,1011.0,2.8,3461,,61.11,Peak,0.0,6.0,0.0,No,5.0,120.0,Delayed,2.6
+PNR6447381055,12875,Neelachal Express,Express,2024-08-05,Monday,Howrah,Puri,Kolkata,Asansol,SL,72,33,0,39,Yes,Railway Employee,ER,1313.0,22.3,647,,45.83,Off-Peak,0.0,8.0,3.0,Yes,10.0,90.0,Delayed,
+PNR9862513734,12301,Howrah Rajdhani,Rajdhani,2024-01-11,Thursday,Howrah,New Delhi,Howrah,Jaipur,GN,120,97,0,23,Yes,Ladies,WR,693.0,40.5,939,,80.83,Off-Peak,0.0,4.0,2.0,No,6.0,30.0,Delayed,
+PNR3261538155,12245,Duronto Express,Duronto,2024-05-07,Tuesday,Howrah,Pune,Ranchi,Allahabad,1A,18,1,0,17,No,General,SR,1209.0,15.5,364,,5.56,Peak,0.0,0.0,4.0,Yes,14.0,30.0,Delayed,1.5
+PNR9907290768,12245,Duronto Express,Duronto,2024-05-18,Saturday,Howrah,Pune,Kolkata,Indore,GN,120,21,0,99,No,General,ER,2268.0,29.6,826,,17.5,Peak,1.0,3.0,4.0,No,7.0,60.0,Delayed,2.2
+PNR7319616386,12875,Neelachal Express,Express,2024-04-13,Saturday,Howrah,Puri,Chennai Central,Lucknow,1A,18,8,0,10,Yes,Tatkal,ECR,2347.0,14.5,4920,,44.44,Peak,0.0,6.0,0.0,No,12.0,30.0,Delayed,4.1
+PNR5188411716,12245,Duronto Express,Duronto,2024-02-25,Sunday,Howrah,Pune,Hyderabad Deccan,Visakhapatnam,SL,72,28,0,44,Yes,Senior Citizen,SCR,2002.0,27.7,4933,6412.0,38.89,Off-Peak,0.0,2.0,1.0,Yes,9.0,0.0,On Time,
+PNR8894452239,12875,Neelachal Express,Express,2024-10-30,Wednesday,Howrah,Puri,Ranchi,Raipur,2A,46,5,0,41,Yes,General,NER,1082.0,20.7,1357,1764.0,10.87,Peak,0.0,0.0,5.0,No,14.0,0.0,On Time,1.8
+PNR6307460038,22811,Bhubaneswar Rajdhani,Rajdhani,2024-09-07,Saturday,Bhubaneswar,New Delhi,Patna,Indore,CC,78,63,0,15,No,Defense,NR,480.0,21.3,2764,,80.77,Off-Peak,0.0,0.0,2.0,Yes,3.0,5.0,Slight Delay,4.9
+PNR3092479645,12301,Howrah Rajdhani,Rajdhani,2024-08-05,Monday,Howrah,New Delhi,Kolkata,Ahmedabad,SL,72,21,0,51,No,Senior Citizen,ER,1265.0,7.0,4497,,29.17,Off-Peak,0.0,8.0,5.0,No,10.0,120.0,Delayed,
+PNR6374032156,12311,Kalka Mail,Mail,2024-09-24,Tuesday,Howrah,Kalka,Patna,Kolkata,2S,100,52,0,48,Yes,Railway Employee,SR,722.0,25.9,3241,4213.0,52.0,Off-Peak,0.0,5.0,6.0,Yes,3.0,45.0,Delayed,
+PNR3980901341,12301,Howrah Rajdhani,Rajdhani,2024-06-08,Saturday,Howrah,New Delhi,Ranchi,Kanpur,2S,100,48,0,52,Yes,General,ER,1969.0,29.1,1832,,48.0,Off-Peak,0.0,5.0,0.0,Yes,5.0,10.0,Slight Delay,4.5
+PNR9307789257,12073,Jan Shatabdi,Jan Shatabdi,2024-06-05,Wednesday,Howrah,Patna,Ranchi,Ahmedabad,3A,64,64,15,0,Yes,General,SR,471.0,,3503,,100.0,Off-Peak,0.0,9.0,,Yes,,,Delayed,
+PNR9200079312,13049,Amaravati Express,Express,2024-10-21,Monday,Howrah,Amravati,Mumbai CST,Puri,GN,120,120,31,0,Yes,Tatkal,WR,424.0,44.7,2471,3212.0,100.0,Peak,0.0,2.0,7.0,Yes,6.0,0.0,On Time,1.2
+PNR6699805408,22811,Bhubaneswar Rajdhani,Rajdhani,2024-08-13,Tuesday,Bhubaneswar,New Delhi,Ranchi,Visakhapatnam,SL,72,72,13,0,Yes,Tatkal,ECR,1595.0,37.5,4064,5283.0,100.0,Off-Peak,0.0,4.0,8.0,No,9.0,0.0,On Time,4.4
+PNR8902207709,12259,Sealdah Duronto,Duronto,2024-11-20,Wednesday,Sealdah,New Delhi,Ranchi,Kanpur,GN,120,71,0,49,No,Railway Employee,CR,542.0,27.4,1370,,59.17,Peak,0.0,2.0,0.0,No,14.0,45.0,Delayed,2.4
+PNR6937609381,12381,Poorva Express,Express,2024-04-19,Friday,Howrah,New Delhi,New Delhi,Raipur,CC,78,71,0,7,Yes,Tatkal,NER,1528.0,26.0,1764,,91.03,Peak,0.0,5.0,1.0,No,15.0,10.0,Slight Delay,1.1
+PNR2710659735,12311,Kalka Mail,Mail,2024-01-18,Thursday,Howrah,Kalka,Kolkata,Indore,2S,100,70,0,30,Yes,Ladies,ER,2393.0,39.8,4121,,70.0,Off-Peak,1.0,9.0,7.0,No,3.0,45.0,Delayed,
+PNR4063645073,22811,Bhubaneswar Rajdhani,Rajdhani,2024-02-23,Friday,Bhubaneswar,New Delhi,Kolkata,Raipur,1A,18,11,0,7,Yes,Tatkal,NR,1768.0,40.3,436,,61.11,Off-Peak,1.0,10.0,0.0,No,2.0,60.0,Delayed,4.4
+PNR4046458781,13119,Sealdah Anvt Express,Express,2024-11-10,Sunday,Sealdah,Anand Vihar,Dhanbad,Surat,2S,100,4,0,96,Yes,Defense,ER,1701.0,20.9,2925,3802.0,4.0,Peak,0.0,1.0,3.0,Yes,12.0,10.0,Slight Delay,
+PNR2757721882,12875,Neelachal Express,Express,2024-01-23,Tuesday,Howrah,Puri,Puri,Raipur,3A,64,64,13,0,Yes,Ladies,CR,2346.0,,1827,,100.0,Off-Peak,0.0,9.0,,Yes,,,On Time,
+PNR4293048383,12302,New Delhi Rajdhani,Rajdhani,2024-04-05,Friday,New Delhi,Howrah,Asansol,Bangalore City,3A,64,64,11,0,Yes,Railway Employee,SCR,1935.0,5.3,364,473.0,100.0,Peak,0.0,4.0,3.0,Yes,5.0,0.0,On Time,2.1
+PNR6103474676,12311,Kalka Mail,Mail,2024-03-12,Tuesday,Howrah,Kalka,Dhanbad,Kolkata,CC,78,40,0,38,Yes,Ladies,CR,1850.0,13.8,3591,,51.28,Off-Peak,0.0,5.0,8.0,No,14.0,120.0,Delayed,1.7
+PNR8310839493,12073,Jan Shatabdi,Jan Shatabdi,2024-07-16,Tuesday,Howrah,Patna,Bangalore City,Nagpur,2A,46,34,0,12,Yes,Tatkal,SCR,2113.0,27.1,4858,,73.91,Off-Peak,0.0,1.0,8.0,Yes,5.0,5.0,Slight Delay,1.1
+PNR5895469359,12302,New Delhi Rajdhani,Rajdhani,2024-09-21,Saturday,New Delhi,Howrah,Bhubaneswar,Gaya,2S,100,47,0,53,Yes,Defense,ECR,2460.0,43.4,4092,,47.0,Off-Peak,0.0,10.0,5.0,Yes,3.0,30.0,Delayed,2.3
+PNR5388382689,12302,New Delhi Rajdhani,Rajdhani,2024-04-05,Friday,New Delhi,Howrah,Asansol,Pune,3A,64,39,0,25,No,Defense,ECR,1685.0,23.5,1533,,60.94,Peak,0.0,9.0,5.0,No,11.0,30.0,Delayed,
+PNR8619583142,12019,Shatabdi Express,Shatabdi,2024-09-16,Monday,Howrah,Ranchi,,Allahabad,1A,18,13,0,5,Yes,Tatkal,SR,,,3688,,72.22,Off-Peak,0.0,,,Yes,,,Slight Delay,
+PNR7265126870,12302,New Delhi Rajdhani,Rajdhani,2024-06-07,Friday,New Delhi,Howrah,New Delhi,Kanpur,GN,120,36,0,84,Yes,Railway Employee,SR,870.0,42.6,3035,,30.0,Off-Peak,0.0,2.0,3.0,Yes,7.0,0.0,On Time,1.6
+PNR2480526205,22811,Bhubaneswar Rajdhani,Rajdhani,2024-07-10,Wednesday,Bhubaneswar,New Delhi,Patna,Ahmedabad,1A,18,15,0,3,No,Railway Employee,WR,1984.0,32.6,1505,1956.0,83.33,Off-Peak,0.0,1.0,6.0,Yes,6.0,0.0,On Time,2.3
+PNR3294007227,12311,Kalka Mail,Mail,2024-12-11,Wednesday,Howrah,Kalka,Bangalore City,Agra,2S,100,100,8,0,Yes,Tatkal,SR,1013.0,18.7,3426,,100.0,Peak,0.0,9.0,6.0,Yes,11.0,5.0,Slight Delay,
+PNR5693756540,12019,Shatabdi Express,Shatabdi,2024-01-23,Tuesday,Howrah,Ranchi,Hyderabad Deccan,Nagpur,2A,46,19,0,27,Yes,Senior Citizen,SR,1217.0,16.0,3766,4895.0,41.3,Off-Peak,1.0,0.0,4.0,No,3.0,0.0,On Time,3.1
+PNR8999232625,12302,New Delhi Rajdhani,Rajdhani,2024-08-26,Monday,New Delhi,Howrah,Asansol,Bangalore City,GN,120,21,0,99,Yes,Ladies,SR,2403.0,25.1,3036,,17.5,Off-Peak,0.0,7.0,6.0,No,,,On Time,
+PNR2567069461,13119,Sealdah Anvt Express,Express,2024-02-29,Thursday,Sealdah,Anand Vihar,Asansol,Puri,CC,78,57,0,21,No,Defense,ECR,377.0,8.5,4312,,73.08,Off-Peak,0.0,3.0,8.0,No,,,On Time,
+PNR6378702684,12875,Neelachal Express,Express,2024-08-23,Friday,Howrah,Puri,Bangalore City,Bhopal,3A,64,6,0,58,Yes,General,CR,782.0,15.1,3225,,9.38,Off-Peak,1.0,5.0,4.0,Yes,10.0,0.0,On Time,1.1
+PNR3297743956,12245,Duronto Express,Duronto,2024-07-21,Sunday,Howrah,Pune,New Delhi,Raipur,2A,46,11,0,35,Yes,Railway Employee,NER,1815.0,43.0,888,,23.91,Off-Peak,1.0,9.0,3.0,No,1.0,0.0,On Time,1.2
+PNR4115565294,12073,Jan Shatabdi,Jan Shatabdi,2024-11-22,Friday,Howrah,Patna,Bangalore City,Nagpur,GN,120,25,0,95,Yes,Senior Citizen,ECR,141.0,10.1,3328,4326.0,20.83,Peak,0.0,6.0,1.0,Yes,10.0,10.0,Slight Delay,3.5
+PNR7757426736,22811,Bhubaneswar Rajdhani,Rajdhani,2024-05-04,Saturday,Bhubaneswar,New Delhi,Mumbai CST,Visakhapatnam,2S,100,12,0,88,No,Ladies,SR,1183.0,24.8,3265,,12.0,Peak,1.0,2.0,4.0,No,1.0,30.0,Delayed,
+PNR8021655910,12381,Poorva Express,Express,2024-12-02,Monday,Howrah,New Delhi,Sealdah,Asansol,2A,46,17,0,29,Yes,General,SCR,955.0,4.5,2387,,36.96,Peak,1.0,9.0,6.0,No,9.0,30.0,Delayed,
+PNR5946851537,13049,Amaravati Express,Express,2024-06-23,Sunday,Howrah,Amravati,Durgapur,Raipur,3A,64,44,0,20,No,Tatkal,SR,1647.0,13.4,3840,,68.75,Off-Peak,0.0,10.0,7.0,No,2.0,5.0,Slight Delay,
+PNR8191928635,12311,Kalka Mail,Mail,2024-05-29,Wednesday,Howrah,Kalka,Howrah,Bhubaneswar,GN,120,80,0,40,Yes,Defense,SCR,2363.0,21.6,3898,5067.0,66.67,Peak,0.0,4.0,8.0,No,4.0,30.0,Delayed,1.5
+PNR2242744399,12073,Jan Shatabdi,Jan Shatabdi,2024-03-04,Monday,Howrah,Patna,Durgapur,Puri,1A,18,12,0,6,No,Defense,ECR,1491.0,36.4,1988,,66.67,Off-Peak,0.0,5.0,5.0,Yes,11.0,120.0,Delayed,4.0
+PNR7029987916,13049,Amaravati Express,Express,2024-09-14,Saturday,Howrah,Amravati,Asansol,Kanpur,CC,78,68,0,10,Yes,Senior Citizen,SR,777.0,20.1,3412,,87.18,Off-Peak,0.0,7.0,2.0,Yes,7.0,90.0,Delayed,
+PNR5290285300,12381,Poorva Express,Express,2024-04-06,Saturday,Howrah,New Delhi,Bhubaneswar,Surat,2S,100,7,0,93,No,General,SCR,1073.0,9.2,2036,2646.0,7.0,Peak,0.0,5.0,0.0,No,9.0,60.0,Delayed,4.4
+PNR6153038644,12259,Sealdah Duronto,Duronto,2024-08-22,Thursday,Sealdah,New Delhi,New Delhi,Dhanbad,3A,64,30,0,34,Yes,General,WR,,,1635,,46.88,Off-Peak,1.0,,,No,,,Delayed,
+PNR5133794489,12073,Jan Shatabdi,Jan Shatabdi,2024-06-18,Tuesday,Howrah,Patna,Howrah,Raipur,GN,120,40,0,80,Yes,Railway Employee,ECR,2178.0,47.8,2205,2866.0,33.33,Off-Peak,0.0,6.0,4.0,Yes,12.0,90.0,Delayed,3.1
+PNR4301805593,12301,Howrah Rajdhani,Rajdhani,2024-08-12,Monday,Howrah,New Delhi,Bangalore City,Allahabad,SL,72,72,20,0,No,Senior Citizen,NR,474.0,8.3,689,,100.0,Off-Peak,0.0,2.0,5.0,No,11.0,15.0,Slight Delay,
+PNR3979487804,12019,Shatabdi Express,Shatabdi,2024-09-04,Wednesday,Howrah,Ranchi,Patna,Indore,2A,46,16,0,30,No,Tatkal,CR,1452.0,,995,,34.78,Off-Peak,1.0,4.0,4.0,Yes,,,On Time,
+PNR7715350726,12311,Kalka Mail,Mail,2024-01-14,Sunday,Howrah,Kalka,Kolkata,Dhanbad,2A,46,46,10,0,Yes,Railway Employee,SR,2375.0,31.0,3238,,100.0,Off-Peak,1.0,10.0,4.0,Yes,12.0,0.0,On Time,
+PNR2301188571,12311,Kalka Mail,Mail,2024-07-15,Monday,Howrah,Kalka,Bhubaneswar,Bangalore City,3A,64,64,17,0,Yes,Ladies,ECR,2003.0,30.3,2067,,100.0,Off-Peak,0.0,10.0,2.0,No,9.0,15.0,Slight Delay,4.7
+PNR6048250271,13119,Sealdah Anvt Express,Express,2024-03-27,Wednesday,Sealdah,Anand Vihar,Dhanbad,Allahabad,GN,120,120,14,0,Yes,Railway Employee,NR,1452.0,12.0,4148,,100.0,Off-Peak,0.0,4.0,1.0,Yes,6.0,45.0,Delayed,4.7
+PNR5436016319,12301,Howrah Rajdhani,Rajdhani,2024-09-25,Wednesday,Howrah,New Delhi,Puri,Ranchi,2A,46,46,1,0,Yes,Defense,NR,1161.0,27.2,1859,,100.0,Off-Peak,0.0,0.0,7.0,Yes,4.0,10.0,Slight Delay,1.7
+PNR1762058960,13119,Sealdah Anvt Express,Express,2024-05-05,Sunday,Sealdah,Anand Vihar,Bhubaneswar,Durgapur,2A,46,44,0,2,Yes,General,WR,310.0,43.6,3936,,95.65,Peak,0.0,0.0,3.0,Yes,4.0,90.0,Delayed,2.9
+PNR1313766891,12302,New Delhi Rajdhani,Rajdhani,2024-10-01,Tuesday,New Delhi,Howrah,Patna,Ranchi,GN,120,13,0,107,No,General,NER,858.0,6.1,2812,,10.83,Peak,1.0,4.0,0.0,No,14.0,0.0,On Time,2.8
+PNR5261628430,13119,Sealdah Anvt Express,Express,2024-04-09,Tuesday,Sealdah,Anand Vihar,Chennai Central,Visakhapatnam,CC,78,78,3,0,No,Defense,CR,2067.0,30.8,3937,,100.0,Peak,1.0,8.0,4.0,No,5.0,60.0,Delayed,
+PNR7983280639,12311,Kalka Mail,Mail,2024-12-13,Friday,Howrah,Kalka,Sealdah,Visakhapatnam,CC,78,64,0,14,Yes,Senior Citizen,ER,1357.0,43.0,2729,,82.05,Peak,1.0,2.0,2.0,Yes,13.0,30.0,Delayed,1.4
+PNR4344885309,12875,Neelachal Express,Express,2024-06-24,Monday,Howrah,Puri,Asansol,Asansol,2S,100,46,0,54,Yes,Ladies,CR,1360.0,37.1,1785,,46.0,Off-Peak,0.0,9.0,3.0,Yes,6.0,0.0,On Time,
+PNR8415124854,12381,Poorva Express,Express,2024-03-28,Thursday,Howrah,New Delhi,Mumbai CST,Durgapur,GN,120,40,0,80,No,Ladies,SCR,643.0,15.7,1487,1933.0,33.33,Off-Peak,0.0,7.0,4.0,No,10.0,30.0,Delayed,1.0
+PNR9482499233,12381,Poorva Express,Express,2024-01-29,Monday,Howrah,New Delhi,Asansol,Durgapur,SL,72,45,0,27,Yes,Railway Employee,WR,904.0,32.3,1346,,62.5,Off-Peak,0.0,0.0,5.0,No,13.0,30.0,Delayed,3.2
+PNR8973192091,12019,Shatabdi Express,Shatabdi,2024-04-20,Saturday,Howrah,Ranchi,Sealdah,Patna,CC,78,64,0,14,Yes,Tatkal,SCR,2014.0,45.3,3805,,82.05,Peak,0.0,10.0,6.0,No,4.0,10.0,Slight Delay,3.3
+PNR6881737942,12301,Howrah Rajdhani,Rajdhani,2024-02-21,Wednesday,Howrah,New Delhi,Dhanbad,Dhanbad,1A,18,18,2,0,Yes,Senior Citizen,SR,353.0,,3007,,100.0,Off-Peak,1.0,2.0,,No,,,Slight Delay,
+PNR8805286989,13049,Amaravati Express,Express,2024-10-20,Sunday,Howrah,Amravati,Kolkata,Bangalore City,CC,78,78,19,0,Yes,General,SCR,1529.0,43.6,2335,,100.0,Peak,0.0,2.0,5.0,No,4.0,45.0,Delayed,1.8
+PNR1602454789,12245,Duronto Express,Duronto,2024-05-12,Sunday,Howrah,Pune,Puri,Lucknow,3A,64,64,13,0,No,Senior Citizen,NER,246.0,40.2,389,,100.0,Peak,0.0,0.0,6.0,Yes,9.0,15.0,Slight Delay,3.0
+PNR3427974255,12073,Jan Shatabdi,Jan Shatabdi,2024-06-19,Wednesday,Howrah,Patna,Ranchi,Visakhapatnam,2S,100,17,0,83,Yes,Defense,SR,2153.0,40.9,818,,17.0,Off-Peak,1.0,9.0,3.0,Yes,13.0,120.0,Delayed,2.1
+PNR7765534579,12875,Neelachal Express,Express,2024-03-18,Monday,Howrah,Puri,,Jaipur,2S,100,84,0,16,No,General,ECR,,,798,,84.0,Off-Peak,1.0,,,Yes,,,Delayed,
+PNR3857879268,12019,Shatabdi Express,Shatabdi,2024-10-26,Saturday,Howrah,Ranchi,Asansol,Surat,2S,100,83,0,17,Yes,Railway Employee,SR,823.0,37.4,4561,,83.0,Peak,0.0,1.0,0.0,Yes,13.0,0.0,On Time,4.8
+PNR6161268347,13049,Amaravati Express,Express,2024-06-10,Monday,Howrah,Amravati,New Delhi,Lucknow,2A,46,42,0,4,Yes,Tatkal,WR,1505.0,2.8,1910,2483.0,91.3,Off-Peak,1.0,1.0,6.0,Yes,8.0,5.0,Slight Delay,2.8
+PNR1535364749,12381,Poorva Express,Express,2024-04-11,Thursday,Howrah,New Delhi,New Delhi,Jaipur,2A,46,46,3,0,Yes,Tatkal,WR,542.0,45.2,3317,4312.0,100.0,Peak,0.0,5.0,6.0,Yes,4.0,0.0,On Time,2.4
+PNR5326129844,12311,Kalka Mail,Mail,2024-09-17,Tuesday,Howrah,Kalka,Asansol,Lucknow,1A,18,14,0,4,No,General,SCR,1526.0,45.5,332,431.0,77.78,Off-Peak,1.0,10.0,4.0,Yes,12.0,0.0,On Time,4.2
+PNR1194860493,12875,Neelachal Express,Express,2024-01-09,Tuesday,Howrah,Puri,,Asansol,3A,64,64,18,0,Yes,Defense,ER,,,2848,,100.0,Off-Peak,,,,Yes,,,Delayed,
+PNR5145932741,12259,Sealdah Duronto,Duronto,2024-08-02,Friday,Sealdah,New Delhi,Kolkata,Bhopal,2A,46,11,0,35,Yes,Ladies,NR,715.0,2.9,4448,,23.91,Off-Peak,1.0,10.0,5.0,No,10.0,15.0,Slight Delay,
+PNR2750861922,12301,Howrah Rajdhani,Rajdhani,2024-06-18,Tuesday,Howrah,New Delhi,Ranchi,Allahabad,1A,18,15,0,3,Yes,Tatkal,NR,111.0,17.7,480,,83.33,Off-Peak,1.0,1.0,1.0,No,8.0,30.0,Delayed,3.1
+PNR7340417431,12259,Sealdah Duronto,Duronto,2024-11-04,Monday,Sealdah,New Delhi,Dhanbad,Durgapur,GN,120,0,0,120,Yes,Ladies,SCR,444.0,23.7,2751,,0.0,Peak,0.0,2.0,3.0,Yes,13.0,0.0,On Time,
+PNR1451951731,12302,New Delhi Rajdhani,Rajdhani,2024-02-18,Sunday,New Delhi,Howrah,Mumbai CST,Durgapur,2S,100,100,3,0,Yes,Railway Employee,CR,1396.0,34.5,2512,,100.0,Off-Peak,0.0,2.0,5.0,No,6.0,120.0,Delayed,
+PNR4411040931,12245,Duronto Express,Duronto,2024-01-18,Thursday,Howrah,Pune,New Delhi,Bangalore City,2S,100,98,0,2,Yes,Railway Employee,ER,1024.0,9.0,593,,98.0,Off-Peak,1.0,7.0,5.0,Yes,11.0,90.0,Delayed,5.0
+PNR9263025879,12875,Neelachal Express,Express,2024-11-14,Thursday,Howrah,Puri,Bangalore City,Puri,3A,64,64,5,0,Yes,Ladies,NER,2298.0,22.7,3803,,100.0,Peak,0.0,8.0,4.0,Yes,13.0,15.0,Slight Delay,1.1
+PNR4565157685,22811,Bhubaneswar Rajdhani,Rajdhani,2024-03-05,Tuesday,Bhubaneswar,New Delhi,Sealdah,Ahmedabad,1A,18,7,0,11,Yes,Tatkal,SCR,1307.0,22.5,3947,,38.89,Off-Peak,0.0,8.0,2.0,No,14.0,60.0,Delayed,
+PNR3255052081,13119,Sealdah Anvt Express,Express,2024-04-23,Tuesday,Sealdah,Anand Vihar,Asansol,Ahmedabad,GN,120,4,0,116,Yes,Defense,WR,2224.0,9.3,1827,,3.33,Peak,0.0,10.0,3.0,Yes,9.0,90.0,Delayed,1.8
+PNR9469713575,12301,Howrah Rajdhani,Rajdhani,2024-07-24,Wednesday,Howrah,New Delhi,Dhanbad,Agra,3A,64,49,0,15,No,Ladies,SR,1278.0,1.5,4474,,76.56,Off-Peak,0.0,3.0,1.0,Yes,,30.0,Delayed,
+PNR4377187993,12875,Neelachal Express,Express,2024-03-23,Saturday,Howrah,Puri,,Lucknow,GN,120,62,0,58,No,Defense,WR,,,3405,,51.67,Off-Peak,,,,Yes,,,Delayed,
+PNR9636187241,12875,Neelachal Express,Express,2024-03-13,Wednesday,Howrah,Puri,Sealdah,Jaipur,2S,100,70,0,30,Yes,Defense,NR,1979.0,12.3,2882,,70.0,Off-Peak,0.0,8.0,7.0,Yes,2.0,15.0,Slight Delay,4.8
+PNR7987475138,12301,Howrah Rajdhani,Rajdhani,2024-07-14,Sunday,Howrah,New Delhi,Hyderabad Deccan,Surat,GN,120,65,0,55,Yes,Railway Employee,NER,1242.0,11.9,1124,,54.17,Off-Peak,0.0,3.0,7.0,No,7.0,0.0,On Time,4.5
+PNR6707279978,12311,Kalka Mail,Mail,2024-05-21,Tuesday,Howrah,Kalka,Puri,Durgapur,3A,64,64,17,0,Yes,General,ER,464.0,34.7,4360,,100.0,Peak,1.0,3.0,6.0,No,2.0,45.0,Delayed,4.3
+PNR9770757995,12381,Poorva Express,Express,2024-11-06,Wednesday,Howrah,New Delhi,Sealdah,Surat,CC,78,78,7,0,Yes,Defense,NR,531.0,46.5,3334,,100.0,Peak,1.0,6.0,0.0,No,11.0,45.0,Delayed,3.3
+PNR1110125417,22811,Bhubaneswar Rajdhani,Rajdhani,2024-01-20,Saturday,Bhubaneswar,New Delhi,Bhubaneswar,Puri,SL,72,72,8,0,Yes,Railway Employee,SCR,454.0,15.1,3737,,100.0,Off-Peak,0.0,7.0,4.0,No,14.0,120.0,Delayed,4.9
+PNR4408662267,12019,Shatabdi Express,Shatabdi,2024-05-21,Tuesday,Howrah,Ranchi,Mumbai CST,Ahmedabad,SL,72,6,0,66,Yes,Railway Employee,ECR,1477.0,37.8,2858,,8.33,Peak,1.0,1.0,5.0,No,10.0,60.0,Delayed,4.3
+PNR9978339137,12019,Shatabdi Express,Shatabdi,2024-06-11,Tuesday,Howrah,Ranchi,Hyderabad Deccan,Gaya,GN,120,78,0,42,No,Railway Employee,SR,1617.0,10.9,1029,,65.0,Off-Peak,1.0,5.0,5.0,No,15.0,15.0,Slight Delay,
+PNR6059076790,13049,Amaravati Express,Express,2024-01-09,Tuesday,Howrah,Amravati,Bhubaneswar,Indore,1A,18,6,0,12,Yes,Tatkal,NR,420.0,34.6,4966,,33.33,Off-Peak,1.0,4.0,2.0,No,,15.0,Slight Delay,
+PNR6260582710,12302,New Delhi Rajdhani,Rajdhani,2024-05-30,Thursday,New Delhi,Howrah,Durgapur,Hyderabad Deccan,CC,78,72,0,6,Yes,Defense,SR,1171.0,2.7,873,,92.31,Peak,0.0,3.0,3.0,No,11.0,5.0,Slight Delay,
+PNR8893852340,12311,Kalka Mail,Mail,2024-05-04,Saturday,Howrah,Kalka,Hyderabad Deccan,Ahmedabad,1A,18,18,1,0,Yes,Senior Citizen,SR,2174.0,28.5,4158,5405.0,100.0,Peak,1.0,4.0,5.0,No,7.0,15.0,Slight Delay,4.7
+PNR5872609483,12019,Shatabdi Express,Shatabdi,2024-06-12,Wednesday,Howrah,Ranchi,Durgapur,Indore,CC,78,45,0,33,Yes,Defense,SR,445.0,47.1,831,1080.0,57.69,Off-Peak,1.0,8.0,5.0,Yes,13.0,90.0,Delayed,
+PNR4593227236,13049,Amaravati Express,Express,2024-12-25,Wednesday,Howrah,Amravati,Patna,Pune,2S,100,57,0,43,No,Senior Citizen,ECR,314.0,45.8,4011,,57.0,Peak,1.0,8.0,0.0,No,8.0,0.0,On Time,
+PNR9708376770,13049,Amaravati Express,Express,2024-02-03,Saturday,Howrah,Amravati,Bhubaneswar,Agra,2S,100,70,0,30,No,Railway Employee,SR,1673.0,11.5,4867,,70.0,Off-Peak,0.0,5.0,3.0,No,3.0,60.0,Delayed,
+PNR3523068547,12301,Howrah Rajdhani,Rajdhani,2024-11-08,Friday,Howrah,New Delhi,Asansol,Patna,1A,18,18,4,0,Yes,Defense,ECR,710.0,35.6,3135,,100.0,Peak,0.0,2.0,0.0,No,12.0,0.0,On Time,
+PNR3037564969,12381,Poorva Express,Express,2024-10-20,Sunday,Howrah,New Delhi,Durgapur,Gaya,2S,100,99,0,1,Yes,General,CR,1504.0,9.7,3538,,99.0,Peak,0.0,7.0,1.0,Yes,5.0,30.0,Delayed,
+PNR9993781295,13049,Amaravati Express,Express,2024-11-27,Wednesday,Howrah,Amravati,Chennai Central,Bangalore City,2S,100,20,0,80,Yes,Defense,ER,1578.0,5.9,2982,,20.0,Peak,0.0,0.0,5.0,No,,,On Time,
+PNR2482828724,13049,Amaravati Express,Express,2024-02-05,Monday,Howrah,Amravati,Durgapur,Bhopal,2A,46,12,0,34,Yes,Defense,SCR,2401.0,9.7,4281,,26.09,Off-Peak,0.0,8.0,2.0,No,1.0,90.0,Delayed,
+PNR5757857074,22811,Bhubaneswar Rajdhani,Rajdhani,2024-03-02,Saturday,Bhubaneswar,New Delhi,Puri,Puri,GN,120,79,0,41,Yes,General,NER,841.0,29.6,2587,3363.0,65.83,Off-Peak,0.0,7.0,8.0,No,13.0,45.0,Delayed,3.7
+PNR8806470288,12302,New Delhi Rajdhani,Rajdhani,2024-06-22,Saturday,New Delhi,Howrah,Mumbai CST,Allahabad,2A,46,23,0,23,Yes,Ladies,ER,2017.0,39.2,1358,,50.0,Off-Peak,0.0,8.0,1.0,No,15.0,60.0,Delayed,
+PNR6508559946,22811,Bhubaneswar Rajdhani,Rajdhani,2024-07-20,Saturday,Bhubaneswar,New Delhi,New Delhi,Kanpur,GN,120,120,19,0,Yes,Ladies,ECR,1705.0,21.7,1846,,100.0,Off-Peak,0.0,7.0,1.0,No,9.0,45.0,Delayed,
+PNR4570222505,12311,Kalka Mail,Mail,2024-12-16,Monday,Howrah,Kalka,Mumbai CST,Patna,2S,100,14,0,86,Yes,Defense,SR,1334.0,35.9,4521,,14.0,Peak,0.0,4.0,6.0,Yes,6.0,60.0,Delayed,
+PNR4647375561,13119,Sealdah Anvt Express,Express,2024-08-10,Saturday,Sealdah,Anand Vihar,Ranchi,Varanasi,2S,100,100,30,0,Yes,Tatkal,NR,1922.0,45.7,4492,5839.0,100.0,Off-Peak,0.0,1.0,3.0,No,4.0,90.0,Delayed,1.1
+PNR8865390946,12381,Poorva Express,Express,2024-04-15,Monday,Howrah,New Delhi,New Delhi,Allahabad,2S,100,29,0,71,Yes,Ladies,ECR,233.0,8.8,2579,,29.0,Peak,0.0,6.0,4.0,Yes,15.0,120.0,Delayed,2.1
+PNR4870091128,12245,Duronto Express,Duronto,2024-01-06,Saturday,Howrah,Pune,,Visakhapatnam,SL,72,52,0,20,No,Ladies,ER,,,3289,,72.22,Off-Peak,,,,Yes,,,On Time,
+PNR8473642287,12875,Neelachal Express,Express,2024-02-04,Sunday,Howrah,Puri,Puri,Indore,2A,46,34,0,12,No,Ladies,CR,1216.0,41.3,2881,,73.91,Off-Peak,0.0,6.0,3.0,Yes,9.0,45.0,Delayed,
+PNR1478487824,22811,Bhubaneswar Rajdhani,Rajdhani,2024-01-19,Friday,Bhubaneswar,New Delhi,Howrah,Allahabad,SL,72,61,0,11,Yes,General,NR,1040.0,,1095,,84.72,Off-Peak,0.0,7.0,0.0,Yes,,,Slight Delay,
+PNR6798709289,12301,Howrah Rajdhani,Rajdhani,2024-03-19,Tuesday,Howrah,New Delhi,Mumbai CST,Nagpur,3A,64,32,0,32,Yes,Senior Citizen,ECR,677.0,45.5,1637,,50.0,Off-Peak,0.0,2.0,3.0,No,11.0,45.0,Delayed,
+PNR1691910650,12875,Neelachal Express,Express,2024-02-05,Monday,Howrah,Puri,Ranchi,Gaya,GN,120,62,0,58,Yes,General,NR,1729.0,25.6,4529,,51.67,Off-Peak,0.0,5.0,5.0,Yes,3.0,0.0,On Time,
+PNR3698470384,12301,Howrah Rajdhani,Rajdhani,2024-10-15,Tuesday,Howrah,New Delhi,Bhubaneswar,Ahmedabad,1A,18,12,0,6,Yes,General,NER,2390.0,31.5,4844,,66.67,Peak,1.0,7.0,3.0,No,10.0,10.0,Slight Delay,5.0
+PNR9072151871,12875,Neelachal Express,Express,2024-09-02,Monday,Howrah,Puri,Mumbai CST,Bhubaneswar,2A,46,29,0,17,Yes,Railway Employee,SR,1641.0,48.0,4594,5972.0,63.04,Off-Peak,0.0,0.0,6.0,No,3.0,0.0,On Time,3.8
+PNR7037832206,22811,Bhubaneswar Rajdhani,Rajdhani,2024-04-26,Friday,Bhubaneswar,New Delhi,Dhanbad,Lucknow,SL,72,16,0,56,No,Railway Employee,NER,1868.0,45.8,3091,,22.22,Peak,0.0,5.0,6.0,Yes,12.0,60.0,Delayed,
+PNR8696917702,12019,Shatabdi Express,Shatabdi,2024-12-30,Monday,Howrah,Ranchi,Bangalore City,Nagpur,2A,46,36,0,10,Yes,Tatkal,ECR,628.0,23.4,1794,,78.26,Peak,1.0,4.0,6.0,Yes,4.0,5.0,Slight Delay,
+PNR9345977352,13119,Sealdah Anvt Express,Express,2024-07-15,Monday,Sealdah,Anand Vihar,Howrah,Indore,CC,78,55,0,23,Yes,Senior Citizen,SR,1169.0,47.2,1677,2180.0,70.51,Off-Peak,0.0,10.0,6.0,Yes,3.0,30.0,Delayed,2.0
+PNR9741553924,12245,Duronto Express,Duronto,2024-03-07,Thursday,Howrah,Pune,Sealdah,Patna,GN,120,120,4,0,Yes,General,ER,266.0,16.9,2790,,100.0,Off-Peak,0.0,3.0,2.0,Yes,5.0,0.0,On Time,
+PNR6539395632,12073,Jan Shatabdi,Jan Shatabdi,2024-08-16,Friday,Howrah,Patna,Sealdah,Ahmedabad,SL,72,43,0,29,Yes,Tatkal,SR,1750.0,7.0,1635,2125.0,59.72,Off-Peak,1.0,2.0,8.0,No,12.0,10.0,Slight Delay,4.6
+PNR1169128713,12302,New Delhi Rajdhani,Rajdhani,2024-12-05,Thursday,New Delhi,Howrah,Dhanbad,Allahabad,2A,46,46,12,0,No,Senior Citizen,NER,748.0,37.2,3844,,100.0,Peak,0.0,7.0,2.0,No,15.0,0.0,On Time,4.8
+PNR1295880269,12073,Jan Shatabdi,Jan Shatabdi,2024-06-25,Tuesday,Howrah,Patna,New Delhi,Pune,3A,64,10,0,54,Yes,Railway Employee,ECR,662.0,6.7,3230,4199.0,15.62,Off-Peak,0.0,10.0,5.0,No,12.0,0.0,On Time,4.9
+PNR5259326842,12875,Neelachal Express,Express,2024-01-09,Tuesday,Howrah,Puri,Bangalore City,Durgapur,CC,78,75,0,3,Yes,Defense,CR,2181.0,43.5,3622,,96.15,Off-Peak,0.0,2.0,0.0,Yes,12.0,10.0,Slight Delay,5.0
+PNR1134749473,13049,Amaravati Express,Express,2024-01-21,Sunday,Howrah,Amravati,Durgapur,Pune,3A,64,58,0,6,Yes,Railway Employee,ER,1289.0,19.2,857,1114.0,90.62,Off-Peak,1.0,6.0,0.0,No,12.0,30.0,Delayed,4.2
+PNR9344718841,12381,Poorva Express,Express,2024-07-27,Saturday,Howrah,New Delhi,Kolkata,Durgapur,2S,100,87,0,13,Yes,Senior Citizen,CR,1142.0,5.4,1284,,87.0,Off-Peak,0.0,10.0,5.0,Yes,1.0,0.0,On Time,1.4
+PNR1323890137,12302,New Delhi Rajdhani,Rajdhani,2024-03-31,Sunday,New Delhi,Howrah,Kolkata,Bangalore City,3A,64,8,0,56,Yes,Defense,NR,689.0,28.6,1461,,12.5,Off-Peak,1.0,10.0,5.0,Yes,10.0,0.0,On Time,
+PNR9983799760,12259,Sealdah Duronto,Duronto,2024-04-12,Friday,Sealdah,New Delhi,,Bangalore City,2S,100,20,0,80,No,Railway Employee,WR,,,1720,,20.0,Peak,,,,Yes,,,Slight Delay,
+PNR2900593159,12245,Duronto Express,Duronto,2024-04-05,Friday,Howrah,Pune,Ranchi,Bangalore City,SL,72,36,0,36,Yes,Tatkal,WR,1128.0,8.2,701,,50.0,Peak,0.0,1.0,1.0,Yes,,15.0,Slight Delay,
+PNR7878621894,12381,Poorva Express,Express,2024-11-21,Thursday,Howrah,New Delhi,Ranchi,Nagpur,GN,120,120,31,0,Yes,Tatkal,ECR,1077.0,39.8,2630,3419.0,100.0,Peak,0.0,10.0,4.0,No,13.0,0.0,On Time,
+PNR9933324137,12302,New Delhi Rajdhani,Rajdhani,2024-09-09,Monday,New Delhi,Howrah,Asansol,Indore,3A,64,7,0,57,No,General,NR,1354.0,28.8,3723,4839.0,10.94,Off-Peak,0.0,10.0,1.0,No,12.0,15.0,Slight Delay,4.0
+PNR1817268090,12875,Neelachal Express,Express,2024-07-08,Monday,Howrah,Puri,Bhubaneswar,Puri,SL,72,38,0,34,Yes,Railway Employee,SCR,1728.0,23.1,4206,,52.78,Off-Peak,1.0,7.0,7.0,No,3.0,0.0,On Time,2.5
+PNR3715248432,12301,Howrah Rajdhani,Rajdhani,2024-03-12,Tuesday,Howrah,New Delhi,Hyderabad Deccan,Varanasi,GN,120,81,0,39,Yes,Senior Citizen,SR,668.0,29.1,3324,,67.5,Off-Peak,0.0,0.0,6.0,No,3.0,10.0,Slight Delay,1.1
+PNR1978132823,12381,Poorva Express,Express,2024-03-22,Friday,Howrah,New Delhi,Patna,Pune,3A,64,64,6,0,No,Senior Citizen,ECR,704.0,24.2,2474,3216.0,100.0,Off-Peak,0.0,1.0,1.0,No,12.0,45.0,Delayed,1.6
+PNR3106710988,22811,Bhubaneswar Rajdhani,Rajdhani,2024-09-10,Tuesday,Bhubaneswar,New Delhi,Chennai Central,Nagpur,GN,120,55,0,65,Yes,Ladies,CR,1807.0,29.9,3610,,45.83,Off-Peak,0.0,5.0,5.0,Yes,6.0,90.0,Delayed,1.3
+PNR9351893567,12875,Neelachal Express,Express,2024-07-08,Monday,Howrah,Puri,Kolkata,Asansol,SL,72,31,0,41,Yes,Railway Employee,NER,1199.0,27.3,1915,,43.06,Off-Peak,0.0,3.0,2.0,No,13.0,120.0,Delayed,4.6
+PNR5378278018,12245,Duronto Express,Duronto,2024-10-30,Wednesday,Howrah,Pune,,Ranchi,CC,78,30,0,48,No,Tatkal,SCR,,,2240,,38.46,Peak,0.0,,,No,,,Slight Delay,
+PNR2059077154,12259,Sealdah Duronto,Duronto,2024-07-05,Friday,Sealdah,New Delhi,Puri,Bangalore City,GN,120,15,0,105,Yes,Ladies,NER,2351.0,8.3,4080,,12.5,Off-Peak,0.0,7.0,5.0,Yes,14.0,120.0,Delayed,
+PNR2213140390,12073,Jan Shatabdi,Jan Shatabdi,2024-11-05,Tuesday,Howrah,Patna,Asansol,Allahabad,1A,18,9,0,9,No,Railway Employee,ER,1271.0,13.6,696,,50.0,Peak,0.0,0.0,6.0,Yes,6.0,45.0,Delayed,
+PNR7845512441,12875,Neelachal Express,Express,2024-11-16,Saturday,Howrah,Puri,Asansol,Gaya,SL,72,71,0,1,Yes,Ladies,NER,1180.0,10.7,1485,1930.0,98.61,Peak,0.0,2.0,2.0,No,1.0,0.0,On Time,
+PNR8389496579,13049,Amaravati Express,Express,2024-10-09,Wednesday,Howrah,Amravati,Ranchi,Bangalore City,SL,72,47,0,25,No,Railway Employee,SCR,1670.0,9.8,1361,1769.0,65.28,Peak,0.0,10.0,4.0,No,10.0,90.0,Delayed,
+PNR1291605342,22811,Bhubaneswar Rajdhani,Rajdhani,2024-01-29,Monday,Bhubaneswar,New Delhi,New Delhi,Ranchi,2S,100,33,0,67,Yes,Railway Employee,WR,426.0,,4268,,33.0,Off-Peak,0.0,1.0,6.0,No,,,On Time,
+PNR6185118898,22811,Bhubaneswar Rajdhani,Rajdhani,2024-08-01,Thursday,Bhubaneswar,New Delhi,New Delhi,Ranchi,2S,100,100,1,0,Yes,Tatkal,WR,281.0,31.5,1469,,100.0,Off-Peak,0.0,10.0,3.0,No,1.0,0.0,On Time,
+PNR6667033327,12019,Shatabdi Express,Shatabdi,2024-03-19,Tuesday,Howrah,Ranchi,Hyderabad Deccan,Visakhapatnam,GN,120,35,0,85,No,General,CR,2066.0,2.6,4300,5590.0,29.17,Off-Peak,1.0,8.0,1.0,Yes,4.0,90.0,Delayed,
+PNR4014312032,12019,Shatabdi Express,Shatabdi,2024-10-25,Friday,Howrah,Ranchi,Bhubaneswar,Varanasi,SL,72,0,0,72,Yes,Senior Citizen,WR,673.0,26.4,3062,,0.0,Peak,0.0,4.0,8.0,No,9.0,30.0,Delayed,
+PNR6413127036,12019,Shatabdi Express,Shatabdi,2024-11-07,Thursday,Howrah,Ranchi,Sealdah,Nagpur,3A,64,42,0,22,Yes,Senior Citizen,ER,1874.0,29.6,1803,2343.0,65.62,Peak,1.0,3.0,2.0,Yes,1.0,30.0,Delayed,4.0
+PNR3895694146,12019,Shatabdi Express,Shatabdi,2024-04-12,Friday,Howrah,Ranchi,Dhanbad,Surat,GN,120,120,25,0,Yes,Ladies,NER,272.0,31.6,2646,,100.0,Peak,0.0,3.0,8.0,Yes,5.0,0.0,On Time,
+PNR8387211804,12259,Sealdah Duronto,Duronto,2024-06-19,Wednesday,Sealdah,New Delhi,Patna,Allahabad,2A,46,31,0,15,Yes,Senior Citizen,NER,2347.0,29.2,3383,4397.0,67.39,Off-Peak,0.0,1.0,1.0,Yes,14.0,0.0,On Time,4.4
+PNR5128358636,12311,Kalka Mail,Mail,2024-01-01,Monday,Howrah,Kalka,Sealdah,Hyderabad Deccan,3A,64,56,0,8,Yes,Tatkal,WR,1783.0,36.0,3324,,87.5,Off-Peak,0.0,6.0,0.0,No,13.0,0.0,On Time,2.2
+PNR3046572593,12311,Kalka Mail,Mail,2024-08-21,Wednesday,Howrah,Kalka,Howrah,Ranchi,GN,120,52,0,68,Yes,Railway Employee,WR,1914.0,41.9,1185,,43.33,Off-Peak,0.0,4.0,0.0,No,2.0,0.0,On Time,
+PNR7431384691,12381,Poorva Express,Express,2024-12-13,Friday,Howrah,New Delhi,Durgapur,Kanpur,SL,72,3,0,69,No,Tatkal,ER,2412.0,43.2,504,655.0,4.17,Peak,0.0,4.0,7.0,Yes,13.0,10.0,Slight Delay,
+PNR4480443642,12311,Kalka Mail,Mail,2024-04-06,Saturday,Howrah,Kalka,Puri,Hyderabad Deccan,2A,46,44,0,2,No,Defense,NER,998.0,34.8,3869,5029.0,95.65,Peak,0.0,5.0,1.0,No,8.0,45.0,Delayed,2.5
+PNR6784409330,13049,Amaravati Express,Express,2024-10-09,Wednesday,Howrah,Amravati,New Delhi,Surat,CC,78,18,0,60,No,Ladies,NER,1473.0,37.2,2827,,23.08,Peak,1.0,10.0,8.0,No,6.0,30.0,Delayed,
+PNR3922028033,12311,Kalka Mail,Mail,2024-03-11,Monday,Howrah,Kalka,Dhanbad,Hyderabad Deccan,3A,64,45,0,19,Yes,Defense,SR,1449.0,26.6,4022,5228.0,70.31,Off-Peak,0.0,9.0,2.0,Yes,14.0,30.0,Delayed,
+PNR3231531200,12381,Poorva Express,Express,2024-02-27,Tuesday,Howrah,New Delhi,Bhubaneswar,Bangalore City,CC,78,69,0,9,Yes,Defense,SR,978.0,33.3,543,705.0,88.46,Off-Peak,1.0,1.0,5.0,No,9.0,30.0,Delayed,4.3
+PNR8060506476,12019,Shatabdi Express,Shatabdi,2024-10-22,Tuesday,Howrah,Ranchi,New Delhi,Indore,3A,64,52,0,12,Yes,Railway Employee,ER,2116.0,38.7,1071,,81.25,Peak,0.0,4.0,3.0,No,5.0,5.0,Slight Delay,1.4
+PNR1520015475,12019,Shatabdi Express,Shatabdi,2024-01-13,Saturday,Howrah,Ranchi,New Delhi,Visakhapatnam,1A,18,0,0,18,Yes,General,CR,1903.0,45.7,2623,,0.0,Off-Peak,0.0,10.0,6.0,Yes,12.0,90.0,Delayed,2.6
+PNR3548359539,12019,Shatabdi Express,Shatabdi,2024-06-04,Tuesday,Howrah,Ranchi,Puri,Agra,SL,72,72,7,0,Yes,Senior Citizen,SCR,1489.0,2.9,4119,,100.0,Off-Peak,1.0,8.0,1.0,No,12.0,90.0,Delayed,
+PNR9430025478,13119,Sealdah Anvt Express,Express,2024-09-08,Sunday,Sealdah,Anand Vihar,Asansol,Patna,1A,18,12,0,6,No,Ladies,NR,389.0,12.9,516,670.0,66.67,Off-Peak,0.0,7.0,6.0,No,4.0,90.0,Delayed,1.1
+PNR7930862832,12311,Kalka Mail,Mail,2024-10-09,Wednesday,Howrah,Kalka,Sealdah,Bangalore City,GN,120,115,0,5,Yes,Defense,ER,2123.0,22.2,1974,,95.83,Peak,1.0,4.0,6.0,Yes,5.0,90.0,Delayed,
+PNR1698989552,22811,Bhubaneswar Rajdhani,Rajdhani,2024-09-08,Sunday,Bhubaneswar,New Delhi,Chennai Central,Pune,2A,46,46,11,0,Yes,Senior Citizen,NR,684.0,46.5,3900,,100.0,Off-Peak,1.0,7.0,3.0,Yes,7.0,120.0,Delayed,4.1
+PNR3118926603,12301,Howrah Rajdhani,Rajdhani,2024-06-03,Monday,Howrah,New Delhi,Kolkata,Kanpur,2A,46,14,0,32,Yes,General,SR,620.0,7.6,2985,3880.0,30.43,Off-Peak,0.0,7.0,7.0,No,13.0,30.0,Delayed,
+PNR5751643053,22811,Bhubaneswar Rajdhani,Rajdhani,2024-12-21,Saturday,Bhubaneswar,New Delhi,Patna,Hyderabad Deccan,3A,64,64,17,0,Yes,Senior Citizen,ECR,324.0,4.5,4652,,100.0,Peak,0.0,7.0,6.0,Yes,15.0,0.0,On Time,
+PNR6424572385,12259,Sealdah Duronto,Duronto,2024-02-14,Wednesday,Sealdah,New Delhi,Sealdah,Bhopal,CC,78,23,0,55,Yes,Defense,ECR,524.0,27.5,1809,,29.49,Off-Peak,0.0,4.0,2.0,No,,15.0,Slight Delay,
+PNR5333009936,12301,Howrah Rajdhani,Rajdhani,2024-02-27,Tuesday,Howrah,New Delhi,Dhanbad,Bhubaneswar,CC,78,78,7,0,Yes,Tatkal,NER,924.0,10.3,2378,,100.0,Off-Peak,1.0,3.0,1.0,Yes,7.0,60.0,Delayed,3.2
+PNR4266400036,12302,New Delhi Rajdhani,Rajdhani,2024-03-15,Friday,New Delhi,Howrah,Patna,Jaipur,2S,100,32,0,68,Yes,Defense,SR,1061.0,30.7,4376,,32.0,Off-Peak,0.0,3.0,4.0,No,,30.0,Delayed,
+PNR6973338427,13049,Amaravati Express,Express,2024-07-21,Sunday,Howrah,Amravati,Bhubaneswar,Asansol,1A,18,6,0,12,Yes,Senior Citizen,ECR,694.0,12.7,3261,,33.33,Off-Peak,1.0,1.0,6.0,Yes,7.0,0.0,On Time,3.8
+PNR6984037689,12259,Sealdah Duronto,Duronto,2024-11-24,Sunday,Sealdah,New Delhi,Patna,Nagpur,1A,18,11,0,7,Yes,Ladies,SCR,1312.0,41.3,2472,,61.11,Peak,1.0,6.0,8.0,Yes,8.0,15.0,Slight Delay,
+PNR3205542649,12875,Neelachal Express,Express,2024-06-24,Monday,Howrah,Puri,Bangalore City,Gaya,CC,78,66,0,12,Yes,Defense,WR,1477.0,46.7,715,,84.62,Off-Peak,0.0,8.0,6.0,No,5.0,90.0,Delayed,3.6
+PNR2379296495,12073,Jan Shatabdi,Jan Shatabdi,2024-03-12,Tuesday,Howrah,Patna,Asansol,Kanpur,GN,120,75,0,45,Yes,General,CR,1061.0,11.1,1756,2282.0,62.5,Off-Peak,0.0,2.0,7.0,No,4.0,30.0,Delayed,2.1
+PNR5604420757,12073,Jan Shatabdi,Jan Shatabdi,2024-08-23,Friday,Howrah,Patna,Sealdah,Allahabad,CC,78,43,0,35,No,General,NR,823.0,39.3,1398,,55.13,Off-Peak,1.0,7.0,8.0,No,9.0,90.0,Delayed,
+PNR7340952947,12381,Poorva Express,Express,2024-11-17,Sunday,Howrah,New Delhi,Hyderabad Deccan,Gaya,SL,72,72,4,0,Yes,Tatkal,SR,553.0,18.3,1085,,100.0,Peak,0.0,0.0,1.0,No,2.0,60.0,Delayed,1.5
+PNR3433388223,12302,New Delhi Rajdhani,Rajdhani,2024-12-17,Tuesday,New Delhi,Howrah,Howrah,Ranchi,SL,72,26,0,46,Yes,Defense,CR,1214.0,21.5,527,,36.11,Peak,0.0,8.0,5.0,Yes,3.0,0.0,On Time,2.3
+PNR1688894653,12019,Shatabdi Express,Shatabdi,2024-03-28,Thursday,Howrah,Ranchi,Bhubaneswar,Raipur,GN,120,98,0,22,Yes,Senior Citizen,NR,441.0,12.9,1864,,81.67,Off-Peak,0.0,7.0,2.0,Yes,15.0,5.0,Slight Delay,1.0
+PNR2916264973,13119,Sealdah Anvt Express,Express,2024-06-06,Thursday,Sealdah,Anand Vihar,Mumbai CST,Ranchi,SL,72,72,2,0,Yes,Senior Citizen,NER,1862.0,8.5,3367,4377.0,100.0,Off-Peak,1.0,0.0,8.0,No,4.0,120.0,Delayed,4.2
+PNR6177452419,22811,Bhubaneswar Rajdhani,Rajdhani,2024-06-24,Monday,Bhubaneswar,New Delhi,New Delhi,Indore,3A,64,2,0,62,Yes,Defense,ECR,739.0,38.1,4288,,3.12,Off-Peak,0.0,5.0,6.0,No,4.0,10.0,Slight Delay,2.5
+PNR4436406092,12875,Neelachal Express,Express,2024-01-13,Saturday,Howrah,Puri,Hyderabad Deccan,Surat,2S,100,62,0,38,Yes,Ladies,ECR,133.0,24.3,729,947.0,62.0,Off-Peak,1.0,1.0,6.0,No,6.0,5.0,Slight Delay,4.6
+PNR4479534060,12311,Kalka Mail,Mail,2024-09-02,Monday,Howrah,Kalka,Durgapur,Hyderabad Deccan,2A,46,10,0,36,No,Ladies,ER,986.0,5.7,1995,,21.74,Off-Peak,0.0,9.0,8.0,Yes,5.0,0.0,On Time,2.0
+PNR4934030604,12259,Sealdah Duronto,Duronto,2024-05-30,Thursday,Sealdah,New Delhi,Mumbai CST,Lucknow,2A,46,46,8,0,Yes,Tatkal,NR,999.0,42.0,3770,4901.0,100.0,Peak,0.0,4.0,8.0,No,7.0,0.0,On Time,
+PNR4319306719,12019,Shatabdi Express,Shatabdi,2024-11-04,Monday,Howrah,Ranchi,Chennai Central,Puri,2S,100,19,0,81,Yes,Senior Citizen,SCR,782.0,8.6,751,976.0,19.0,Peak,0.0,0.0,5.0,Yes,13.0,10.0,Slight Delay,1.1
+PNR5502605209,22811,Bhubaneswar Rajdhani,Rajdhani,2024-01-30,Tuesday,Bhubaneswar,New Delhi,New Delhi,Bhubaneswar,SL,72,17,0,55,Yes,Defense,SCR,2400.0,37.9,1568,,23.61,Off-Peak,1.0,2.0,1.0,Yes,3.0,120.0,Delayed,1.2
+PNR8534483048,12381,Poorva Express,Express,2024-03-10,Sunday,Howrah,New Delhi,Ranchi,Ahmedabad,1A,18,9,0,9,No,Defense,NER,2178.0,18.0,3974,5166.0,50.0,Off-Peak,1.0,4.0,8.0,No,3.0,60.0,Delayed,1.5
+PNR8911097892,12301,Howrah Rajdhani,Rajdhani,2024-04-15,Monday,Howrah,New Delhi,Sealdah,Pune,1A,18,18,1,0,No,Senior Citizen,ECR,1276.0,18.9,3210,,100.0,Peak,0.0,0.0,3.0,No,13.0,120.0,Delayed,2.8
+PNR2050084221,12073,Jan Shatabdi,Jan Shatabdi,2024-03-12,Tuesday,Howrah,Patna,Howrah,Asansol,2S,100,77,0,23,No,Ladies,NER,1685.0,23.2,3446,,77.0,Off-Peak,0.0,7.0,2.0,No,1.0,5.0,Slight Delay,
+PNR2861362966,12302,New Delhi Rajdhani,Rajdhani,2024-05-31,Friday,New Delhi,Howrah,Bhubaneswar,Dhanbad,3A,64,6,0,58,Yes,Defense,NER,215.0,44.9,3071,3992.0,9.38,Peak,1.0,1.0,5.0,No,4.0,10.0,Slight Delay,1.7
+PNR9695949463,12302,New Delhi Rajdhani,Rajdhani,2024-03-15,Friday,New Delhi,Howrah,Mumbai CST,Nagpur,2S,100,69,0,31,Yes,General,NER,1702.0,17.0,690,897.0,69.0,Off-Peak,0.0,9.0,5.0,No,6.0,0.0,On Time,3.3
+PNR3173028996,12875,Neelachal Express,Express,2024-09-06,Friday,Howrah,Puri,,Allahabad,SL,72,65,0,7,Yes,Railway Employee,NER,,,496,,90.28,Off-Peak,,,,No,,,Slight Delay,
+PNR3445102896,12311,Kalka Mail,Mail,2024-01-07,Sunday,Howrah,Kalka,Hyderabad Deccan,Bhubaneswar,2A,46,12,0,34,No,Defense,CR,912.0,1.5,3627,,26.09,Off-Peak,0.0,4.0,7.0,Yes,4.0,45.0,Delayed,1.7
+PNR9403205543,13119,Sealdah Anvt Express,Express,2024-09-09,Monday,Sealdah,Anand Vihar,Bhubaneswar,Ahmedabad,1A,18,2,0,16,Yes,Railway Employee,SCR,2207.0,8.7,3965,5154.0,11.11,Off-Peak,0.0,9.0,3.0,Yes,14.0,0.0,On Time,2.1
+PNR7836268717,22811,Bhubaneswar Rajdhani,Rajdhani,2024-06-02,Sunday,Bhubaneswar,New Delhi,,Durgapur,SL,72,72,20,0,Yes,Tatkal,WR,,,3515,,100.0,Off-Peak,,,,No,,,Delayed,
+PNR3847057976,12302,New Delhi Rajdhani,Rajdhani,2024-05-04,Saturday,New Delhi,Howrah,Asansol,Gaya,2A,46,39,0,7,Yes,Senior Citizen,ECR,1820.0,8.7,4141,,84.78,Peak,0.0,5.0,5.0,Yes,,,Slight Delay,
+PNR4648360242,12381,Poorva Express,Express,2024-10-28,Monday,Howrah,New Delhi,Chennai Central,Asansol,2A,46,25,0,21,Yes,Ladies,SR,2499.0,16.7,3723,,54.35,Peak,0.0,1.0,1.0,Yes,13.0,0.0,On Time,
+PNR5259908653,12381,Poorva Express,Express,2024-09-09,Monday,Howrah,New Delhi,Howrah,Agra,1A,18,18,4,0,Yes,General,SR,1243.0,47.2,1444,,100.0,Off-Peak,0.0,10.0,1.0,Yes,3.0,10.0,Slight Delay,1.2
+PNR9561936242,12073,Jan Shatabdi,Jan Shatabdi,2024-02-12,Monday,Howrah,Patna,Sealdah,Durgapur,1A,18,18,1,0,Yes,Defense,NR,1215.0,7.9,201,,100.0,Off-Peak,0.0,2.0,8.0,Yes,8.0,90.0,Delayed,
+PNR8279577736,12311,Kalka Mail,Mail,2024-01-17,Wednesday,Howrah,Kalka,Asansol,Kanpur,SL,72,43,0,29,Yes,Defense,CR,1252.0,31.9,1533,1992.0,59.72,Off-Peak,1.0,3.0,4.0,No,4.0,5.0,Slight Delay,3.8
+PNR1634280645,12301,Howrah Rajdhani,Rajdhani,2024-02-10,Saturday,Howrah,New Delhi,Patna,Bhubaneswar,1A,18,18,0,0,Yes,Railway Employee,NR,1207.0,37.3,1164,1513.0,100.0,Off-Peak,0.0,7.0,6.0,No,2.0,120.0,Delayed,3.7
+PNR3818278815,12245,Duronto Express,Duronto,2024-10-27,Sunday,Howrah,Pune,Bangalore City,Puri,3A,64,26,0,38,No,Tatkal,SCR,320.0,3.8,4076,5298.0,40.62,Peak,0.0,6.0,2.0,No,8.0,120.0,Delayed,4.1
+PNR8333160749,13049,Amaravati Express,Express,2024-08-18,Sunday,Howrah,Amravati,Puri,Gaya,2A,46,46,6,0,Yes,General,SR,1076.0,20.8,2878,,100.0,Off-Peak,0.0,2.0,0.0,Yes,4.0,60.0,Delayed,4.8
+PNR8007402185,12019,Shatabdi Express,Shatabdi,2024-04-02,Tuesday,Howrah,Ranchi,Kolkata,Gaya,SL,72,4,0,68,Yes,Ladies,ER,478.0,24.0,275,,5.56,Peak,0.0,3.0,2.0,No,11.0,120.0,Delayed,
+PNR4437174078,12311,Kalka Mail,Mail,2024-09-28,Saturday,Howrah,Kalka,Patna,Raipur,SL,72,67,0,5,Yes,Defense,NER,232.0,14.7,1811,,93.06,Off-Peak,0.0,7.0,6.0,No,15.0,90.0,Delayed,4.7
+PNR4660019631,12073,Jan Shatabdi,Jan Shatabdi,2024-04-24,Wednesday,Howrah,Patna,Durgapur,Asansol,SL,72,33,0,39,Yes,Senior Citizen,CR,67.0,26.2,2659,,45.83,Peak,1.0,3.0,6.0,Yes,7.0,0.0,On Time,4.2
+PNR9660128991,12311,Kalka Mail,Mail,2024-10-01,Tuesday,Howrah,Kalka,Durgapur,Raipur,GN,120,120,19,0,Yes,Defense,ER,2084.0,47.5,3614,,100.0,Peak,0.0,1.0,3.0,No,9.0,15.0,Slight Delay,
+PNR5637176934,13119,Sealdah Anvt Express,Express,2024-04-12,Friday,Sealdah,Anand Vihar,Puri,Asansol,1A,18,18,3,0,No,General,NR,581.0,44.8,3718,,100.0,Peak,0.0,10.0,4.0,No,,0.0,On Time,
+PNR3744581207,12259,Sealdah Duronto,Duronto,2024-07-04,Thursday,Sealdah,New Delhi,Sealdah,Bhubaneswar,1A,18,9,0,9,Yes,General,WR,320.0,37.7,2735,3555.0,50.0,Off-Peak,0.0,2.0,1.0,No,6.0,0.0,On Time,4.3
+PNR5652601077,22811,Bhubaneswar Rajdhani,Rajdhani,2024-08-26,Monday,Bhubaneswar,New Delhi,Asansol,Patna,CC,78,15,0,63,Yes,Tatkal,ECR,825.0,26.9,4142,,19.23,Off-Peak,0.0,9.0,1.0,Yes,3.0,0.0,On Time,3.1
+PNR5422910534,12245,Duronto Express,Duronto,2024-09-30,Monday,Howrah,Pune,Durgapur,Allahabad,2A,46,30,0,16,No,General,ECR,919.0,9.3,3078,4001.0,65.22,Off-Peak,1.0,9.0,1.0,Yes,14.0,120.0,Delayed,4.1
+PNR1180236719,22811,Bhubaneswar Rajdhani,Rajdhani,2024-08-22,Thursday,Bhubaneswar,New Delhi,Patna,Kolkata,SL,72,41,0,31,Yes,Defense,SCR,120.0,47.4,3221,4187.0,56.94,Off-Peak,0.0,6.0,0.0,No,14.0,45.0,Delayed,
+PNR3546423865,12302,New Delhi Rajdhani,Rajdhani,2024-10-31,Thursday,New Delhi,Howrah,Patna,Agra,CC,78,71,0,7,Yes,General,ER,1348.0,12.9,1154,,91.03,Peak,1.0,4.0,0.0,Yes,1.0,10.0,Slight Delay,5.0
+PNR6500427536,12245,Duronto Express,Duronto,2024-05-12,Sunday,Howrah,Pune,Durgapur,Lucknow,GN,120,97,0,23,Yes,Defense,SCR,357.0,24.7,1453,1888.0,80.83,Peak,1.0,0.0,0.0,No,6.0,0.0,On Time,4.5
+PNR1486938421,22811,Bhubaneswar Rajdhani,Rajdhani,2024-11-04,Monday,Bhubaneswar,New Delhi,Chennai Central,Visakhapatnam,CC,78,12,0,66,Yes,Ladies,NR,798.0,28.3,3169,,15.38,Peak,0.0,3.0,0.0,No,5.0,60.0,Delayed,4.7
+PNR2277950614,12302,New Delhi Rajdhani,Rajdhani,2024-12-30,Monday,New Delhi,Howrah,,Allahabad,CC,78,73,0,5,Yes,Ladies,ECR,,,4673,,93.59,Peak,,,,Yes,,,On Time,
+PNR3327719428,12875,Neelachal Express,Express,2024-01-22,Monday,Howrah,Puri,Chennai Central,Puri,SL,72,46,0,26,Yes,General,SCR,739.0,10.1,3525,4582.0,63.89,Off-Peak,0.0,10.0,0.0,No,4.0,0.0,On Time,
+PNR9053376113,13119,Sealdah Anvt Express,Express,2024-09-17,Tuesday,Sealdah,Anand Vihar,Bhubaneswar,Raipur,2A,46,26,0,20,Yes,Senior Citizen,WR,293.0,21.5,243,315.0,56.52,Off-Peak,1.0,3.0,8.0,No,6.0,0.0,On Time,3.4
+PNR8331098417,12073,Jan Shatabdi,Jan Shatabdi,2024-05-27,Monday,Howrah,Patna,Chennai Central,Nagpur,3A,64,31,0,33,No,General,NR,1711.0,29.0,1221,,48.44,Peak,0.0,9.0,2.0,Yes,,5.0,Slight Delay,
+PNR4140705527,12301,Howrah Rajdhani,Rajdhani,2024-04-28,Sunday,Howrah,New Delhi,Puri,Allahabad,2A,46,46,1,0,Yes,Tatkal,CR,511.0,28.2,581,755.0,100.0,Peak,0.0,0.0,6.0,Yes,6.0,5.0,Slight Delay,1.6
+PNR9492224104,13119,Sealdah Anvt Express,Express,2024-03-04,Monday,Sealdah,Anand Vihar,Hyderabad Deccan,Bhopal,GN,120,94,0,26,Yes,Senior Citizen,WR,647.0,11.1,2863,,78.33,Off-Peak,0.0,7.0,7.0,No,7.0,0.0,On Time,2.7
+PNR7546741316,12259,Sealdah Duronto,Duronto,2024-02-01,Thursday,Sealdah,New Delhi,Mumbai CST,Lucknow,GN,120,15,0,105,Yes,Ladies,SR,1210.0,14.5,3958,,12.5,Off-Peak,0.0,7.0,8.0,Yes,10.0,45.0,Delayed,
+PNR9433203404,12875,Neelachal Express,Express,2024-04-12,Friday,Howrah,Puri,Chennai Central,Puri,2S,100,70,0,30,No,Tatkal,NER,596.0,2.3,4106,,70.0,Peak,1.0,6.0,3.0,Yes,2.0,10.0,Slight Delay,3.1
+PNR8500743474,12245,Duronto Express,Duronto,2024-02-20,Tuesday,Howrah,Pune,Howrah,Patna,3A,64,64,2,0,Yes,Tatkal,CR,1082.0,39.2,2741,3563.0,100.0,Off-Peak,0.0,10.0,7.0,Yes,3.0,0.0,On Time,3.8
+PNR3065961960,22811,Bhubaneswar Rajdhani,Rajdhani,2024-08-02,Friday,Bhubaneswar,New Delhi,New Delhi,Ranchi,CC,78,43,0,35,Yes,Railway Employee,ECR,1078.0,33.9,211,,55.13,Off-Peak,0.0,10.0,6.0,No,2.0,30.0,Delayed,1.8
+PNR6727034720,12019,Shatabdi Express,Shatabdi,2024-06-15,Saturday,Howrah,Ranchi,Mumbai CST,Lucknow,1A,18,10,0,8,Yes,Railway Employee,NR,472.0,27.8,3123,,55.56,Off-Peak,1.0,0.0,3.0,No,7.0,60.0,Delayed,1.3
+PNR1921415412,13119,Sealdah Anvt Express,Express,2024-10-07,Monday,Sealdah,Anand Vihar,Bangalore City,Ranchi,SL,72,72,19,0,Yes,Ladies,ER,2456.0,20.5,1311,1704.0,100.0,Peak,1.0,3.0,1.0,No,15.0,5.0,Slight Delay,1.4
+PNR5484678382,12311,Kalka Mail,Mail,2024-11-02,Saturday,Howrah,Kalka,Kolkata,Durgapur,CC,78,78,17,0,Yes,Railway Employee,ER,2055.0,39.5,2175,,100.0,Peak,1.0,5.0,1.0,Yes,9.0,90.0,Delayed,
+PNR9309279227,12073,Jan Shatabdi,Jan Shatabdi,2024-05-22,Wednesday,Howrah,Patna,Asansol,Kanpur,1A,18,13,0,5,Yes,General,NR,2391.0,2.5,3058,,72.22,Peak,0.0,2.0,3.0,Yes,12.0,0.0,On Time,
+PNR9853109380,12019,Shatabdi Express,Shatabdi,2024-04-11,Thursday,Howrah,Ranchi,Patna,Asansol,2A,46,18,0,28,Yes,General,NR,886.0,18.5,3975,5167.0,39.13,Peak,0.0,10.0,6.0,Yes,12.0,0.0,On Time,1.6
+PNR3289344965,12381,Poorva Express,Express,2024-01-04,Thursday,Howrah,New Delhi,Puri,Lucknow,2A,46,23,0,23,Yes,General,SR,917.0,4.9,487,,50.0,Off-Peak,1.0,3.0,2.0,No,12.0,60.0,Delayed,4.5
+PNR3436507567,22811,Bhubaneswar Rajdhani,Rajdhani,2024-10-29,Tuesday,Bhubaneswar,New Delhi,Patna,Lucknow,CC,78,42,0,36,Yes,Defense,NER,1193.0,16.2,3911,,53.85,Peak,0.0,3.0,6.0,No,7.0,60.0,Delayed,1.4
+PNR7353638232,12073,Jan Shatabdi,Jan Shatabdi,2024-02-29,Thursday,Howrah,Patna,Dhanbad,Nagpur,GN,120,32,0,88,Yes,General,SR,2257.0,42.2,640,,26.67,Off-Peak,0.0,0.0,8.0,Yes,4.0,60.0,Delayed,2.4
+PNR3357539470,22811,Bhubaneswar Rajdhani,Rajdhani,2024-02-17,Saturday,Bhubaneswar,New Delhi,Durgapur,Puri,3A,64,33,0,31,Yes,Senior Citizen,NER,890.0,8.0,2920,3796.0,51.56,Off-Peak,0.0,8.0,2.0,No,2.0,30.0,Delayed,3.2
+PNR2450330956,12245,Duronto Express,Duronto,2024-06-13,Thursday,Howrah,Pune,Howrah,Visakhapatnam,SL,72,21,0,51,Yes,General,ER,174.0,5.4,2463,,29.17,Off-Peak,0.0,1.0,3.0,No,13.0,0.0,On Time,4.6
+PNR4089049607,13119,Sealdah Anvt Express,Express,2024-07-09,Tuesday,Sealdah,Anand Vihar,Bangalore City,Gaya,1A,18,18,2,0,No,Railway Employee,NR,2114.0,31.5,411,534.0,100.0,Off-Peak,0.0,2.0,1.0,Yes,10.0,120.0,Delayed,2.9
+PNR8573009419,12875,Neelachal Express,Express,2024-09-24,Tuesday,Howrah,Puri,Ranchi,Pune,GN,120,19,0,101,Yes,Ladies,ECR,1970.0,3.4,1433,,15.83,Off-Peak,0.0,0.0,0.0,Yes,11.0,10.0,Slight Delay,2.5
+PNR5939034623,13119,Sealdah Anvt Express,Express,2024-06-23,Sunday,Sealdah,Anand Vihar,Hyderabad Deccan,Surat,1A,18,11,0,7,Yes,Tatkal,ECR,661.0,38.6,4426,,61.11,Off-Peak,0.0,5.0,0.0,No,5.0,0.0,On Time,2.5
+PNR5522758283,12301,Howrah Rajdhani,Rajdhani,2024-10-09,Wednesday,Howrah,New Delhi,Mumbai CST,Asansol,2S,100,10,0,90,No,Defense,NER,1504.0,38.1,4048,,10.0,Peak,0.0,2.0,1.0,Yes,5.0,0.0,On Time,4.5
+PNR4171860046,12311,Kalka Mail,Mail,2024-09-27,Friday,Howrah,Kalka,Chennai Central,Nagpur,1A,18,17,0,1,Yes,Railway Employee,SR,2292.0,45.6,4535,,94.44,Off-Peak,0.0,8.0,3.0,No,12.0,5.0,Slight Delay,1.3
+PNR8206538713,12311,Kalka Mail,Mail,2024-05-04,Saturday,Howrah,Kalka,Kolkata,Puri,2A,46,43,0,3,Yes,Senior Citizen,CR,699.0,2.5,736,956.0,93.48,Peak,0.0,5.0,8.0,No,4.0,0.0,On Time,4.1
+PNR2674525521,12302,New Delhi Rajdhani,Rajdhani,2024-08-24,Saturday,New Delhi,Howrah,Bangalore City,Visakhapatnam,GN,120,10,0,110,Yes,Ladies,ER,814.0,20.3,3396,,8.33,Off-Peak,0.0,5.0,8.0,Yes,,5.0,Slight Delay,
+PNR6616655324,12301,Howrah Rajdhani,Rajdhani,2024-12-08,Sunday,Howrah,New Delhi,Asansol,Durgapur,1A,18,15,0,3,Yes,Defense,ER,975.0,35.5,3290,,83.33,Peak,0.0,4.0,5.0,Yes,8.0,90.0,Delayed,1.2
+PNR2251451461,12245,Duronto Express,Duronto,2024-06-23,Sunday,Howrah,Pune,Mumbai CST,Kolkata,1A,18,9,0,9,Yes,Ladies,WR,2205.0,13.5,671,,50.0,Off-Peak,0.0,6.0,3.0,Yes,13.0,0.0,On Time,
+PNR4381741645,12245,Duronto Express,Duronto,2024-11-03,Sunday,Howrah,Pune,Ranchi,Hyderabad Deccan,SL,72,67,0,5,Yes,Tatkal,NR,860.0,24.4,4021,,93.06,Peak,0.0,3.0,0.0,No,14.0,0.0,On Time,4.8
+PNR5704311166,12073,Jan Shatabdi,Jan Shatabdi,2024-09-15,Sunday,Howrah,Patna,Ranchi,Lucknow,SL,72,41,0,31,Yes,General,SR,904.0,39.6,3389,4405.0,56.94,Off-Peak,0.0,9.0,1.0,No,13.0,30.0,Delayed,
+PNR8251608605,12259,Sealdah Duronto,Duronto,2024-11-01,Friday,Sealdah,New Delhi,Bangalore City,Agra,CC,78,1,0,77,No,Ladies,CR,2491.0,7.1,2202,2862.0,1.28,Peak,1.0,0.0,3.0,No,6.0,90.0,Delayed,1.5
+PNR4472539541,12301,Howrah Rajdhani,Rajdhani,2024-02-09,Friday,Howrah,New Delhi,Durgapur,Jaipur,3A,64,64,13,0,Yes,General,CR,975.0,12.3,780,,100.0,Off-Peak,0.0,0.0,2.0,No,4.0,0.0,On Time,1.6
+PNR1315686781,12019,Shatabdi Express,Shatabdi,2024-11-06,Wednesday,Howrah,Ranchi,Patna,Durgapur,CC,78,64,0,14,Yes,Ladies,ECR,364.0,5.8,1411,1834.0,82.05,Peak,0.0,2.0,8.0,No,12.0,0.0,On Time,3.5
+PNR9789042402,13049,Amaravati Express,Express,2024-05-01,Wednesday,Howrah,Amravati,Kolkata,Ranchi,SL,72,50,0,22,Yes,Railway Employee,SR,1797.0,37.8,3711,,69.44,Peak,0.0,3.0,0.0,Yes,6.0,30.0,Delayed,3.4
+PNR5607122989,12301,Howrah Rajdhani,Rajdhani,2024-07-16,Tuesday,Howrah,New Delhi,Kolkata,Kolkata,2A,46,43,0,3,Yes,Tatkal,WR,1090.0,43.2,3932,,93.48,Off-Peak,1.0,8.0,8.0,Yes,7.0,90.0,Delayed,
+PNR3667942069,13119,Sealdah Anvt Express,Express,2024-09-05,Thursday,Sealdah,Anand Vihar,Ranchi,Durgapur,SL,72,71,0,1,Yes,Railway Employee,ER,524.0,12.8,1368,,98.61,Off-Peak,0.0,8.0,7.0,Yes,6.0,10.0,Slight Delay,
+PNR1198086379,13119,Sealdah Anvt Express,Express,2024-10-08,Tuesday,Sealdah,Anand Vihar,Mumbai CST,Nagpur,2S,100,34,0,66,Yes,Defense,NR,268.0,6.3,3537,,34.0,Peak,0.0,9.0,0.0,No,10.0,90.0,Delayed,4.2
+PNR4467433849,12311,Kalka Mail,Mail,2024-10-20,Sunday,Howrah,Kalka,Hyderabad Deccan,Visakhapatnam,2A,46,46,13,0,No,Defense,ECR,1264.0,40.1,329,,100.0,Peak,1.0,1.0,8.0,No,3.0,60.0,Delayed,
+PNR3428116280,13119,Sealdah Anvt Express,Express,2024-10-18,Friday,Sealdah,Anand Vihar,Chennai Central,Bangalore City,2A,46,9,0,37,Yes,Defense,WR,767.0,42.9,2906,,19.57,Peak,0.0,4.0,2.0,No,7.0,90.0,Delayed,
+PNR3031423129,12381,Poorva Express,Express,2024-11-14,Thursday,Howrah,New Delhi,Hyderabad Deccan,Nagpur,2S,100,5,0,95,Yes,Senior Citizen,ECR,175.0,31.4,4770,,5.0,Peak,0.0,4.0,8.0,Yes,9.0,90.0,Delayed,
+PNR3234278606,13119,Sealdah Anvt Express,Express,2024-12-05,Thursday,Sealdah,Anand Vihar,Puri,Ahmedabad,CC,78,46,0,32,Yes,Ladies,ER,1461.0,46.1,2198,,58.97,Peak,0.0,2.0,6.0,No,1.0,60.0,Delayed,
+PNR3905778118,12381,Poorva Express,Express,2024-10-29,Tuesday,Howrah,New Delhi,Hyderabad Deccan,Bhopal,GN,120,91,0,29,Yes,General,ECR,2396.0,19.1,4660,,75.83,Peak,0.0,3.0,0.0,No,13.0,30.0,Delayed,
+PNR5811161965,13119,Sealdah Anvt Express,Express,2024-03-15,Friday,Sealdah,Anand Vihar,Durgapur,Kolkata,GN,120,48,0,72,Yes,Senior Citizen,SR,1035.0,28.8,4529,5887.0,40.0,Off-Peak,0.0,10.0,0.0,Yes,14.0,0.0,On Time,1.9
+PNR7873633190,12301,Howrah Rajdhani,Rajdhani,2024-12-07,Saturday,Howrah,New Delhi,Dhanbad,Allahabad,GN,120,120,11,0,Yes,General,NR,1635.0,24.9,3757,,100.0,Peak,0.0,9.0,5.0,Yes,1.0,0.0,On Time,1.2
+PNR2380371508,13119,Sealdah Anvt Express,Express,2024-05-22,Wednesday,Sealdah,Anand Vihar,Patna,Lucknow,1A,18,9,0,9,Yes,Railway Employee,WR,2435.0,45.6,799,1038.0,50.0,Peak,0.0,0.0,5.0,Yes,11.0,10.0,Slight Delay,4.6
+PNR1697125957,12875,Neelachal Express,Express,2024-08-14,Wednesday,Howrah,Puri,Kolkata,Kanpur,CC,78,36,0,42,Yes,Railway Employee,ECR,1736.0,32.7,3400,,46.15,Off-Peak,0.0,0.0,8.0,Yes,12.0,45.0,Delayed,4.3
+PNR2131920912,12381,Poorva Express,Express,2024-01-25,Thursday,Howrah,New Delhi,Hyderabad Deccan,Jaipur,2A,46,36,0,10,Yes,General,WR,862.0,10.9,747,,78.26,Off-Peak,0.0,5.0,5.0,Yes,4.0,15.0,Slight Delay,2.6
+PNR4898275173,12875,Neelachal Express,Express,2024-10-05,Saturday,Howrah,Puri,Puri,Ranchi,1A,18,14,0,4,Yes,Defense,SR,51.0,19.2,287,,77.78,Peak,1.0,3.0,8.0,No,3.0,45.0,Delayed,3.3
+PNR2921952148,13049,Amaravati Express,Express,2024-07-11,Thursday,Howrah,Amravati,Dhanbad,Bhopal,1A,18,6,0,12,Yes,Ladies,CR,2477.0,3.8,1987,,33.33,Off-Peak,0.0,0.0,2.0,No,5.0,60.0,Delayed,
+PNR6310759305,12302,New Delhi Rajdhani,Rajdhani,2024-08-08,Thursday,New Delhi,Howrah,,Bhopal,3A,64,36,0,28,Yes,General,ECR,,,633,,56.25,Off-Peak,,,,Yes,,,On Time,
+PNR4553324308,12259,Sealdah Duronto,Duronto,2024-11-23,Saturday,Sealdah,New Delhi,Sealdah,Nagpur,1A,18,15,0,3,Yes,Ladies,ECR,752.0,28.1,4592,,83.33,Peak,1.0,10.0,7.0,Yes,13.0,30.0,Delayed,1.9
+PNR9572389939,22811,Bhubaneswar Rajdhani,Rajdhani,2024-05-04,Saturday,Bhubaneswar,New Delhi,Hyderabad Deccan,Bangalore City,1A,18,16,0,2,Yes,Tatkal,NER,143.0,24.4,1651,2146.0,88.89,Peak,1.0,6.0,1.0,No,8.0,0.0,On Time,4.8
+PNR5361375345,12019,Shatabdi Express,Shatabdi,2024-07-26,Friday,Howrah,Ranchi,Asansol,Bangalore City,CC,78,78,21,0,No,Defense,SR,395.0,32.1,1400,,100.0,Off-Peak,0.0,10.0,5.0,No,11.0,0.0,On Time,
+PNR8633387715,12381,Poorva Express,Express,2024-12-13,Friday,Howrah,New Delhi,Ranchi,Kanpur,GN,120,93,0,27,Yes,Railway Employee,CR,1708.0,28.0,321,417.0,77.5,Peak,0.0,1.0,2.0,No,10.0,30.0,Delayed,4.0
+PNR6305226005,12301,Howrah Rajdhani,Rajdhani,2024-10-12,Saturday,Howrah,New Delhi,Bhubaneswar,Pune,CC,78,68,0,10,Yes,Defense,ER,698.0,7.4,2399,,87.18,Peak,0.0,0.0,3.0,No,,90.0,Delayed,
+PNR9873476605,12311,Kalka Mail,Mail,2024-11-27,Wednesday,Howrah,Kalka,Sealdah,Dhanbad,2A,46,19,0,27,Yes,Senior Citizen,NER,196.0,33.8,2966,,41.3,Peak,0.0,2.0,3.0,No,8.0,30.0,Delayed,3.2
+PNR6475653995,13119,Sealdah Anvt Express,Express,2024-04-05,Friday,Sealdah,Anand Vihar,Asansol,Patna,1A,18,18,1,0,Yes,Railway Employee,NER,2077.0,29.9,3902,,100.0,Peak,0.0,9.0,6.0,No,12.0,0.0,On Time,1.5
+PNR7580494069,22811,Bhubaneswar Rajdhani,Rajdhani,2024-10-22,Tuesday,Bhubaneswar,New Delhi,Puri,Jaipur,2A,46,31,0,15,Yes,Senior Citizen,SR,1022.0,18.6,512,665.0,67.39,Peak,0.0,10.0,5.0,No,7.0,90.0,Delayed,2.8
+PNR3326884832,12301,Howrah Rajdhani,Rajdhani,2024-01-16,Tuesday,Howrah,New Delhi,Asansol,Raipur,2S,100,31,0,69,Yes,Ladies,CR,1078.0,,1575,,31.0,Off-Peak,1.0,9.0,,Yes,,,Slight Delay,
+PNR8931701298,12259,Sealdah Duronto,Duronto,2024-11-22,Friday,Sealdah,New Delhi,Asansol,Allahabad,2A,46,40,0,6,Yes,Tatkal,NR,1443.0,20.3,1290,,86.96,Peak,0.0,2.0,8.0,No,12.0,45.0,Delayed,
+PNR3530269341,13049,Amaravati Express,Express,2024-07-18,Thursday,Howrah,Amravati,Durgapur,Indore,2A,46,36,0,10,Yes,Ladies,SCR,468.0,11.9,1607,,78.26,Off-Peak,0.0,8.0,6.0,No,6.0,0.0,On Time,
+PNR9657075293,12311,Kalka Mail,Mail,2024-07-16,Tuesday,Howrah,Kalka,Bangalore City,Visakhapatnam,GN,120,120,23,0,No,Railway Employee,CR,1121.0,11.9,2857,,100.0,Off-Peak,0.0,10.0,8.0,Yes,,0.0,On Time,
+PNR3499572011,12259,Sealdah Duronto,Duronto,2024-01-25,Thursday,Sealdah,New Delhi,Chennai Central,Hyderabad Deccan,2A,46,33,0,13,Yes,Ladies,WR,1665.0,15.8,2932,,71.74,Off-Peak,1.0,1.0,5.0,No,4.0,0.0,On Time,
+PNR3252816770,12259,Sealdah Duronto,Duronto,2024-07-06,Saturday,Sealdah,New Delhi,Mumbai CST,Lucknow,CC,78,27,0,51,No,Ladies,ER,115.0,46.1,3636,,34.62,Off-Peak,0.0,10.0,1.0,No,13.0,0.0,On Time,
+PNR9848243913,13049,Amaravati Express,Express,2024-03-31,Sunday,Howrah,Amravati,Kolkata,Bhubaneswar,SL,72,49,0,23,No,General,CR,1528.0,7.5,4535,,68.06,Off-Peak,0.0,6.0,2.0,Yes,,15.0,Slight Delay,
+PNR7470108123,12381,Poorva Express,Express,2024-08-01,Thursday,Howrah,New Delhi,Asansol,Visakhapatnam,1A,18,10,0,8,No,Defense,NER,1194.0,15.4,4980,,55.56,Off-Peak,1.0,5.0,8.0,No,12.0,120.0,Delayed,
+PNR2237090718,12245,Duronto Express,Duronto,2024-10-28,Monday,Howrah,Pune,Ranchi,Bhubaneswar,SL,72,46,0,26,Yes,Defense,NR,389.0,39.3,2799,,63.89,Peak,0.0,0.0,2.0,Yes,15.0,0.0,On Time,
+PNR2015421546,12311,Kalka Mail,Mail,2024-07-09,Tuesday,Howrah,Kalka,Puri,Ranchi,2S,100,58,0,42,Yes,Ladies,NR,903.0,1.8,2101,,58.0,Off-Peak,0.0,8.0,3.0,No,9.0,0.0,On Time,
+PNR8373331430,12311,Kalka Mail,Mail,2024-09-23,Monday,Howrah,Kalka,New Delhi,Agra,CC,78,78,0,0,Yes,Senior Citizen,NER,1856.0,35.0,3338,,100.0,Off-Peak,1.0,2.0,0.0,Yes,6.0,60.0,Delayed,3.8
+PNR4494244734,13049,Amaravati Express,Express,2024-05-27,Monday,Howrah,Amravati,Kolkata,Ahmedabad,2A,46,4,0,42,Yes,Railway Employee,SR,829.0,40.4,4507,,8.7,Peak,0.0,10.0,0.0,No,10.0,0.0,On Time,
+PNR7078959269,12245,Duronto Express,Duronto,2024-01-05,Friday,Howrah,Pune,Patna,Puri,1A,18,16,0,2,Yes,Railway Employee,NER,1463.0,2.6,2204,,88.89,Off-Peak,1.0,6.0,8.0,Yes,11.0,45.0,Delayed,
+PNR9475241888,12259,Sealdah Duronto,Duronto,2024-06-28,Friday,Sealdah,New Delhi,Ranchi,Nagpur,SL,72,59,0,13,Yes,Senior Citizen,SR,1602.0,8.7,2828,,81.94,Off-Peak,0.0,5.0,2.0,Yes,9.0,120.0,Delayed,2.5
+PNR2685755625,13119,Sealdah Anvt Express,Express,2024-10-10,Thursday,Sealdah,Anand Vihar,Ranchi,Puri,2A,46,46,0,0,No,General,NER,769.0,4.4,1037,1348.0,100.0,Peak,0.0,7.0,3.0,Yes,14.0,0.0,On Time,1.7
+PNR4786265850,12073,Jan Shatabdi,Jan Shatabdi,2024-10-17,Thursday,Howrah,Patna,Sealdah,Raipur,CC,78,27,0,51,No,Ladies,NR,1291.0,12.5,3574,,34.62,Peak,0.0,2.0,5.0,No,12.0,5.0,Slight Delay,4.4
+PNR6440771216,22811,Bhubaneswar Rajdhani,Rajdhani,2024-04-14,Sunday,Bhubaneswar,New Delhi,Sealdah,Agra,3A,64,64,7,0,No,Railway Employee,NER,946.0,9.0,2723,,100.0,Peak,0.0,0.0,5.0,No,14.0,10.0,Slight Delay,
+PNR9131540912,12875,Neelachal Express,Express,2024-11-08,Friday,Howrah,Puri,Bhubaneswar,Surat,2S,100,29,0,71,No,General,SR,,,1678,,29.0,Peak,0.0,,,No,,,Delayed,
+PNR2043793884,12019,Shatabdi Express,Shatabdi,2024-09-08,Sunday,Howrah,Ranchi,New Delhi,Bangalore City,2S,100,83,0,17,Yes,Tatkal,SCR,1676.0,35.4,1332,1731.0,83.0,Off-Peak,0.0,8.0,3.0,Yes,1.0,0.0,On Time,3.2
+PNR7738465701,12073,Jan Shatabdi,Jan Shatabdi,2024-12-17,Tuesday,Howrah,Patna,Bangalore City,Bhopal,SL,72,66,0,6,Yes,Railway Employee,SCR,2156.0,18.1,4324,,91.67,Peak,1.0,0.0,0.0,Yes,1.0,10.0,Slight Delay,1.9
+PNR2377542628,12381,Poorva Express,Express,2024-11-26,Tuesday,Howrah,New Delhi,Patna,Patna,1A,18,18,0,0,Yes,Tatkal,WR,2386.0,43.3,4900,6370.0,100.0,Peak,0.0,2.0,2.0,No,11.0,0.0,On Time,
+PNR1828289951,12019,Shatabdi Express,Shatabdi,2024-09-01,Sunday,Howrah,Ranchi,Bhubaneswar,Kolkata,3A,64,64,19,0,Yes,Defense,ECR,1975.0,5.3,4389,5705.0,100.0,Off-Peak,1.0,1.0,1.0,Yes,7.0,0.0,On Time,3.9
+PNR7056382841,12302,New Delhi Rajdhani,Rajdhani,2024-04-16,Tuesday,New Delhi,Howrah,Asansol,Bhopal,2A,46,7,0,39,Yes,General,NR,415.0,6.9,3971,,15.22,Peak,0.0,2.0,2.0,Yes,2.0,90.0,Delayed,2.8
+PNR4133955750,12245,Duronto Express,Duronto,2024-06-24,Monday,Howrah,Pune,Howrah,Dhanbad,2S,100,100,12,0,Yes,Senior Citizen,ECR,1431.0,11.2,2237,,100.0,Off-Peak,0.0,7.0,4.0,Yes,3.0,10.0,Slight Delay,
+PNR9627481869,12302,New Delhi Rajdhani,Rajdhani,2024-05-25,Saturday,New Delhi,Howrah,Puri,Gaya,1A,18,17,0,1,Yes,Tatkal,CR,1588.0,7.5,3434,4464.0,94.44,Peak,0.0,5.0,5.0,No,14.0,0.0,On Time,3.9
+PNR7800904085,12301,Howrah Rajdhani,Rajdhani,2024-04-19,Friday,Howrah,New Delhi,Durgapur,Bangalore City,2S,100,88,0,12,Yes,Tatkal,NER,535.0,8.1,1250,,88.0,Peak,0.0,8.0,5.0,No,7.0,10.0,Slight Delay,
+PNR1110146803,12301,Howrah Rajdhani,Rajdhani,2024-05-12,Sunday,Howrah,New Delhi,Patna,Hyderabad Deccan,1A,18,18,5,0,No,General,SCR,713.0,23.8,1479,,100.0,Peak,0.0,0.0,2.0,Yes,8.0,0.0,On Time,4.4
+PNR8988685991,12301,Howrah Rajdhani,Rajdhani,2024-07-30,Tuesday,Howrah,New Delhi,Ranchi,Nagpur,2A,46,8,0,38,Yes,Ladies,SCR,1119.0,45.8,1236,,17.39,Off-Peak,0.0,3.0,4.0,Yes,4.0,0.0,On Time,
+PNR8043053505,12073,Jan Shatabdi,Jan Shatabdi,2024-07-04,Thursday,Howrah,Patna,Bangalore City,Lucknow,SL,72,63,0,9,Yes,Defense,NR,1569.0,22.1,4823,6269.0,87.5,Off-Peak,0.0,5.0,4.0,No,14.0,0.0,On Time,2.0
+PNR2864809852,12302,New Delhi Rajdhani,Rajdhani,2024-03-11,Monday,New Delhi,Howrah,Sealdah,Hyderabad Deccan,GN,120,64,0,56,Yes,General,NR,208.0,11.1,3982,,53.33,Off-Peak,1.0,8.0,3.0,Yes,8.0,30.0,Delayed,
+PNR3338062656,12875,Neelachal Express,Express,2024-03-23,Saturday,Howrah,Puri,Ranchi,Ranchi,SL,72,66,0,6,Yes,Senior Citizen,NR,656.0,29.1,549,713.0,91.67,Off-Peak,0.0,5.0,0.0,No,2.0,5.0,Slight Delay,2.6
+PNR2426527399,12302,New Delhi Rajdhani,Rajdhani,2024-05-06,Monday,New Delhi,Howrah,Howrah,Dhanbad,1A,18,14,0,4,Yes,Defense,CR,2065.0,15.5,2077,2700.0,77.78,Peak,0.0,1.0,3.0,Yes,1.0,90.0,Delayed,2.4
+PNR8316080635,22811,Bhubaneswar Rajdhani,Rajdhani,2024-12-12,Thursday,Bhubaneswar,New Delhi,Bhubaneswar,Durgapur,3A,64,57,0,7,No,General,WR,543.0,27.6,3689,,89.06,Peak,0.0,9.0,6.0,Yes,14.0,45.0,Delayed,4.4
+PNR9865132682,12381,Poorva Express,Express,2024-08-11,Sunday,Howrah,New Delhi,Mumbai CST,Bhubaneswar,GN,120,38,0,82,No,General,ER,285.0,47.1,846,,31.67,Off-Peak,1.0,1.0,4.0,No,11.0,90.0,Delayed,
+PNR8157719876,12302,New Delhi Rajdhani,Rajdhani,2024-02-29,Thursday,New Delhi,Howrah,Sealdah,Durgapur,1A,18,14,0,4,Yes,General,CR,2448.0,12.5,4178,5431.0,77.78,Off-Peak,0.0,9.0,4.0,Yes,6.0,5.0,Slight Delay,3.8
+PNR7827476439,13049,Amaravati Express,Express,2024-03-29,Friday,Howrah,Amravati,Puri,Pune,1A,18,8,0,10,No,Senior Citizen,NER,966.0,31.6,4311,,44.44,Off-Peak,1.0,10.0,1.0,No,7.0,90.0,Delayed,2.2
+PNR7377834977,12381,Poorva Express,Express,2024-07-14,Sunday,Howrah,New Delhi,Howrah,Agra,1A,18,4,0,14,No,Defense,CR,1066.0,12.3,1971,,22.22,Off-Peak,0.0,6.0,2.0,Yes,12.0,60.0,Delayed,3.4
+PNR4466096192,12073,Jan Shatabdi,Jan Shatabdi,2024-10-18,Friday,Howrah,Patna,Sealdah,Indore,1A,18,18,1,0,Yes,Tatkal,ECR,621.0,2.7,3854,,100.0,Peak,1.0,8.0,2.0,Yes,2.0,30.0,Delayed,
+PNR4432477041,12259,Sealdah Duronto,Duronto,2024-12-04,Wednesday,Sealdah,New Delhi,Mumbai CST,Varanasi,2S,100,7,0,93,No,Tatkal,NR,392.0,46.9,2325,3022.0,7.0,Peak,0.0,10.0,8.0,Yes,14.0,0.0,On Time,4.7
+PNR4254866543,12311,Kalka Mail,Mail,2024-06-04,Tuesday,Howrah,Kalka,,Varanasi,CC,78,17,0,61,Yes,Defense,NER,,,1516,,21.79,Off-Peak,,,,No,,,On Time,
+PNR5660589433,13119,Sealdah Anvt Express,Express,2024-02-17,Saturday,Sealdah,Anand Vihar,Bhubaneswar,Allahabad,GN,120,46,0,74,Yes,Railway Employee,NR,696.0,25.3,1747,,38.33,Off-Peak,0.0,2.0,6.0,Yes,8.0,30.0,Delayed,5.0
+PNR9775196687,12875,Neelachal Express,Express,2024-12-06,Friday,Howrah,Puri,Bangalore City,Asansol,2S,100,12,0,88,Yes,Ladies,NR,2429.0,21.2,2388,,12.0,Peak,0.0,7.0,8.0,Yes,3.0,45.0,Delayed,4.6
+PNR8399650163,12245,Duronto Express,Duronto,2024-10-10,Thursday,Howrah,Pune,Bangalore City,Ranchi,CC,78,28,0,50,No,Defense,ECR,794.0,15.1,2930,,35.9,Peak,1.0,10.0,4.0,No,7.0,60.0,Delayed,
+PNR2341720625,12311,Kalka Mail,Mail,2024-11-09,Saturday,Howrah,Kalka,Sealdah,Kanpur,SL,72,3,0,69,Yes,Tatkal,SCR,468.0,19.4,2376,,4.17,Peak,0.0,9.0,3.0,No,5.0,60.0,Delayed,1.0
+PNR3155252343,12073,Jan Shatabdi,Jan Shatabdi,2024-04-23,Tuesday,Howrah,Patna,Bhubaneswar,Hyderabad Deccan,3A,64,64,4,0,No,Tatkal,CR,1668.0,23.8,3477,4520.0,100.0,Peak,1.0,9.0,1.0,No,1.0,90.0,Delayed,1.4
+PNR4499811548,12302,New Delhi Rajdhani,Rajdhani,2024-04-19,Friday,New Delhi,Howrah,Durgapur,Kolkata,GN,120,28,0,92,No,General,WR,923.0,23.6,2233,,23.33,Peak,0.0,5.0,2.0,Yes,1.0,10.0,Slight Delay,
+PNR9401592815,12381,Poorva Express,Express,2024-06-19,Wednesday,Howrah,New Delhi,Asansol,Dhanbad,GN,120,5,0,115,No,Tatkal,CR,560.0,,1556,,4.17,Off-Peak,0.0,3.0,4.0,No,,,Delayed,
+PNR3707920718,12875,Neelachal Express,Express,2024-09-04,Wednesday,Howrah,Puri,Ranchi,Ahmedabad,2S,100,16,0,84,Yes,Senior Citizen,NER,2307.0,8.3,4425,,16.0,Off-Peak,1.0,4.0,6.0,Yes,13.0,5.0,Slight Delay,
+PNR4930488077,12381,Poorva Express,Express,2024-11-16,Saturday,Howrah,New Delhi,Kolkata,Surat,SL,72,33,0,39,No,Railway Employee,NER,1326.0,44.8,4672,,45.83,Peak,0.0,1.0,5.0,No,10.0,10.0,Slight Delay,4.2
+PNR3918529276,12301,Howrah Rajdhani,Rajdhani,2024-02-26,Monday,Howrah,New Delhi,Howrah,Bhopal,1A,18,18,1,0,No,Ladies,WR,1612.0,42.8,1304,,100.0,Off-Peak,0.0,1.0,7.0,Yes,7.0,120.0,Delayed,1.9
+PNR6184633422,12073,Jan Shatabdi,Jan Shatabdi,2024-10-02,Wednesday,Howrah,Patna,Bangalore City,Asansol,GN,120,120,22,0,No,Railway Employee,SR,459.0,25.4,3434,,100.0,Peak,0.0,9.0,0.0,No,8.0,0.0,On Time,
+PNR2074677056,12073,Jan Shatabdi,Jan Shatabdi,2024-12-01,Sunday,Howrah,Patna,Howrah,Dhanbad,2S,100,77,0,23,No,Senior Citizen,CR,2330.0,30.0,1313,,77.0,Peak,1.0,0.0,5.0,No,5.0,0.0,On Time,
+PNR8543106319,12311,Kalka Mail,Mail,2024-06-10,Monday,Howrah,Kalka,Bangalore City,Ahmedabad,SL,72,46,0,26,Yes,Defense,NER,1313.0,37.2,4214,,63.89,Off-Peak,0.0,8.0,0.0,No,3.0,5.0,Slight Delay,2.5
+PNR8603916194,12381,Poorva Express,Express,2024-07-14,Sunday,Howrah,New Delhi,Bangalore City,Indore,GN,120,33,0,87,Yes,General,NR,1674.0,30.9,1709,2221.0,27.5,Off-Peak,0.0,3.0,0.0,Yes,12.0,120.0,Delayed,4.4
+PNR8723175423,12302,New Delhi Rajdhani,Rajdhani,2024-03-30,Saturday,New Delhi,Howrah,Hyderabad Deccan,Agra,2A,46,18,0,28,No,Ladies,ECR,600.0,37.0,1683,2187.0,39.13,Off-Peak,1.0,0.0,1.0,Yes,3.0,10.0,Slight Delay,1.4
+PNR8041246170,13049,Amaravati Express,Express,2024-09-14,Saturday,Howrah,Amravati,Howrah,Bangalore City,GN,120,64,0,56,Yes,General,NER,2461.0,25.5,4569,,53.33,Off-Peak,1.0,8.0,2.0,Yes,14.0,0.0,On Time,
+PNR2916050928,12073,Jan Shatabdi,Jan Shatabdi,2024-07-02,Tuesday,Howrah,Patna,Kolkata,Lucknow,SL,72,1,0,71,Yes,Tatkal,ECR,361.0,8.3,2438,,1.39,Off-Peak,0.0,0.0,3.0,No,4.0,45.0,Delayed,2.7
+PNR5501528110,12245,Duronto Express,Duronto,2024-10-28,Monday,Howrah,Pune,Ranchi,Varanasi,2S,100,98,0,2,Yes,Ladies,CR,2155.0,9.6,4560,,98.0,Peak,0.0,8.0,5.0,No,6.0,10.0,Slight Delay,
+PNR7301679332,13119,Sealdah Anvt Express,Express,2024-08-07,Wednesday,Sealdah,Anand Vihar,Kolkata,Bhubaneswar,3A,64,39,0,25,Yes,General,NR,623.0,45.4,3209,,60.94,Off-Peak,1.0,4.0,8.0,No,11.0,90.0,Delayed,4.9
+PNR4187988846,12875,Neelachal Express,Express,2024-08-12,Monday,Howrah,Puri,Patna,Puri,GN,120,101,0,19,Yes,Tatkal,ECR,745.0,,1889,,84.17,Off-Peak,0.0,0.0,,Yes,,,On Time,
+PNR5437560815,12019,Shatabdi Express,Shatabdi,2024-01-22,Monday,Howrah,Ranchi,Bhubaneswar,Asansol,3A,64,42,0,22,Yes,Railway Employee,SR,1142.0,30.5,1792,,65.62,Off-Peak,0.0,4.0,0.0,Yes,14.0,120.0,Delayed,3.1
+PNR4886958219,12245,Duronto Express,Duronto,2024-07-21,Sunday,Howrah,Pune,Durgapur,Lucknow,SL,72,60,0,12,Yes,Tatkal,CR,1090.0,13.3,4338,5639.0,83.33,Off-Peak,0.0,4.0,4.0,No,1.0,60.0,Delayed,
+PNR6228876555,22811,Bhubaneswar Rajdhani,Rajdhani,2024-07-04,Thursday,Bhubaneswar,New Delhi,Kolkata,Ahmedabad,2S,100,16,0,84,Yes,General,SCR,1036.0,31.4,4092,,16.0,Off-Peak,1.0,8.0,8.0,No,14.0,60.0,Delayed,4.2
+PNR5556620439,12073,Jan Shatabdi,Jan Shatabdi,2024-10-23,Wednesday,Howrah,Patna,,Agra,SL,72,72,3,0,Yes,Senior Citizen,NR,,,4522,,100.0,Peak,,,,Yes,,,On Time,
+PNR2150190600,22811,Bhubaneswar Rajdhani,Rajdhani,2024-07-14,Sunday,Bhubaneswar,New Delhi,Dhanbad,Kolkata,2S,100,64,0,36,Yes,Defense,NER,716.0,25.7,1633,,64.0,Off-Peak,0.0,2.0,1.0,No,1.0,30.0,Delayed,
+PNR4969210194,12073,Jan Shatabdi,Jan Shatabdi,2024-04-17,Wednesday,Howrah,Patna,Kolkata,Surat,2A,46,33,0,13,Yes,Tatkal,SR,546.0,3.6,4416,,71.74,Peak,0.0,3.0,2.0,Yes,1.0,0.0,On Time,2.5
+PNR2658861672,12381,Poorva Express,Express,2024-07-13,Saturday,Howrah,New Delhi,Howrah,Ahmedabad,1A,18,1,0,17,Yes,Ladies,WR,1576.0,19.3,444,,5.56,Off-Peak,0.0,3.0,8.0,No,15.0,15.0,Slight Delay,3.6
+PNR8671536514,12302,New Delhi Rajdhani,Rajdhani,2024-10-28,Monday,New Delhi,Howrah,Chennai Central,Lucknow,CC,78,78,18,0,Yes,Tatkal,SCR,1317.0,20.5,588,764.0,100.0,Peak,0.0,10.0,1.0,Yes,1.0,5.0,Slight Delay,5.0
+PNR6923573378,12875,Neelachal Express,Express,2024-07-25,Thursday,Howrah,Puri,Durgapur,Patna,2A,46,0,0,46,Yes,General,ER,1835.0,21.6,3231,4200.0,0.0,Off-Peak,1.0,6.0,4.0,Yes,2.0,0.0,On Time,2.6
+PNR5048419646,13049,Amaravati Express,Express,2024-06-02,Sunday,Howrah,Amravati,Chennai Central,Bangalore City,GN,120,22,0,98,No,Defense,SCR,461.0,20.0,939,1220.0,18.33,Off-Peak,0.0,9.0,7.0,Yes,9.0,90.0,Delayed,
+PNR6163848174,22811,Bhubaneswar Rajdhani,Rajdhani,2024-04-09,Tuesday,Bhubaneswar,New Delhi,Ranchi,Bhubaneswar,SL,72,53,0,19,No,Defense,ECR,702.0,19.6,4691,,73.61,Peak,0.0,8.0,3.0,No,9.0,60.0,Delayed,3.5
+PNR5606987443,12302,New Delhi Rajdhani,Rajdhani,2024-08-29,Thursday,New Delhi,Howrah,Howrah,Varanasi,CC,78,78,9,0,No,Tatkal,SCR,1907.0,40.7,4175,,100.0,Off-Peak,1.0,0.0,3.0,Yes,1.0,0.0,On Time,
+PNR6097146801,12245,Duronto Express,Duronto,2024-07-02,Tuesday,Howrah,Pune,Howrah,Dhanbad,SL,72,72,8,0,Yes,Defense,ER,2391.0,18.6,4476,,100.0,Off-Peak,0.0,7.0,5.0,No,9.0,15.0,Slight Delay,
+PNR7392104267,12875,Neelachal Express,Express,2024-08-21,Wednesday,Howrah,Puri,Hyderabad Deccan,Pune,3A,64,11,0,53,Yes,General,NR,2269.0,32.8,1330,,17.19,Off-Peak,0.0,4.0,1.0,No,3.0,30.0,Delayed,
+PNR2929639043,12073,Jan Shatabdi,Jan Shatabdi,2024-09-01,Sunday,Howrah,Patna,Asansol,Indore,3A,64,64,1,0,Yes,Railway Employee,SCR,1141.0,44.1,809,,100.0,Off-Peak,0.0,10.0,4.0,No,8.0,0.0,On Time,4.1
+PNR9030057713,12259,Sealdah Duronto,Duronto,2024-01-02,Tuesday,Sealdah,New Delhi,Patna,Bangalore City,GN,120,120,27,0,Yes,Railway Employee,ER,309.0,30.9,1359,,100.0,Off-Peak,0.0,6.0,4.0,Yes,8.0,0.0,On Time,
+PNR3160792413,12259,Sealdah Duronto,Duronto,2024-05-22,Wednesday,Sealdah,New Delhi,Dhanbad,Ahmedabad,GN,120,120,0,0,Yes,Railway Employee,CR,70.0,4.2,1655,,100.0,Peak,0.0,2.0,4.0,No,4.0,0.0,On Time,
+PNR5321797947,12381,Poorva Express,Express,2024-02-07,Wednesday,Howrah,New Delhi,Sealdah,Hyderabad Deccan,SL,72,69,0,3,Yes,Defense,ER,424.0,6.9,3256,,95.83,Off-Peak,0.0,9.0,2.0,No,15.0,0.0,On Time,3.6
+PNR8489856785,13049,Amaravati Express,Express,2024-04-05,Friday,Howrah,Amravati,Mumbai CST,Kanpur,SL,72,10,0,62,Yes,Defense,SR,867.0,3.5,557,,13.89,Peak,1.0,9.0,5.0,Yes,1.0,45.0,Delayed,3.8
+PNR2258578199,13119,Sealdah Anvt Express,Express,2024-02-14,Wednesday,Sealdah,Anand Vihar,,Nagpur,CC,78,73,0,5,Yes,Defense,NER,,,2758,,93.59,Off-Peak,,,,No,,,Delayed,
+PNR4975831753,12245,Duronto Express,Duronto,2024-02-15,Thursday,Howrah,Pune,Patna,Kolkata,CC,78,78,23,0,Yes,Defense,NR,923.0,43.4,4416,,100.0,Off-Peak,0.0,0.0,4.0,No,1.0,0.0,On Time,3.2
+PNR5590120624,12073,Jan Shatabdi,Jan Shatabdi,2024-07-25,Thursday,Howrah,Patna,,Dhanbad,2A,46,43,0,3,Yes,Railway Employee,SCR,,,1700,,93.48,Off-Peak,0.0,,,No,,,On Time,
+PNR2923306345,22811,Bhubaneswar Rajdhani,Rajdhani,2024-08-10,Saturday,Bhubaneswar,New Delhi,,Ahmedabad,1A,18,18,5,0,Yes,Railway Employee,CR,,,3716,,100.0,Off-Peak,,,,Yes,,,Delayed,
+PNR5522913982,12259,Sealdah Duronto,Duronto,2024-10-03,Thursday,Sealdah,New Delhi,Durgapur,Kanpur,1A,18,10,0,8,Yes,Railway Employee,ER,1661.0,18.2,2936,,55.56,Peak,0.0,1.0,5.0,No,3.0,5.0,Slight Delay,3.9
+PNR2393942170,12301,Howrah Rajdhani,Rajdhani,2024-10-31,Thursday,Howrah,New Delhi,Howrah,Agra,1A,18,17,0,1,Yes,Railway Employee,ER,466.0,42.9,2930,,94.44,Peak,0.0,1.0,7.0,No,2.0,90.0,Delayed,
+PNR9821791583,13049,Amaravati Express,Express,2024-05-31,Friday,Howrah,Amravati,Kolkata,Puri,2S,100,100,13,0,Yes,Railway Employee,ER,1713.0,34.8,3387,,100.0,Peak,0.0,5.0,4.0,Yes,11.0,0.0,On Time,4.6
+PNR5131668045,13119,Sealdah Anvt Express,Express,2024-03-10,Sunday,Sealdah,Anand Vihar,Howrah,Puri,2A,46,28,0,18,No,Railway Employee,ER,373.0,16.4,2770,,60.87,Off-Peak,0.0,5.0,4.0,No,11.0,90.0,Delayed,2.8
+PNR4627206450,12301,Howrah Rajdhani,Rajdhani,2024-09-09,Monday,Howrah,New Delhi,Patna,Pune,1A,18,14,0,4,Yes,Ladies,SCR,164.0,44.0,1766,,77.78,Off-Peak,0.0,0.0,0.0,No,5.0,120.0,Delayed,
+PNR1509028741,12245,Duronto Express,Duronto,2024-01-07,Sunday,Howrah,Pune,Chennai Central,Varanasi,2A,46,44,0,2,Yes,General,WR,1804.0,3.6,4942,6424.0,95.65,Off-Peak,0.0,1.0,1.0,No,11.0,90.0,Delayed,4.8
+PNR6837608623,13119,Sealdah Anvt Express,Express,2024-06-21,Friday,Sealdah,Anand Vihar,Asansol,Visakhapatnam,CC,78,78,0,0,Yes,Ladies,SCR,650.0,3.6,1627,,100.0,Off-Peak,0.0,0.0,6.0,No,10.0,90.0,Delayed,
+PNR1252500343,12301,Howrah Rajdhani,Rajdhani,2024-07-22,Monday,Howrah,New Delhi,Ranchi,Allahabad,CC,78,54,0,24,No,Senior Citizen,CR,230.0,37.7,4685,6090.0,69.23,Off-Peak,1.0,8.0,4.0,Yes,12.0,5.0,Slight Delay,3.3
+PNR4701780894,12311,Kalka Mail,Mail,2024-06-06,Thursday,Howrah,Kalka,Howrah,Bangalore City,CC,78,78,11,0,No,Senior Citizen,NER,1594.0,36.8,3271,4252.0,100.0,Off-Peak,0.0,5.0,0.0,Yes,3.0,120.0,Delayed,1.0
+PNR2680032283,12875,Neelachal Express,Express,2024-04-18,Thursday,Howrah,Puri,Chennai Central,Ranchi,SL,72,40,0,32,No,Defense,CR,802.0,28.6,2289,2975.0,55.56,Peak,0.0,3.0,3.0,No,6.0,0.0,On Time,
+PNR5494231664,12245,Duronto Express,Duronto,2024-01-17,Wednesday,Howrah,Pune,Mumbai CST,Bangalore City,CC,78,5,0,73,No,Defense,CR,1045.0,2.1,3655,4751.0,6.41,Off-Peak,0.0,1.0,6.0,No,8.0,5.0,Slight Delay,3.5
+PNR7627264996,12301,Howrah Rajdhani,Rajdhani,2024-05-24,Friday,Howrah,New Delhi,Bangalore City,Surat,2S,100,85,0,15,Yes,General,SR,2480.0,35.8,3939,,85.0,Peak,0.0,2.0,6.0,Yes,4.0,5.0,Slight Delay,
+PNR6884294167,12259,Sealdah Duronto,Duronto,2024-01-05,Friday,Sealdah,New Delhi,Ranchi,Puri,2S,100,36,0,64,Yes,Ladies,NER,1947.0,42.9,3948,5132.0,36.0,Off-Peak,0.0,0.0,7.0,Yes,2.0,15.0,Slight Delay,1.9
+PNR1722621777,22811,Bhubaneswar Rajdhani,Rajdhani,2024-01-04,Thursday,Bhubaneswar,New Delhi,Puri,Pune,2A,46,12,0,34,Yes,General,SCR,2198.0,38.0,3734,,26.09,Off-Peak,1.0,0.0,5.0,Yes,7.0,0.0,On Time,3.0
+PNR3364813790,12019,Shatabdi Express,Shatabdi,2024-10-01,Tuesday,Howrah,Ranchi,Kolkata,Surat,3A,64,42,0,22,Yes,Defense,NER,1976.0,9.3,4707,,65.62,Peak,1.0,8.0,8.0,Yes,,0.0,On Time,
+PNR9878422143,12019,Shatabdi Express,Shatabdi,2024-09-02,Monday,Howrah,Ranchi,Hyderabad Deccan,Pune,CC,78,78,19,0,Yes,Defense,NER,756.0,38.9,1969,,100.0,Off-Peak,0.0,0.0,1.0,Yes,3.0,45.0,Delayed,
+PNR3304913884,12301,Howrah Rajdhani,Rajdhani,2024-03-31,Sunday,Howrah,New Delhi,Puri,Asansol,CC,78,27,0,51,Yes,Railway Employee,SR,292.0,13.2,2612,,34.62,Off-Peak,1.0,4.0,3.0,Yes,15.0,60.0,Delayed,1.3
+PNR4011204942,13049,Amaravati Express,Express,2024-10-22,Tuesday,Howrah,Amravati,Puri,Bhubaneswar,CC,78,78,12,0,Yes,Tatkal,ER,901.0,47.0,1807,,100.0,Peak,0.0,3.0,2.0,Yes,12.0,45.0,Delayed,4.4
+PNR4083152295,12259,Sealdah Duronto,Duronto,2024-12-22,Sunday,Sealdah,New Delhi,Howrah,Visakhapatnam,1A,18,7,0,11,Yes,Defense,NR,1761.0,17.1,3255,,38.89,Peak,0.0,6.0,3.0,Yes,11.0,0.0,On Time,4.2
+PNR3510675524,12019,Shatabdi Express,Shatabdi,2024-08-13,Tuesday,Howrah,Ranchi,Bhubaneswar,Ahmedabad,SL,72,58,0,14,Yes,Tatkal,NR,143.0,31.8,3115,,80.56,Off-Peak,0.0,6.0,1.0,No,5.0,30.0,Delayed,1.2
+PNR5420258513,12259,Sealdah Duronto,Duronto,2024-10-25,Friday,Sealdah,New Delhi,Mumbai CST,Raipur,2S,100,55,0,45,Yes,General,ECR,1655.0,9.0,1177,,55.0,Peak,0.0,1.0,6.0,No,1.0,60.0,Delayed,
+PNR4826492627,12381,Poorva Express,Express,2024-10-12,Saturday,Howrah,New Delhi,Hyderabad Deccan,Asansol,3A,64,53,0,11,No,Tatkal,NR,,,3421,,82.81,Peak,0.0,,,No,,,Slight Delay,
+PNR7085248253,12381,Poorva Express,Express,2024-07-19,Friday,Howrah,New Delhi,Howrah,Dhanbad,2A,46,43,0,3,No,Tatkal,NER,827.0,7.5,2708,,93.48,Off-Peak,0.0,6.0,1.0,Yes,5.0,0.0,On Time,
+PNR8281800690,13119,Sealdah Anvt Express,Express,2024-03-11,Monday,Sealdah,Anand Vihar,Chennai Central,Bhopal,GN,120,87,0,33,Yes,General,ER,2236.0,35.7,4744,6167.0,72.5,Off-Peak,0.0,9.0,6.0,Yes,11.0,5.0,Slight Delay,4.6
+PNR1947483284,12245,Duronto Express,Duronto,2024-02-13,Tuesday,Howrah,Pune,Ranchi,Gaya,2S,100,97,0,3,Yes,Tatkal,CR,1937.0,46.8,2359,,97.0,Off-Peak,0.0,10.0,0.0,No,9.0,5.0,Slight Delay,
+PNR1333067525,12311,Kalka Mail,Mail,2024-04-13,Saturday,Howrah,Kalka,Kolkata,Varanasi,GN,120,8,0,112,No,Senior Citizen,ER,1581.0,47.1,2173,,6.67,Peak,1.0,6.0,4.0,No,6.0,45.0,Delayed,3.8
+PNR6325455222,12245,Duronto Express,Duronto,2024-05-17,Friday,Howrah,Pune,Bangalore City,Surat,2S,100,85,0,15,No,Ladies,ECR,1633.0,44.8,1833,,85.0,Peak,1.0,1.0,6.0,Yes,15.0,10.0,Slight Delay,
+PNR4900941556,12259,Sealdah Duronto,Duronto,2024-06-24,Monday,Sealdah,New Delhi,Bhubaneswar,Gaya,3A,64,47,0,17,Yes,Defense,NR,1449.0,10.1,381,,73.44,Off-Peak,0.0,5.0,5.0,No,7.0,10.0,Slight Delay,1.7
+PNR6324029963,12019,Shatabdi Express,Shatabdi,2024-01-07,Sunday,Howrah,Ranchi,Asansol,Indore,SL,72,35,0,37,Yes,Ladies,SR,1626.0,7.2,1319,1714.0,48.61,Off-Peak,0.0,10.0,4.0,Yes,4.0,0.0,On Time,4.3
+PNR2772315019,12311,Kalka Mail,Mail,2024-06-11,Tuesday,Howrah,Kalka,Puri,Visakhapatnam,3A,64,27,0,37,No,Tatkal,NR,124.0,2.9,657,854.0,42.19,Off-Peak,0.0,7.0,8.0,No,15.0,0.0,On Time,
+PNR6501214550,12302,New Delhi Rajdhani,Rajdhani,2024-02-10,Saturday,New Delhi,Howrah,New Delhi,Kolkata,3A,64,64,6,0,Yes,Railway Employee,CR,771.0,21.6,3858,5015.0,100.0,Off-Peak,1.0,4.0,4.0,No,1.0,0.0,On Time,3.6
+PNR1633885220,12259,Sealdah Duronto,Duronto,2024-11-27,Wednesday,Sealdah,New Delhi,Dhanbad,Kanpur,GN,120,6,0,114,No,Senior Citizen,SR,2414.0,21.5,4533,,5.0,Peak,1.0,3.0,3.0,No,1.0,0.0,On Time,1.2
+PNR8789659355,12301,Howrah Rajdhani,Rajdhani,2024-11-18,Monday,Howrah,New Delhi,Dhanbad,Ahmedabad,2S,100,91,0,9,Yes,General,SCR,1383.0,31.7,1449,,91.0,Peak,0.0,0.0,0.0,Yes,8.0,120.0,Delayed,
+PNR1836949785,12259,Sealdah Duronto,Duronto,2024-02-03,Saturday,Sealdah,New Delhi,Hyderabad Deccan,Bangalore City,3A,64,23,0,41,Yes,Tatkal,NR,941.0,37.0,2819,,35.94,Off-Peak,0.0,7.0,2.0,Yes,,0.0,On Time,
+PNR8625995551,12073,Jan Shatabdi,Jan Shatabdi,2024-06-26,Wednesday,Howrah,Patna,New Delhi,Raipur,3A,64,19,0,45,Yes,Defense,SR,2407.0,35.3,4444,5777.0,29.69,Off-Peak,0.0,5.0,2.0,No,10.0,15.0,Slight Delay,4.4
+PNR8793998005,13119,Sealdah Anvt Express,Express,2024-04-19,Friday,Sealdah,Anand Vihar,,Indore,2A,46,9,0,37,Yes,Defense,SR,,,1584,,19.57,Peak,,,,Yes,,,Delayed,
+PNR2971882657,12301,Howrah Rajdhani,Rajdhani,2024-08-28,Wednesday,Howrah,New Delhi,Ranchi,Puri,SL,72,11,0,61,No,Defense,NER,544.0,37.0,601,,15.28,Off-Peak,0.0,6.0,0.0,Yes,1.0,45.0,Delayed,
+PNR8984473676,12381,Poorva Express,Express,2024-02-21,Wednesday,Howrah,New Delhi,Puri,Nagpur,3A,64,64,18,0,No,Railway Employee,CR,2237.0,41.5,4735,6155.0,100.0,Off-Peak,1.0,3.0,5.0,No,13.0,10.0,Slight Delay,
+PNR5090028822,12019,Shatabdi Express,Shatabdi,2024-04-20,Saturday,Howrah,Ranchi,Dhanbad,Indore,2S,100,39,0,61,Yes,Railway Employee,NR,1246.0,13.3,1360,,39.0,Peak,0.0,10.0,2.0,Yes,12.0,15.0,Slight Delay,
+PNR9161374922,12073,Jan Shatabdi,Jan Shatabdi,2024-06-21,Friday,Howrah,Patna,Mumbai CST,Nagpur,2A,46,23,0,23,No,Tatkal,NR,519.0,26.2,603,,50.0,Off-Peak,1.0,4.0,1.0,Yes,1.0,45.0,Delayed,
+PNR2391392754,22811,Bhubaneswar Rajdhani,Rajdhani,2024-06-05,Wednesday,Bhubaneswar,New Delhi,Howrah,Bhopal,GN,120,31,0,89,Yes,Tatkal,ECR,764.0,20.2,4801,,25.83,Off-Peak,0.0,10.0,6.0,Yes,10.0,45.0,Delayed,2.5
+PNR6847735965,13049,Amaravati Express,Express,2024-05-21,Tuesday,Howrah,Amravati,Chennai Central,Surat,GN,120,120,1,0,Yes,Tatkal,NR,1558.0,5.5,568,738.0,100.0,Peak,0.0,1.0,1.0,No,6.0,30.0,Delayed,3.3
+PNR6673825968,13119,Sealdah Anvt Express,Express,2024-02-16,Friday,Sealdah,Anand Vihar,Ranchi,Agra,CC,78,78,14,0,Yes,Tatkal,ER,2004.0,38.9,3279,4262.0,100.0,Off-Peak,0.0,4.0,2.0,No,3.0,120.0,Delayed,
+PNR1385711216,12073,Jan Shatabdi,Jan Shatabdi,2024-11-29,Friday,Howrah,Patna,Chennai Central,Patna,SL,72,12,0,60,Yes,Defense,WR,1811.0,43.6,1313,,16.67,Peak,1.0,8.0,7.0,No,1.0,90.0,Delayed,2.9
+PNR1993529899,12302,New Delhi Rajdhani,Rajdhani,2024-03-25,Monday,New Delhi,Howrah,,Pune,SL,72,62,0,10,Yes,Tatkal,NER,,,4163,,86.11,Off-Peak,,,,No,,,Delayed,
+PNR9983763814,13119,Sealdah Anvt Express,Express,2024-04-16,Tuesday,Sealdah,Anand Vihar,Asansol,Allahabad,2S,100,79,0,21,Yes,Ladies,WR,176.0,45.9,1863,,79.0,Peak,0.0,2.0,3.0,Yes,3.0,0.0,On Time,
+PNR6919048740,12073,Jan Shatabdi,Jan Shatabdi,2024-02-05,Monday,Howrah,Patna,Chennai Central,Surat,3A,64,3,0,61,No,Ladies,NER,78.0,34.6,3059,,4.69,Off-Peak,1.0,8.0,7.0,No,5.0,10.0,Slight Delay,4.1
+PNR7842251654,12875,Neelachal Express,Express,2024-07-24,Wednesday,Howrah,Puri,Dhanbad,Dhanbad,3A,64,64,9,0,Yes,Senior Citizen,WR,1629.0,42.9,3868,,100.0,Off-Peak,0.0,4.0,5.0,Yes,1.0,30.0,Delayed,
+PNR9751575923,13049,Amaravati Express,Express,2024-12-23,Monday,Howrah,Amravati,Kolkata,Allahabad,2A,46,30,0,16,Yes,Defense,ECR,813.0,46.3,1831,,65.22,Peak,0.0,10.0,5.0,Yes,10.0,30.0,Delayed,
+PNR4088149542,12019,Shatabdi Express,Shatabdi,2024-01-26,Friday,Howrah,Ranchi,New Delhi,Varanasi,2S,100,94,0,6,Yes,General,SR,2216.0,9.0,4017,,94.0,Off-Peak,0.0,6.0,4.0,Yes,2.0,15.0,Slight Delay,4.7
+PNR7922302140,12073,Jan Shatabdi,Jan Shatabdi,2024-10-13,Sunday,Howrah,Patna,Bangalore City,Dhanbad,GN,120,120,25,0,No,Railway Employee,ECR,1065.0,15.4,2947,,100.0,Peak,0.0,4.0,3.0,No,12.0,10.0,Slight Delay,4.2
+PNR3530114839,12311,Kalka Mail,Mail,2024-11-09,Saturday,Howrah,Kalka,Asansol,Pune,1A,18,12,0,6,Yes,Railway Employee,CR,1179.0,28.4,4864,,66.67,Peak,0.0,6.0,4.0,Yes,9.0,120.0,Delayed,3.8
+PNR7444616725,12259,Sealdah Duronto,Duronto,2024-03-15,Friday,Sealdah,New Delhi,New Delhi,Pune,2A,46,3,0,43,No,Railway Employee,WR,2407.0,32.6,2888,,6.52,Off-Peak,0.0,1.0,3.0,Yes,2.0,0.0,On Time,4.0
+PNR5481161557,12875,Neelachal Express,Express,2024-03-07,Thursday,Howrah,Puri,Bangalore City,Dhanbad,1A,18,18,4,0,Yes,Tatkal,CR,1740.0,18.7,1619,,100.0,Off-Peak,0.0,2.0,0.0,Yes,1.0,0.0,On Time,3.3
+PNR3433414813,12311,Kalka Mail,Mail,2024-07-14,Sunday,Howrah,Kalka,Durgapur,Bangalore City,1A,18,4,0,14,Yes,Railway Employee,SCR,486.0,7.8,2030,,22.22,Off-Peak,1.0,5.0,6.0,No,9.0,90.0,Delayed,2.3
+PNR4462449882,13049,Amaravati Express,Express,2024-11-17,Sunday,Howrah,Amravati,Dhanbad,Surat,2S,100,100,20,0,Yes,General,CR,1526.0,27.2,218,,100.0,Peak,0.0,6.0,6.0,Yes,2.0,0.0,On Time,
+PNR1788415032,22811,Bhubaneswar Rajdhani,Rajdhani,2024-10-08,Tuesday,Bhubaneswar,New Delhi,Durgapur,Lucknow,3A,64,6,0,58,Yes,Railway Employee,SR,187.0,41.4,1876,,9.38,Peak,1.0,4.0,2.0,No,,5.0,Slight Delay,
+PNR8121196375,12019,Shatabdi Express,Shatabdi,2024-12-05,Thursday,Howrah,Ranchi,Asansol,Ahmedabad,SL,72,72,19,0,Yes,General,SCR,626.0,28.0,4946,,100.0,Peak,0.0,2.0,1.0,No,8.0,10.0,Slight Delay,
+PNR8909063683,12311,Kalka Mail,Mail,2024-04-06,Saturday,Howrah,Kalka,Howrah,Bhubaneswar,1A,18,9,0,9,Yes,Defense,SCR,242.0,9.1,1902,2472.0,50.0,Peak,0.0,6.0,6.0,No,3.0,45.0,Delayed,3.9
+PNR5269267449,12259,Sealdah Duronto,Duronto,2024-04-11,Thursday,Sealdah,New Delhi,Bhubaneswar,Asansol,2A,46,8,0,38,Yes,Tatkal,ER,600.0,16.9,4462,,17.39,Peak,0.0,3.0,3.0,Yes,4.0,0.0,On Time,
+PNR9164319224,12311,Kalka Mail,Mail,2024-07-28,Sunday,Howrah,Kalka,Asansol,Kanpur,SL,72,56,0,16,Yes,General,NER,1798.0,8.1,754,,77.78,Off-Peak,0.0,5.0,3.0,Yes,3.0,10.0,Slight Delay,
+PNR3094381758,12302,New Delhi Rajdhani,Rajdhani,2024-03-29,Friday,New Delhi,Howrah,Mumbai CST,Bangalore City,2A,46,46,1,0,Yes,Ladies,SR,241.0,7.4,4965,,100.0,Off-Peak,0.0,9.0,0.0,Yes,8.0,0.0,On Time,3.6
+PNR8865483029,12259,Sealdah Duronto,Duronto,2024-05-29,Wednesday,Sealdah,New Delhi,Puri,Ahmedabad,1A,18,11,0,7,No,Railway Employee,NR,2000.0,31.4,679,882.0,61.11,Peak,0.0,4.0,6.0,Yes,10.0,90.0,Delayed,1.7
+PNR2892818922,12311,Kalka Mail,Mail,2024-01-26,Friday,Howrah,Kalka,Asansol,Bhopal,SL,72,46,0,26,No,Railway Employee,SR,1440.0,25.0,4636,6026.0,63.89,Off-Peak,0.0,2.0,5.0,Yes,13.0,90.0,Delayed,2.4
+PNR6357565508,12381,Poorva Express,Express,2024-09-30,Monday,Howrah,New Delhi,Mumbai CST,Nagpur,3A,64,32,0,32,Yes,Senior Citizen,NR,813.0,6.1,4354,,50.0,Off-Peak,0.0,1.0,8.0,No,9.0,0.0,On Time,
+PNR4860348995,13049,Amaravati Express,Express,2024-12-18,Wednesday,Howrah,Amravati,Patna,Hyderabad Deccan,CC,78,53,0,25,No,Ladies,ER,973.0,29.3,609,,67.95,Peak,0.0,5.0,2.0,No,12.0,0.0,On Time,1.7
+PNR2951648195,12259,Sealdah Duronto,Duronto,2024-09-09,Monday,Sealdah,New Delhi,New Delhi,Bangalore City,SL,72,32,0,40,Yes,Ladies,SR,641.0,6.8,2246,,44.44,Off-Peak,0.0,10.0,4.0,No,14.0,5.0,Slight Delay,4.0
+PNR9487551059,12301,Howrah Rajdhani,Rajdhani,2024-12-20,Friday,Howrah,New Delhi,Chennai Central,Dhanbad,CC,78,25,0,53,No,General,CR,2107.0,40.6,1857,,32.05,Peak,0.0,0.0,4.0,No,1.0,0.0,On Time,
+PNR8234248424,13049,Amaravati Express,Express,2024-11-10,Sunday,Howrah,Amravati,Sealdah,Pune,2S,100,96,0,4,Yes,Tatkal,NER,2085.0,13.5,4357,5664.0,96.0,Peak,0.0,6.0,6.0,Yes,3.0,90.0,Delayed,2.7
+PNR1732276273,12311,Kalka Mail,Mail,2024-04-04,Thursday,Howrah,Kalka,Dhanbad,Varanasi,SL,72,63,0,9,Yes,General,ECR,379.0,42.7,4084,,87.5,Peak,0.0,2.0,2.0,Yes,11.0,15.0,Slight Delay,4.7
+PNR2763138690,12259,Sealdah Duronto,Duronto,2024-10-30,Wednesday,Sealdah,New Delhi,,Bhubaneswar,3A,64,14,0,50,Yes,Ladies,ECR,,,784,,21.88,Peak,,,,Yes,,,Delayed,
+PNR3209211183,12259,Sealdah Duronto,Duronto,2024-01-22,Monday,Sealdah,New Delhi,Puri,Bhopal,SL,72,48,0,24,Yes,General,WR,,,822,,66.67,Off-Peak,0.0,,,Yes,,,On Time,
+PNR4559822204,13119,Sealdah Anvt Express,Express,2024-02-12,Monday,Sealdah,Anand Vihar,Asansol,Patna,2A,46,46,8,0,Yes,Railway Employee,CR,2144.0,32.3,1443,,100.0,Off-Peak,0.0,8.0,2.0,No,9.0,30.0,Delayed,
+PNR7574900430,12311,Kalka Mail,Mail,2024-01-05,Friday,Howrah,Kalka,Chennai Central,Ahmedabad,1A,18,18,0,0,Yes,Senior Citizen,CR,1301.0,36.4,1098,1427.0,100.0,Off-Peak,0.0,0.0,6.0,Yes,10.0,60.0,Delayed,3.0
+PNR7531704552,13119,Sealdah Anvt Express,Express,2024-09-25,Wednesday,Sealdah,Anand Vihar,Asansol,Raipur,SL,72,31,0,41,No,Railway Employee,ECR,1204.0,45.5,2769,,43.06,Off-Peak,0.0,1.0,6.0,Yes,4.0,10.0,Slight Delay,
+PNR1322568010,12259,Sealdah Duronto,Duronto,2024-08-11,Sunday,Sealdah,New Delhi,New Delhi,Bangalore City,GN,120,37,0,83,Yes,Railway Employee,NR,236.0,14.7,1666,,30.83,Off-Peak,0.0,1.0,4.0,No,,90.0,Delayed,
+PNR8560651734,12302,New Delhi Rajdhani,Rajdhani,2024-02-16,Friday,New Delhi,Howrah,Bhubaneswar,Pune,SL,72,72,6,0,Yes,Defense,NR,708.0,25.4,3857,,100.0,Off-Peak,0.0,0.0,3.0,No,7.0,30.0,Delayed,
+PNR5318085572,12245,Duronto Express,Duronto,2024-03-27,Wednesday,Howrah,Pune,Dhanbad,Kolkata,2S,100,0,0,100,Yes,Defense,SCR,842.0,26.8,711,,0.0,Off-Peak,0.0,0.0,5.0,Yes,6.0,0.0,On Time,4.5
+PNR1268211135,12019,Shatabdi Express,Shatabdi,2024-10-08,Tuesday,Howrah,Ranchi,Patna,Allahabad,2S,100,0,0,100,No,Tatkal,NER,1836.0,44.9,3110,4043.0,0.0,Peak,0.0,8.0,3.0,No,11.0,5.0,Slight Delay,
+PNR2728683349,12875,Neelachal Express,Express,2024-07-27,Saturday,Howrah,Puri,Hyderabad Deccan,Kanpur,2S,100,21,0,79,Yes,Tatkal,ECR,2311.0,15.7,4342,5644.0,21.0,Off-Peak,0.0,1.0,3.0,Yes,11.0,60.0,Delayed,1.8
+PNR6256205686,12019,Shatabdi Express,Shatabdi,2024-11-07,Thursday,Howrah,Ranchi,Dhanbad,Puri,2A,46,6,0,40,No,Railway Employee,NR,2214.0,23.7,4628,6016.0,13.04,Peak,0.0,6.0,7.0,No,7.0,0.0,On Time,2.7
+PNR9616880989,13119,Sealdah Anvt Express,Express,2024-07-08,Monday,Sealdah,Anand Vihar,Dhanbad,Ahmedabad,GN,120,120,28,0,Yes,Railway Employee,CR,1063.0,37.3,1568,2038.0,100.0,Off-Peak,1.0,9.0,7.0,No,2.0,45.0,Delayed,3.8
+PNR3762744182,13049,Amaravati Express,Express,2024-10-30,Wednesday,Howrah,Amravati,Ranchi,Indore,SL,72,72,2,0,Yes,Ladies,NER,779.0,35.7,4568,,100.0,Peak,0.0,6.0,6.0,No,,30.0,Delayed,
+PNR6685131324,12073,Jan Shatabdi,Jan Shatabdi,2024-06-30,Sunday,Howrah,Patna,,Dhanbad,CC,78,12,0,66,Yes,Ladies,SCR,,,1333,,15.38,Off-Peak,,,,Yes,,,Delayed,
+PNR2307872543,12311,Kalka Mail,Mail,2024-11-17,Sunday,Howrah,Kalka,Asansol,Kanpur,SL,72,18,0,54,No,Senior Citizen,ER,2353.0,1.7,3575,4647.0,25.0,Peak,1.0,4.0,7.0,No,9.0,15.0,Slight Delay,4.4
+PNR2298235387,12311,Kalka Mail,Mail,2024-07-26,Friday,Howrah,Kalka,Hyderabad Deccan,Kanpur,3A,64,9,0,55,Yes,Ladies,NER,2175.0,45.4,4370,,14.06,Off-Peak,1.0,9.0,8.0,Yes,7.0,10.0,Slight Delay,3.1
+PNR5337542300,12311,Kalka Mail,Mail,2024-05-28,Tuesday,Howrah,Kalka,New Delhi,Ranchi,3A,64,1,0,63,Yes,Tatkal,ECR,621.0,46.2,1565,,1.56,Peak,1.0,4.0,8.0,Yes,1.0,60.0,Delayed,
+PNR4307865456,22811,Bhubaneswar Rajdhani,Rajdhani,2024-05-09,Thursday,Bhubaneswar,New Delhi,Howrah,Ahmedabad,3A,64,64,2,0,Yes,Railway Employee,ER,1401.0,23.9,1055,1371.0,100.0,Peak,0.0,9.0,7.0,No,14.0,0.0,On Time,2.7
+PNR8680701997,12019,Shatabdi Express,Shatabdi,2024-01-08,Monday,Howrah,Ranchi,Dhanbad,Bangalore City,2A,46,46,13,0,Yes,General,WR,238.0,33.1,3862,,100.0,Off-Peak,1.0,1.0,5.0,Yes,1.0,15.0,Slight Delay,1.4
+PNR6558502494,12311,Kalka Mail,Mail,2024-10-16,Wednesday,Howrah,Kalka,Patna,Surat,2A,46,46,6,0,Yes,Defense,NER,129.0,31.9,3790,,100.0,Peak,0.0,6.0,0.0,Yes,2.0,120.0,Delayed,2.7
+PNR9241758722,12245,Duronto Express,Duronto,2024-03-03,Sunday,Howrah,Pune,Chennai Central,Durgapur,1A,18,7,0,11,Yes,Defense,ER,1661.0,24.0,2423,3149.0,38.89,Off-Peak,1.0,8.0,6.0,No,3.0,10.0,Slight Delay,2.5
+PNR9041221145,12259,Sealdah Duronto,Duronto,2024-02-29,Thursday,Sealdah,New Delhi,New Delhi,Gaya,3A,64,44,0,20,No,Tatkal,SR,790.0,7.3,3773,,68.75,Off-Peak,0.0,3.0,4.0,No,13.0,0.0,On Time,
+PNR7172183272,12381,Poorva Express,Express,2024-06-04,Tuesday,Howrah,New Delhi,New Delhi,Ranchi,CC,78,36,0,42,Yes,Defense,WR,1330.0,1.8,2867,,46.15,Off-Peak,0.0,4.0,5.0,No,4.0,0.0,On Time,
+PNR2693876917,12073,Jan Shatabdi,Jan Shatabdi,2024-01-29,Monday,Howrah,Patna,Puri,Puri,1A,18,18,5,0,Yes,General,NER,1020.0,44.4,2240,2912.0,100.0,Off-Peak,1.0,7.0,2.0,No,13.0,10.0,Slight Delay,3.2
+PNR2394679025,12019,Shatabdi Express,Shatabdi,2024-11-12,Tuesday,Howrah,Ranchi,New Delhi,Surat,3A,64,64,7,0,Yes,Tatkal,SCR,623.0,34.6,2829,,100.0,Peak,1.0,1.0,8.0,No,8.0,15.0,Slight Delay,2.8
+PNR6855212153,12301,Howrah Rajdhani,Rajdhani,2024-06-21,Friday,Howrah,New Delhi,Bhubaneswar,Patna,1A,18,16,0,2,Yes,Senior Citizen,NER,1308.0,14.0,586,,88.89,Off-Peak,0.0,10.0,3.0,No,,0.0,On Time,
+PNR7747720341,12245,Duronto Express,Duronto,2024-05-31,Friday,Howrah,Pune,Mumbai CST,Durgapur,1A,18,14,0,4,Yes,Defense,WR,200.0,17.0,1175,,77.78,Peak,0.0,3.0,3.0,Yes,9.0,5.0,Slight Delay,4.5
