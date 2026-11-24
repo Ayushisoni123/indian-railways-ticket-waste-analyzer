@@ -62,6 +62,7 @@ UPI payment gateway handle all transactions.
 - Cancellation Rate by Class (Bar Chart)
 - Train Type Occupancy Comparison (Bar Chart)
 - [Looker Studio Dashboard](https://datastudio.google.com/reporting/1dc440e8-b51e-46d7-9625-5a9d5e013af6)
+- [Interactive Passenger-to-Passenger Seat-Transfer Prototype](https://ayushisoni123.github.io/indian-railways-ticket-waste-analyzer/prototype/)
 
 ## Policy Recommendation
 
