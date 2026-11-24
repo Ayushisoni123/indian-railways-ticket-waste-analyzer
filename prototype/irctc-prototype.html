@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html lang="en"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxNTgwMzg0OTI4NjM4MTkwMTM3NiIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzI2MjI4NzMwNzI5MWZiZjhfaXJjdGMtcHJvdG90eXBlLmh0bWwtOTc5In0sImV4cCI6MTc5NTQxOTEzMiwiaWF0IjoxNzk1NDE1NTMyLCJhbGciOiJSUzI1NiJ9.kt1-BpkFR7r4g_NYwmP6ZUKubPsBlxNv1snB5OpIwzQpT2HMIMK1GuNCP3bdfuOt7XZ-f5iVAHwagrKUXbq8LxKbvQwvr7MTtXArxWi7i-g7THLd6CeBM37e07fcmroCrEXqWa9yde9EGrbkNWNAKmjDm5kNgRNZRq294WqK37vrhmr5I4Umt3xklZxF5L56vdFsxxwxRvZM-hq-1xhRVLgj_CUSZO8JjxLA0VdD2RalWTuojdiwMA0gh5yCwEZ4WluTLqipU1FwTCfyeljpvjbq5HGgoN9JWV0fiheKcqUbRld3_thBG4sK_1TXQHpkRCJIquLmJ07oFvmOKdI9hQ","c_262287307291fbf8_irctc-prototype.html-979")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const SCROLL_KEYS = new Set([
+    'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
+    ' ', 'Spacebar', 'PageUp', 'PageDown', 'Home', 'End',
+  ]);
+  const HORIZONTAL_KEYS = new Set(['ArrowLeft', 'ArrowRight']);
+
+  function isTextEntryTarget(target) {
+    if (!target) return false;
+    const tagName = target.tagName;
+    return tagName === 'INPUT' || tagName === 'TEXTAREA' ||
+        tagName === 'SELECT' || target.isContentEditable === true;
+  }
+
+  // An element absorbs the key only if it both overflows on the axis being
+  // scrolled and is configured to scroll on that axis. The cheap dimension
+  // test runs first because getComputedStyle forces a style recalc, and this
+  // runs on every keypress. Each axis is read from its own longhand: the
+  // 'overflow' shorthand serializes as two values when the axes differ, which
+  // is the common 'overflow-x: hidden; overflow-y: auto' pane.
+  function canScroll(node, horizontal) {
+    const overflows = horizontal ? node.scrollWidth > node.clientWidth
+                                 : node.scrollHeight > node.clientHeight;
+    if (!overflows) return false;
+    const style = window.getComputedStyle(node);
+    const overflow = horizontal ? style.overflowX : style.overflowY;
+    return overflow === 'auto' || overflow === 'scroll';
+  }
+
+  // Walks up from the event target so nested scrollers keep their behavior.
+  // <body> is included because pages that pin the root height make it the
+  // scroll container.
+  function hasScrollableAncestor(target, horizontal) {
+    let node = target;
+    while (node && node !== document.documentElement) {
+      if (canScroll(node, horizontal)) return true;
+      node = node.parentElement;
+    }
+    return false;
+  }
+
+  function rootCanScroll(horizontal) {
+    const scroller = document.scrollingElement || document.documentElement;
+    if (!scroller) return false;
+    // Tolerate a pixel of rounding so subpixel layouts do not look scrollable.
+    return horizontal ? scroller.scrollWidth > window.innerWidth + 1
+                      : scroller.scrollHeight > window.innerHeight + 1;
+  }
+
+  window.addEventListener('keydown', function(event) {
+    if (!SCROLL_KEYS.has(event.key)) return;
+    if (event.defaultPrevented) return;
+    // Alt and Meta turn arrows into browser history navigation, and Ctrl is
+    // reserved for shortcuts, so none of them are scroll intent.
+    if (event.altKey || event.metaKey || event.ctrlKey) return;
+
+    const target = event.target;
+    if (isTextEntryTarget(target)) return;
+
+    // Anything that can still absorb the scroll gets to keep it.
+    const horizontal = HORIZONTAL_KEYS.has(event.key);
+    if (rootCanScroll(horizontal)) return;
+    if (hasScrollableAncestor(target, horizontal)) return;
+
+    event.preventDefault();
+  }, {capture: true, passive: false});
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.extensions="";var l=0,t=null,r=null,q=[],F=new TextEncoder,
+G=new TextDecoder;c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*
+16|0;return(f==="x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;
+(g=t)==null||g.postMessage(a)}};Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  const OVERLAY_SELECTOR =
+    'dialog[open], [role="dialog"], [role="alertdialog"], [role="menu"], [role="listbox"], [role="combobox"]';
+
+  function isVisibleOverlay(element) {
+    if (element.closest('[hidden], [aria-hidden="true"], [inert]')) {
+      return false;
+    }
+    if (window.getComputedStyle(element).visibility === 'hidden') {
+      return false;
+    }
+    for (let cur = element; cur; cur = cur.parentElement) {
+      if (window.getComputedStyle(cur).display === 'none') {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function hasOpenOverlay() {
+    const candidates = document.querySelectorAll(OVERLAY_SELECTOR);
+    for (let i = 0; i < candidates.length; i++) {
+      if (isVisibleOverlay(candidates[i])) {
+        return true;
+      }
+    }
+    try {
+      if (document.querySelector('[popover]:popover-open')) {
+        return true;
+      }
+    } catch (e) {
+      // Ignore engines that do not support :popover-open.
+    }
+    return false;
+  }
+
+  function isNonEmptySearchInput(target) {
+    return (
+      Boolean(target) &&
+      target.tagName === 'INPUT' &&
+      typeof target.type === 'string' &&
+      target.type.toLowerCase() === 'search' &&
+      typeof target.value === 'string' &&
+      target.value.length > 0
+    );
+  }
+
+  function shouldIgnoreEscape(event) {
+    return (
+      event.key !== 'Escape' ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      event.isComposing ||
+      event.repeat ||
+      event.keyCode === 229 ||
+      isNonEmptySearchInput(event.target)
+    );
+  }
+
+  let shouldIgnoreCaptureState = false;
+
+  window.addEventListener(
+    'keydown',
+    function(event) {
+      if (event.key === 'Escape') {
+        shouldIgnoreCaptureState =
+          hasOpenOverlay() || isNonEmptySearchInput(event.target);
+      }
+    },
+    {capture: true},
+  );
+
+  window.addEventListener('keydown', function(event) {
+    if (
+      shouldIgnoreEscape(event) ||
+      event.defaultPrevented ||
+      shouldIgnoreCaptureState
+    ) {
+      return;
+    }
+    const wasBlockedOnCapture = shouldIgnoreCaptureState;
+    queueMicrotask(function() {
+      if (event.defaultPrevented || wasBlockedOnCapture) {
+        return;
+      }
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({'type': 'escapeKey'}, '*');
+      }
+    });
+  });
+})();</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRCTC Masked P2P Ticket Transfer — Interactive PM Prototype | Ayushi Soni</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, system-ui, -apple-system, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:JetBrains Mono, monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.sticky{position:sticky}.top-0{top:0px}.z-30{z-index:30}.mx-auto{margin-left:auto;margin-right:auto}.mb-3{margin-bottom:0.75rem}.ml-1{margin-left:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-2{height:0.5rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-9{height:2.25rem}.w-2{width:0.5rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-fit{width:-moz-fit-content;width:fit-content}.w-full{width:100%}.min-w-0{min-width:0px}.min-w-\[210px\]{min-width:210px}.max-w-5xl{max-width:64rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.cursor-pointer{cursor:pointer}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-t-2{border-top-width:2px}.border-dashed{border-style:dashed}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-amber-300{--tw-border-opacity:1;border-color:rgb(252 211 77 / var(--tw-border-opacity, 1))}.border-amber-500{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.border-blue-200\/70{border-color:rgb(191 219 254 / 0.7)}.border-blue-300{--tw-border-opacity:1;border-color:rgb(147 197 253 / var(--tw-border-opacity, 1))}.border-blue-700{--tw-border-opacity:1;border-color:rgb(29 78 216 / var(--tw-border-opacity, 1))}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208 / var(--tw-border-opacity, 1))}.border-emerald-500{--tw-border-opacity:1;border-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.border-rose-200{--tw-border-opacity:1;border-color:rgb(254 205 211 / var(--tw-border-opacity, 1))}.border-rose-300{--tw-border-opacity:1;border-color:rgb(253 164 175 / var(--tw-border-opacity, 1))}.border-rose-600{--tw-border-opacity:1;border-color:rgb(225 29 72 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-200\/80{border-color:rgb(226 232 240 / 0.8)}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-amber-200\/80{background-color:rgb(253 230 138 / 0.8)}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-amber-600{--tw-bg-opacity:1;background-color:rgb(217 119 6 / var(--tw-bg-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-blue-50\/50{background-color:rgb(239 246 255 / 0.5)}.bg-blue-50\/60{background-color:rgb(239 246 255 / 0.6)}.bg-blue-50\/70{background-color:rgb(239 246 255 / 0.7)}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-blue-700{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-emerald-50\/40{background-color:rgb(236 253 245 / 0.4)}.bg-emerald-50\/60{background-color:rgb(236 253 245 / 0.6)}.bg-emerald-50\/70{background-color:rgb(236 253 245 / 0.7)}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/20{background-color:rgb(16 185 129 / 0.2)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-rose-100{--tw-bg-opacity:1;background-color:rgb(255 228 230 / var(--tw-bg-opacity, 1))}.bg-rose-50\/50{background-color:rgb(255 241 242 / 0.5)}.bg-rose-50\/70{background-color:rgb(255 241 242 / 0.7)}.bg-rose-600{--tw-bg-opacity:1;background-color:rgb(225 29 72 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-50\/70{background-color:rgb(248 250 252 / 0.7)}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-800\/90{background-color:rgb(30 41 59 / 0.9)}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-slate-50{--tw-gradient-from:#f8fafc var(--tw-gradient-from-position);--tw-gradient-to:rgb(248 250 252 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-blue-50\/40{--tw-gradient-to:rgb(239 246 255 / 0.4) var(--tw-gradient-to-position)}.p-1{padding:0.25rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-1\.5{padding-bottom:0.375rem}.pb-3{padding-bottom:0.75rem}.pb-4{padding-bottom:1rem}.pb-5{padding-bottom:1.25rem}.pl-4{padding-left:1rem}.pt-1{padding-top:0.25rem}.pt-1\.5{padding-top:0.375rem}.pt-2{padding-top:0.5rem}.pt-3{padding-top:0.75rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:JetBrains Mono, monospace}.font-sans{font-family:Inter, system-ui, -apple-system, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-wider{letter-spacing:0.05em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-amber-900{--tw-text-opacity:1;color:rgb(120 53 15 / var(--tw-text-opacity, 1))}.text-amber-950{--tw-text-opacity:1;color:rgb(69 26 3 / var(--tw-text-opacity, 1))}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.text-blue-800{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-blue-900{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.text-blue-950{--tw-text-opacity:1;color:rgb(23 37 84 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-rose-300{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.text-rose-400{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.text-rose-600{--tw-text-opacity:1;color:rgb(225 29 72 / var(--tw-text-opacity, 1))}.text-rose-700{--tw-text-opacity:1;color:rgb(190 18 60 / var(--tw-text-opacity, 1))}.text-rose-800{--tw-text-opacity:1;color:rgb(159 18 57 / var(--tw-text-opacity, 1))}.text-slate-100{--tw-text-opacity:1;color:rgb(241 245 249 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-blue-100 *::selection{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.selection\:text-blue-900 *::selection{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.selection\:bg-blue-100::selection{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.selection\:text-blue-900::selection{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.hover\:border-rose-300:hover{--tw-border-opacity:1;border-color:rgb(253 164 175 / var(--tw-border-opacity, 1))}.hover\:bg-amber-300:hover{--tw-bg-opacity:1;background-color:rgb(252 211 77 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-800:hover{--tw-bg-opacity:1;background-color:rgb(30 64 175 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-700:hover{--tw-bg-opacity:1;background-color:rgb(4 120 87 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-50\/80:hover{background-color:rgb(248 250 252 / 0.8)}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.hover\:text-rose-200:hover{--tw-text-opacity:1;color:rgb(254 205 211 / var(--tw-text-opacity, 1))}.hover\:text-slate-900:hover{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.focus\:ring-blue-600:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(37 99 235 / var(--tw-ring-opacity, 1))}@media (min-width: 640px){.sm\:inline-block{display:inline-block}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:p-4{padding:1rem}.sm\:p-5{padding:1.25rem}.sm\:p-6{padding:1.5rem}.sm\:px-5{padding-left:1.25rem;padding-right:1.25rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:py-8{padding-top:2rem;padding-bottom:2rem}.sm\:text-right{text-align:right}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style></head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
+
+  <!-- Top Editorial Header -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3.5 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-blue-700 text-white flex items-center justify-center font-bold text-sm shadow-sm">
+          IR
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded-full">
+              PM Interactive Spec • v1 SR Pilot
+            </span>
+            <span class="hidden sm:inline-block text-xs text-slate-400 font-medium">By Ayushi Soni</span>
+          </div>
+          <h1 class="text-sm sm:text-base font-bold text-slate-900 leading-tight mt-0.5">
+            IRCTC Masked P2P Berth Transfer &amp; Urgent Recovery Flow
+          </h1>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button id="resetPrototypeBtn" type="button" class="px-3 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-xs font-semibold text-slate-700 transition cursor-pointer">
+          ↻ Reset
+        </button>
+        <button id="saveHtmlBtn" type="button" class="px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold shadow-sm transition flex items-center gap-1.5 cursor-pointer">
+          <span>⬇ Save HTML</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-6">
+
+    <!-- PM Reviewer Control Bar (Scenario Switcher) -->
+    <section aria-label="PM Scenario Switcher" class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-3">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">PM Reviewer Control Bar</span>
+          <h2 class="text-sm font-bold text-slate-900">Test Core Hypothesis &amp; Adversarial Failure Modes</h2>
+        </div>
+        <span id="scenarioStatusPill" class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 w-fit">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          Mode: Happy Path (Urgent Travel)
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+        <button type="button" data-scenario="happy" class="scenario-btn text-left p-3 rounded-xl border-2 border-blue-700 bg-blue-50/60 transition cursor-pointer">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-blue-800">1. Happy Path (Urgent Travel)</span>
+            <span class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-blue-700 text-white">DEFAULT</span>
+          </div>
+          <p class="text-[11px] text-slate-600 mt-1">Flagged SR Express 3A berth claimed by an urgent exam/interview traveler.</p>
+        </button>
+
+        <button type="button" data-scenario="timeout" class="scenario-btn text-left p-3 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 transition cursor-pointer">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-800">2. Edge Case: 3-Min UPI Timeout</span>
+            <span class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-amber-100 text-amber-800">FALLBACK</span>
+          </div>
+          <p class="text-[11px] text-slate-600 mt-1">Buyer fails to pay within 3 mins; berth auto-releases back to masked pool.</p>
+        </button>
+
+        <button type="button" data-scenario="abuse" class="scenario-btn text-left p-3 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 transition cursor-pointer">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-800">3. Abuse &amp; Cutoff Guardrails</span>
+            <span class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-rose-100 text-rose-800">SECURITY</span>
+          </div>
+          <p class="text-[11px] text-slate-600 mt-1">Simulate blocked PNR re-flipping, agent/Aadhaar cap, and T-1h freeze.</p>
+        </button>
+      </div>
+    </section>
+
+    <!-- Interactive 4-Step Progress Stepper -->
+    <nav aria-label="Prototype Steps" class="bg-white rounded-2xl border border-slate-200 p-3 sm:p-4 shadow-sm">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-2">
+        <button type="button" data-step="1" class="step-tab flex items-center gap-2.5 p-2.5 rounded-xl border-2 border-blue-700 bg-blue-50 text-left transition cursor-pointer">
+          <span class="step-badge w-6 h-6 rounded-lg bg-blue-700 text-white font-mono text-xs font-bold flex items-center justify-center shrink-0">1</span>
+          <div class="min-w-0">
+            <div class="text-xs font-bold text-slate-900 truncate">Flag Berth</div>
+            <div class="text-[10px] text-slate-500 truncate">Confirmed Holder</div>
+          </div>
+        </button>
+
+        <button type="button" data-step="2" class="step-tab flex items-center gap-2.5 p-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-left transition cursor-pointer">
+          <span class="step-badge w-6 h-6 rounded-lg bg-slate-200 text-slate-700 font-mono text-xs font-bold flex items-center justify-center shrink-0">2</span>
+          <div class="min-w-0">
+            <div class="text-xs font-bold text-slate-900 truncate">Masked Pool</div>
+            <div class="text-[10px] text-slate-500 truncate">Guardrail Engine</div>
+          </div>
+        </button>
+
+        <button type="button" data-step="3" class="step-tab flex items-center gap-2.5 p-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-left transition cursor-pointer">
+          <span class="step-badge w-6 h-6 rounded-lg bg-slate-200 text-slate-700 font-mono text-xs font-bold flex items-center justify-center shrink-0">3</span>
+          <div class="min-w-0">
+            <div class="text-xs font-bold text-slate-900 truncate">Urgent Claim</div>
+            <div class="text-[10px] text-slate-500 truncate">3-Min UPI Drop</div>
+          </div>
+        </button>
+
+        <button type="button" data-step="4" class="step-tab flex items-center gap-2.5 p-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-left transition cursor-pointer">
+          <span class="step-badge w-6 h-6 rounded-lg bg-slate-200 text-slate-700 font-mono text-xs font-bold flex items-center justify-center shrink-0">4</span>
+          <div class="min-w-0">
+            <div class="text-xs font-bold text-slate-900 truncate">Settlement &amp; HHT</div>
+            <div class="text-[10px] text-slate-500 truncate">T-30m Chart Sync</div>
+          </div>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ABUSE & CUTOFF GUARDRAIL SIMULATOR PANEL (Visible when Scenario 3 is active) -->
+    <section id="abuseLabPanel" class="hidden bg-rose-50/70 border-2 border-rose-200 rounded-2xl p-4 sm:p-5 space-y-4">
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-rose-700">Adversarial Guardrail Sandbox</span>
+          <h3 class="text-base font-bold text-slate-900">Click any abuse or cutoff vector to inspect the system block</h3>
+        </div>
+        <button type="button" id="exitAbuseBtn" class="text-xs font-semibold text-slate-700 bg-white border border-slate-300 px-3 py-1.5 rounded-lg hover:bg-slate-50 cursor-pointer">
+          ← Return to Happy Path
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <button type="button" data-abuse="reflip" class="abuse-trigger p-3.5 rounded-xl bg-white border-2 border-rose-600 text-left shadow-sm transition cursor-pointer">
+          <div class="text-xs font-bold text-rose-700">A. Re-Flip Transferred PNR</div>
+          <p class="text-[11px] text-slate-600 mt-1">Tout attempts to re-flag an already transferred berth to harvest off-app premiums.</p>
+        </button>
+
+        <button type="button" data-abuse="agent" class="abuse-trigger p-3.5 rounded-xl bg-white border border-slate-200 hover:border-rose-300 text-left shadow-sm transition cursor-pointer">
+          <div class="text-xs font-bold text-slate-900">B. Agent Bulk-Buy / &gt;2 Seats</div>
+          <p class="text-[11px] text-slate-600 mt-1">Authorized agent or Aadhaar account attempts to claim a 3rd flagged seat on Train 12623.</p>
+        </button>
+
+        <button type="button" data-abuse="cutoff" class="abuse-trigger p-3.5 rounded-xl bg-white border border-slate-200 hover:border-rose-300 text-left shadow-sm transition cursor-pointer">
+          <div class="text-xs font-bold text-slate-900">C. Post T-1h Charting Freeze</div>
+          <p class="text-[11px] text-slate-600 mt-1">User attempts transfer at T-42m (after boarding-station T-1h freeze ahead of T-30m 2nd Chart).</p>
+        </button>
+      </div>
+
+      <div id="abuseOutputCard" class="bg-white rounded-xl border border-rose-300 p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div class="space-y-1">
+          <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-rose-600 text-white font-mono text-[11px] font-bold">
+            <span id="abuseBadge">ERR_PNR_LOCKED • NON-RETRANSFERABLE</span>
+          </div>
+          <h4 id="abuseTitle" class="text-sm font-bold text-slate-900 pt-1">
+            Transfer Blocked: One-Transfer-Per-PNR Hard Lock Active
+          </h4>
+          <p id="abuseDesc" class="text-xs text-slate-600 leading-relaxed">
+            PNR <span class="font-mono font-semibold text-slate-800">452-8910432</span> was already transferred once via the IRCTC Masked Pool. To eliminate scalper chains, transferred tickets are permanently locked from re-flagging; only standard IRCTC cancellation applies.
+          </p>
+        </div>
+        <div class="shrink-0 bg-slate-900 text-slate-100 rounded-xl p-3 font-mono text-[11px] space-y-1 min-w-[210px]">
+          <div class="text-slate-400">GUARDRAIL TELEMETRY</div>
+          <div id="abuseMeta1">PNR_STATE: LOCKED_FINAL</div>
+          <div id="abuseMeta2">SCALPER_VECTOR: CLOSED</div>
+          <div id="abuseMeta3" class="text-rose-400">ACTION: HTTP 403 REJECTED</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         MAIN 4-STEP INTERACTIVE STAGE
+    ==================================================================== -->
+    <div id="stepperStage">
+
+      <!-- STEP 1: CONFIRMED PASSENGER (FLAG BERTH TO POOL) -->
+      <section id="step1Panel" class="step-panel bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm space-y-5">
+        <div class="flex flex-wrap items-start justify-between gap-3 border-b border-slate-100 pb-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Step 1 of 4 • Confirmed Ticket Holder View</span>
+            <h2 class="text-lg sm:text-xl font-bold text-slate-900 mt-0.5">Flag Unused Berth Instead of Taking a Cancellation Loss</h2>
+          </div>
+          <div class="text-right font-mono text-xs bg-slate-100 px-3 py-1.5 rounded-xl border border-slate-200">
+            <div class="text-slate-500">BOARDING FREEZE</div>
+            <div class="font-bold text-slate-900">T-1h Cutoff Open</div>
+          </div>
+        </div>
+
+        <!-- Realistic SR Express Ticket Card -->
+        <div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-blue-50/40 p-4 sm:p-5">
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-200/80">
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-1 rounded-lg bg-blue-700 text-white font-mono text-xs font-bold">12623</span>
+              <div>
+                <div class="text-sm font-bold text-slate-900">Thiruvananthapuram Mail (SR Express)</div>
+                <div class="text-xs text-slate-500">Southern Railway Pilot • Coach B2 (3A) • Lower Berth #17</div>
+              </div>
+            </div>
+            <span class="text-xs font-mono font-bold px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-800">
+              STATUS: CNF / B2 / 17 (LB)
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 py-3.5 items-center">
+            <div>
+              <div class="text-[11px] font-semibold uppercase text-slate-400">Origin</div>
+              <div class="text-sm font-bold text-slate-900">Chennai Central (MAS)</div>
+              <div class="text-xs text-slate-500">Departs 19:45 • Full-Leg Match</div>
+            </div>
+            <div class="flex items-center justify-center">
+              <div class="w-full flex items-center gap-2">
+                <span class="h-2 w-2 rounded-full bg-blue-700"></span>
+                <div class="flex-1 border-t-2 border-dashed border-blue-300 text-center">
+                  <span class="text-[10px] font-mono font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full">919 km • End-to-End</span>
+                </div>
+                <span class="h-2 w-2 rounded-full bg-blue-700"></span>
+              </div>
+            </div>
+            <div class="sm:text-right">
+              <div class="text-[11px] font-semibold uppercase text-slate-400">Destination</div>
+              <div class="text-sm font-bold text-slate-900">Thiruvananthapuram (TVC)</div>
+              <div class="text-xs text-slate-500">Arrives 11:30 (+1d)</div>
+            </div>
+          </div>
+
+          <!-- Partial Family PNR Selector -->
+          <div class="pt-3 border-t border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="text-xs text-slate-600">
+              <span class="font-bold text-slate-800">Family PNR Partial Flagging (4 Passengers):</span> Flag specific members without disturbing co-travelers.
+            </div>
+            <div class="inline-flex rounded-xl bg-white p-1 border border-slate-200 shrink-0">
+              <button type="button" data-flag-count="1" class="flag-count-btn px-3 py-1 rounded-lg text-xs font-bold bg-blue-700 text-white transition cursor-pointer">
+                Flag 1 Member (P4)
+              </button>
+              <button type="button" data-flag-count="2" class="flag-count-btn px-3 py-1 rounded-lg text-xs font-bold text-slate-600 hover:text-slate-900 transition cursor-pointer">
+                Flag 2 Members (P3, P4)
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tweak 1: Live 3-Pill Ticket-Type & Chart-Window Switcher -->
+        <div class="space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <label class="text-xs font-bold uppercase tracking-wider text-slate-500">
+              Tweak 1 • Simulate Ticket Type &amp; Charting Window
+            </label>
+            <span class="text-[11px] text-slate-500">See how refund math protects both users &amp; Railways</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+            <button type="button" data-ticket-type="tatkal" class="ticket-type-btn p-3 rounded-xl border-2 border-blue-700 bg-blue-50/70 text-left transition cursor-pointer">
+              <div class="text-xs font-bold text-blue-900">Tatkal Ticket (₹1,850)</div>
+              <div class="text-[11px] text-slate-600 mt-0.5">₹1,450 base + ₹400 Tatkal surcharge</div>
+            </button>
+
+            <button type="button" data-ticket-type="post_chart" class="ticket-type-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-left transition cursor-pointer">
+              <div class="text-xs font-bold text-slate-900">General • Post-1st Chart (₹1,450)</div>
+              <div class="text-[11px] text-slate-600 mt-0.5">Within ~8h of departure (1st Chart out)</div>
+            </button>
+
+            <button type="button" data-ticket-type="pre_chart" class="ticket-type-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-left transition cursor-pointer">
+              <div class="text-xs font-bold text-slate-900">General • &gt;12h Before Dep (₹1,450)</div>
+              <div class="text-[11px] text-slate-600 mt-0.5">Before 1st Chart (75% std refund active)</div>
+            </button>
+          </div>
+
+          <!-- Refund Comparison Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
+            <div class="p-4 rounded-xl border border-rose-200 bg-rose-50/50">
+              <div class="text-[11px] font-bold uppercase tracking-wider text-rose-700">Standard IRCTC Cancellation Today</div>
+              <div id="stdRefundAmount" class="text-2xl font-extrabold text-rose-700 font-mono mt-1">₹0 Refund</div>
+              <p id="stdRefundNote" class="text-xs text-slate-600 mt-1">
+                Confirmed Tatkal tickets yield ₹0 upon cancellation; seat often goes empty if cancelled late.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl border-2 border-emerald-500 bg-emerald-50/60">
+              <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-800">IRCTC Masked Pool Transfer Recovery</div>
+              <div id="poolRefundAmount" class="text-2xl font-extrabold text-emerald-700 font-mono mt-1">₹1,420 Net Payout</div>
+              <p id="poolRefundNote" class="text-xs text-slate-700 mt-1">
+                ₹1,450 base fare − ₹30 fee (forfeiting ₹400 Tatkal surcharge prevents buffer hoarding). Settled at T-30m 2nd Chart.
+              </p>
+            </div>
+          </div>
+
+          <!-- Conditional Refund-Protection Alert (Shown on >12h General) -->
+          <div id="refundProtectionBanner" class="hidden p-3.5 rounded-xl bg-amber-50 border border-amber-300 text-xs text-amber-950 flex items-start gap-2.5">
+            <span class="font-bold text-amber-700 text-sm">⚠</span>
+            <div>
+              <span class="font-bold">Smart Refund-Protection Prompt:</span> Standard cancellation returns <span class="font-mono font-bold">₹1,088</span> (75%) immediately. Full-route transfer returns <span class="font-mono font-bold">₹1,420</span> (+₹332 higher), whereas if only a short partial leg were sold in v2 (&lt;₹1,088), the app alerts you to cancel normally instead.
+            </div>
+          </div>
+        </div>
+
+        <!-- Lock Rule Note + CTA -->
+        <div class="pt-3 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <p class="text-xs text-slate-500">
+            <span class="font-semibold text-slate-700">Commitment Rule:</span> Once an urgent traveler claims this berth, standard cancellation locks on this PNR.
+          </p>
+          <button type="button" id="toStep2Btn" class="px-5 py-3 rounded-xl bg-blue-700 hover:bg-blue-800 text-white text-sm font-bold shadow-sm transition cursor-pointer shrink-0">
+            Flag Berth to IRCTC Pool →
+          </button>
+        </div>
+      </section>
+
+      <!-- STEP 2: IRCTC MASKED POOL & GUARDRAIL ENGINE -->
+      <section id="step2Panel" class="hidden step-panel bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm space-y-5">
+        <div class="flex flex-wrap items-start justify-between gap-3 border-b border-slate-100 pb-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Step 2 of 4 • IRCTC Matching &amp; Anti-Scalping Engine</span>
+            <h2 class="text-lg sm:text-xl font-bold text-slate-900 mt-0.5">Identity Masking &amp; 4-Layer Abuse Verification</h2>
+          </div>
+          <span class="inline-flex items-center gap-1.5 text-xs font-mono font-bold px-3 py-1.5 rounded-xl bg-amber-50 text-amber-800 border border-amber-200">
+            ⏱ 3-MIN MICRO-DROP ACTIVE
+          </span>
+        </div>
+
+        <!-- Side-by-Side Masked PII vs Exposed Match Metadata -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="rounded-2xl border border-slate-200 bg-slate-900 text-slate-100 p-4 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-rose-400">Hidden From Public &amp; Buyers</span>
+              <span class="text-[10px] font-mono bg-slate-800 px-2 py-0.5 rounded text-slate-300">ZERO PII LEAK</span>
+            </div>
+            <div class="space-y-2 font-mono text-xs">
+              <div class="flex justify-between py-1.5 border-b border-slate-800">
+                <span class="text-slate-400">Passenger Name:</span>
+                <span class="text-rose-300">██████████ (MASKED)</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-slate-800">
+                <span class="text-slate-400">Original PNR:</span>
+                <span class="text-rose-300">452-███████ (MASKED)</span>
+              </div>
+              <div class="flex justify-between py-1.5">
+                <span class="text-slate-400">Direct Seller Search:</span>
+                <span class="text-rose-300">DISABLED (NO DIRECTORY)</span>
+              </div>
+            </div>
+            <p class="text-[11px] text-slate-400">
+              Prevents off-platform brokers from verifying seller identity or selling specific PNRs for cash bribes.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-blue-200 bg-blue-50/50 p-4 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-blue-800">Exposed Match Metadata</span>
+              <span class="text-[10px] font-mono bg-blue-700 text-white px-2 py-0.5 rounded">SYSTEM INDEXED</span>
+            </div>
+            <div class="space-y-2 font-mono text-xs">
+              <div class="flex justify-between py-1.5 border-b border-blue-200/70">
+                <span class="text-slate-500">Train &amp; Route:</span>
+                <span class="font-bold text-slate-900">12623 • MAS → TVC</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-blue-200/70">
+                <span class="text-slate-500">Coach Class Bucket:</span>
+                <span class="font-bold text-slate-900">3A (AC 3 Tier)</span>
+              </div>
+              <div class="flex justify-between py-1.5">
+                <span class="text-slate-500">Protected Quota Tag:</span>
+                <span class="font-bold text-emerald-700">GENERAL (OPEN TO ALL)</span>
+              </div>
+            </div>
+            <p class="text-[11px] text-slate-600">
+              Grouped strictly by physical coach class (<span class="font-mono">SL/3A/2A/1A</span>); hard locks apply only to Female &amp; Divyangjan quotas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tweak 2: Live 4-Rule Guardrail Verification Checklist -->
+        <div class="rounded-2xl border border-slate-200 p-4 space-y-3">
+          <div class="text-xs font-bold uppercase tracking-wider text-slate-500">
+            Tweak 2 • Live Anti-Scalping &amp; Eligibility Verification
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200 flex items-start gap-2.5">
+              <span class="w-5 h-5 rounded-full bg-emerald-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">✓</span>
+              <div>
+                <div class="text-xs font-bold text-slate-900">1. PII Masked &amp; No Public Listing</div>
+                <div class="text-[11px] text-slate-600">Zero manual cherry-picking; matches strictly by route &amp; class.</div>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200 flex items-start gap-2.5">
+              <span class="w-5 h-5 rounded-full bg-emerald-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">✓</span>
+              <div>
+                <div class="text-xs font-bold text-slate-900">2. Coach-Class &amp; Protected Quota Check</div>
+                <div class="text-[11px] text-slate-600">Female &amp; Divyangjan locked to eligible IDs; General open.</div>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200 flex items-start gap-2.5">
+              <span class="w-5 h-5 rounded-full bg-emerald-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">✓</span>
+              <div>
+                <div class="text-xs font-bold text-slate-900">3. Agents BLOCKED • Aadhaar-OTP Gate</div>
+                <div class="text-[11px] text-slate-600">Individual Aadhaar-verified IRCTC accounts only (max 2 seats/train; no raw co-passenger Aadhaar input).</div>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200 flex items-start gap-2.5">
+              <span class="w-5 h-5 rounded-full bg-emerald-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">✓</span>
+              <div>
+                <div class="text-xs font-bold text-slate-900">4. 3-Min Micro-Drop on REGRET Train</div>
+                <div class="text-[11px] text-slate-600">Opens sold-out REGRET inventory to verified urgent travelers without 10-min hold griefing.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-3 border-t border-slate-100 flex items-center justify-between gap-3">
+          <button type="button" data-goto="1" class="px-4 py-2.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:bg-slate-50 cursor-pointer">
+            ← Back to Step 1
+          </button>
+          <button type="button" id="toStep3Btn" class="px-5 py-3 rounded-xl bg-blue-700 hover:bg-blue-800 text-white text-sm font-bold shadow-sm transition cursor-pointer">
+            Simulate Urgent Traveler Discovery →
+          </button>
+        </div>
+      </section>
+
+      <!-- STEP 3: URGENT LAST-MINUTE TRAVELER (EXAM / INTERVIEW / EMERGENCY) -->
+      <section id="step3Panel" class="hidden step-panel bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm space-y-5">
+        <div class="flex flex-wrap items-start justify-between gap-3 border-b border-slate-100 pb-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Step 3 of 4 • Urgent Traveler Checkout (Exam / Interview / Emergency)</span>
+            <h2 class="text-lg sm:text-xl font-bold text-slate-900 mt-0.5">Claim Confirmed 3A Berth on a REGRET Train at Base Fare</h2>
+          </div>
+
+          <!-- Live 3-Minute UPI Timer Badge -->
+          <div id="timerBox" class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-amber-50 border border-amber-300">
+            <span class="text-xs font-bold text-amber-800">UPI HOLD:</span>
+            <span id="upiCountdown" class="font-mono text-base font-extrabold text-amber-900">03:00</span>
+            <button type="button" id="fastForwardTimeoutBtn" class="ml-1 px-2 py-0.5 rounded bg-amber-200/80 hover:bg-amber-300 text-[10px] font-bold text-amber-950 cursor-pointer" title="Simulate payment expiration">
+              Simulate Timeout
+            </button>
+          </div>
+        </div>
+
+        <!-- Timeout Re-Release Banner (Shown when countdown hits 00:00) -->
+        <div id="timeoutAlertBanner" class="hidden rounded-2xl border-2 border-amber-500 bg-amber-50 p-4 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-md bg-amber-600 text-white font-mono text-xs font-bold">HOLD EXPIRED • AUTO-RELEASED</span>
+              <span class="text-sm font-bold text-slate-900">3-Minute UPI Window Elapsed Without Payment</span>
+            </div>
+            <button type="button" id="reclaimDropBtn" class="px-3.5 py-1.5 rounded-lg bg-blue-700 hover:bg-blue-800 text-white text-xs font-bold cursor-pointer">
+              ↻ Trigger Next 3-Min Drop
+            </button>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            Because unpaid holds expire in <span class="font-bold">3 minutes</span> (instead of standard 10 minutes), a non-paying user cannot block an exam/interview student from grabbing this berth before the <span class="font-mono font-semibold">T-1h</span> chart freeze.
+          </p>
+        </div>
+
+        <!-- Train Search Discovery Card -->
+        <div class="rounded-2xl border border-slate-200 p-4 bg-slate-50/70 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <div class="text-xs font-bold text-slate-900">12623 Thiruvananthapuram Mail • MAS → TVC</div>
+              <div class="text-[11px] text-slate-500">Standard Quota: <span class="font-mono font-bold text-rose-600">REGRET (WL Ceiling Closed)</span></div>
+            </div>
+            <span id="poolSupplyBadge" class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-mono text-xs font-bold">
+              2 FLAGGED BERTHS IN 3A
+            </span>
+          </div>
+
+          <!-- Tweak 3: Interactive Traveler Count & Pool Supply Controls -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2 border-t border-slate-200">
+            <div class="space-y-1.5">
+              <label class="text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                Tweak 3A • Urgent Traveler Party Size
+              </label>
+              <div class="grid grid-cols-2 gap-2">
+                <button type="button" data-party="1" class="party-btn p-2.5 rounded-xl border-2 border-blue-700 bg-blue-50 text-xs font-bold text-blue-900 cursor-pointer">
+                  1 Passenger
+                </button>
+                <button type="button" data-party="2" class="party-btn p-2.5 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-700 cursor-pointer">
+                  2 Friends (Exam)
+                </button>
+              </div>
+            </div>
+
+            <div class="space-y-1.5">
+              <label class="text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                Tweak 3B • Simulated 3A Pool Inventory
+              </label>
+              <div class="grid grid-cols-2 gap-2">
+                <button type="button" data-supply="2" class="supply-btn p-2.5 rounded-xl border-2 border-blue-700 bg-blue-50 text-xs font-bold text-blue-900 cursor-pointer">
+                  2 Flagged Berths
+                </button>
+                <button type="button" data-supply="1" class="supply-btn p-2.5 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-700 cursor-pointer">
+                  Only 1 Berth Left
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Party / Inventory Notice -->
+          <div id="partyNoticeBox" class="p-3.5 rounded-xl bg-blue-50 border border-blue-200 text-xs text-blue-950">
+            <span class="font-bold">Confirmed Travel in 3A:</span> Exact coach &amp; berth assigned at <span class="font-mono font-bold">T-1h</span> (30 mins before Final Chart Freeze). Standard base fare applies — <span class="font-bold text-emerald-700">₹0 Tatkal surcharge</span>.
+          </div>
+
+          <!-- Lower Berth Only Checkbox -->
+          <label class="flex items-start gap-2.5 p-3 rounded-xl bg-white border border-slate-200 cursor-pointer">
+            <input id="lowerBerthCheckbox" type="checkbox" class="mt-0.5 rounded border-slate-300 text-blue-700 focus:ring-blue-600">
+            <div class="text-xs">
+              <span class="font-bold text-slate-900">Require Lower Berth Only (Elderly / Medical)</span>
+              <span class="block text-slate-500 mt-0.5">Skips upper-berth auto-swaps during T-1h optimization; keeps confirmed Lower Berth locked.</span>
+            </div>
+          </label>
+        </div>
+
+        <!-- Checkout Price Summary & Pay CTA -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2 border-t border-slate-100">
+          <div>
+            <div class="text-xs text-slate-500">Total Payable (Base Fare + ₹30/pax Fee • Zero Surge)</div>
+            <div id="buyerTotalFare" class="text-2xl font-extrabold font-mono text-slate-900">₹1,480</div>
+          </div>
+
+          <div class="flex items-center gap-2.5">
+            <button type="button" data-goto="2" class="px-4 py-3 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:bg-slate-50 cursor-pointer">
+              ← Back
+            </button>
+            <button type="button" id="payUpiBtn" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold shadow-sm transition cursor-pointer">
+              Pay Base Fare via UPI →
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 4: REVENUE-NEUTRAL SETTLEMENT & TTE HANDHELD SYNC -->
+      <section id="step4Panel" class="hidden step-panel bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm space-y-5">
+        <div class="flex flex-wrap items-start justify-between gap-3 border-b border-slate-100 pb-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Step 4 of 4 • Atomic Settlement &amp; Offline-Ready TTE Sync</span>
+            <h2 class="text-lg sm:text-xl font-bold text-slate-900 mt-0.5">Revenue-Neutral Ledger &amp; T-30m Second Chart Lock</h2>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-rose-600 text-white font-mono text-xs font-bold">
+            PNR LOCKED • NON-RETRANSFERABLE
+          </span>
+        </div>
+
+        <!-- Tweak 4: Side-by-Side Ledger & Offline TTE HHT Terminal Card -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <!-- Left Card: Revenue-Neutral Accounting -->
+          <div class="rounded-2xl border-2 border-emerald-500 bg-emerald-50/40 p-4 sm:p-5 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-800">Revenue-Neutral Accounting</span>
+              <span class="px-2 py-0.5 rounded bg-emerald-600 text-white font-mono text-[10px] font-bold">₹0 RAILWAY LOSS</span>
+            </div>
+
+            <div class="space-y-2 text-xs font-mono bg-white rounded-xl p-3.5 border border-emerald-200">
+              <div class="flex justify-between py-1 border-b border-slate-100">
+                <span class="text-slate-500">Original Collected (Flagger):</span>
+                <span id="ledgerOrigCollected" class="font-bold text-slate-900">₹1,850</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-100">
+                <span class="text-slate-500">New Buyer Paid (Base + Fee):</span>
+                <span id="ledgerBuyerPaid" class="font-bold text-slate-900">₹1,480</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-100">
+                <span class="text-slate-500">Railways Retains (Surcharge+Fee):</span>
+                <span id="ledgerRailwaysRetains" class="font-bold text-blue-700">₹430 (₹400 + ₹30)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-100">
+                <span class="text-slate-500">Flagger Payout (at T-30m Chart):</span>
+                <span id="ledgerFlaggerPayout" class="font-bold text-emerald-700">₹1,420</span>
+              </div>
+              <div class="flex justify-between pt-1.5 text-sm">
+                <span class="font-bold text-slate-900">Indian Railways Cash Loss:</span>
+                <span class="font-extrabold text-emerald-700">₹0</span>
+              </div>
+            </div>
+
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Holding the flagger's payout until the <span class="font-mono font-semibold text-slate-800">T-30m</span> Second Chart Freeze guarantees Railways reconciles settled legs before releasing funds.
+            </p>
+          </div>
+
+          <!-- Right Card: TTE Handheld Terminal (HHT) Sync -->
+          <div class="rounded-2xl border border-slate-300 bg-slate-900 text-slate-100 p-4 sm:p-5 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-400">TTE Handheld Terminal (HHT)</span>
+              <span class="px-2 py-0.5 rounded bg-blue-600 text-white font-mono text-[10px] font-bold">OFFLINE CACHED AT T-30m</span>
+            </div>
+
+            <div class="rounded-xl bg-slate-800/90 border border-slate-700 p-3.5 font-mono text-xs space-y-2">
+              <div class="flex justify-between text-[11px] text-slate-400 pb-1.5 border-b border-slate-700">
+                <span>TRAIN 12623 • COACH B2</span>
+                <span>FROZEN AT T-1h</span>
+              </div>
+              <div class="flex justify-between items-center py-1">
+                <div>
+                  <div class="text-emerald-400 font-bold">BERTH 17 (LOWER) • MAS → TVC</div>
+                  <div id="hhtPassengerLine" class="text-slate-200 mt-0.5">NEW PNR: 489-3102941 • 1 PAX (AADHAAR-OTP VERIFIED)</div>
+                </div>
+                <span class="px-2 py-1 rounded bg-emerald-500/20 text-emerald-300 text-[10px] font-bold">CNF</span>
+              </div>
+              <div class="pt-1.5 border-t border-slate-700 text-[11px] text-amber-300">
+                ✓ Berth locked at T-1h (30m before T-30m Final Chart) so HHT operates 100% offline through ghat/tunnel dead zones.
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-1">
+              <span class="text-[11px] text-slate-400">Previous holder PNR invalidated for B2-17</span>
+              <button type="button" id="testAbuseFromStep4Btn" class="text-xs font-bold text-rose-300 hover:text-rose-200 underline cursor-pointer">
+                Test Re-Flip Block →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
+          <button type="button" data-goto="3" class="px-4 py-2.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:bg-slate-50 cursor-pointer">
+            ← Back to Step 3
+          </button>
+          <button type="button" id="replayFlowBtn" class="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold cursor-pointer">
+            ↻ Replay End-to-End Prototype
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Bottom Expandable Drawer: v2 Multi-Leg Yield & Split-PNR Roadmap -->
+    <section class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+      <button type="button" id="v2DrawerToggle" aria-expanded="false" class="w-full p-4 sm:p-5 flex items-center justify-between gap-3 text-left hover:bg-slate-50/80 transition cursor-pointer">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-blue-700">Systems Architecture &amp; Scope Discipline</span>
+          <h3 class="text-sm sm:text-base font-bold text-slate-900 mt-0.5">
+            v2 Multi-Leg Yield &amp; Split-PNR Roadmap (Post-SR Express Pilot)
+          </h3>
+        </div>
+        <span id="v2DrawerChevron" class="w-8 h-8 rounded-full bg-slate-100 text-slate-700 font-bold flex items-center justify-center shrink-0 transition-transform">
+          +
+        </span>
+      </button>
+
+      <div id="v2DrawerContent" class="hidden px-4 sm:px-5 pb-5 pt-2 border-t border-slate-100 space-y-4 text-xs text-slate-600">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
+            <div class="font-bold text-slate-900">Case 1 &amp; 2: Full-Journey Priority + Exact Short-Leg Auto-Swap</div>
+            <p class="leading-relaxed">
+              Full-journey buyers (<span class="font-mono">MAS → NDLS</span>) get early priority. Closer to departure (<span class="font-mono">T-6h to T-1h</span>), a partial-leg buyer (<span class="font-mono">MAS → NGP</span>) receives immediate travel confirmation while remaining in a berth-assignment buffer; if an exact <span class="font-mono">MAS → NGP</span> ticket is flagged later, CRIS auto-swaps them (respecting Lower Berth locks) and frees the long-haul seat intact.
+            </p>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
+            <div class="font-bold text-slate-900">Case 3 &amp; 4: Complementary Leg Pairing &amp; Post-Chart Settlement</div>
+            <p class="leading-relaxed">
+              If a complementary <span class="font-mono">NGP → NDLS</span> buyer arrives, both legs share one physical berth across two separate station-indexed PNRs. If the second leg stays unsold at <span class="font-mono">T-30m</span>, the flagger receives the <span class="font-mono">MAS → NGP</span> portion at Second Chart Freeze — guaranteeing <span class="font-mono">₹0</span> cash loss to Indian Railways.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-blue-50/70 border border-blue-200 space-y-1.5 text-slate-700">
+          <div class="font-bold text-blue-950">Why True Station-Indexed PNR Splitting &amp; v1/v2 Scoping Are Mandatory</div>
+          <ul class="list-disc pl-4 space-y-1">
+            <li><span class="font-semibold text-slate-900">Prevents False No-Show (NTU) Cancellation:</span> In CRIS/HHT, leaving a second-leg buyer (<span class="font-mono">NGP → NDLS</span>) on an unsplit <span class="font-mono">MAS → NDLS</span> PNR would cause the Chennai TTE to mark the berth empty at origin and reallocate it to RAC before Nagpur. Splitting into two station-indexed PNRs displays <span class="font-mono">Ramesh (MAS→NGP)</span> then <span class="font-mono">Mahesh (NGP→NDLS)</span> on the TTE HHT.</li>
+            <li><span class="font-semibold text-slate-900">Why Ship v1 End-to-End First:</span> Validating single-leg transfer adoption, Aadhaar-OTP rate limits, and <span class="font-mono">T-1h</span> HHT sync on the Southern Railway (<span class="font-mono">SR</span>) Express pilot first avoids mid-journey station-halt handover friction during MVP validation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    (function () {
+      const PRISTINE_HTML = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+      // Central Prototype State
+      const state = {
+        scenario: 'happy',       // 'happy' | 'timeout' | 'abuse'
+        step: 1,                 // 1 | 2 | 3 | 4
+        ticketType: 'tatkal',    // 'tatkal' | 'post_chart' | 'pre_chart'
+        flagCount: 1,            // 1 | 2
+        partySize: 1,            // 1 | 2
+        poolSupply: 2,           // 2 | 1
+        lowerBerthOnly: false,
+        timerSeconds: 180,
+        timerInterval: null,
+        timedOut: false
+      };
+
+      const ABUSE_CASES = {
+        reflip: {
+          badge: 'ERR_PNR_LOCKED • NON-RETRANSFERABLE',
+          title: 'Transfer Blocked: One-Transfer-Per-PNR Hard Lock Active',
+          desc: 'PNR 452-8910432 was already transferred once via the IRCTC Masked Pool. To eliminate scalper chains, transferred tickets are permanently locked from re-flagging; only standard IRCTC cancellation applies.',
+          m1: 'PNR_STATE: LOCKED_FINAL',
+          m2: 'SCALPER_VECTOR: CLOSED',
+          m3: 'ACTION: HTTP 403 REJECTED'
+        },
+        agent: {
+          badge: 'ERR_AGENT_OR_CAP_EXCEEDED • AADHAAR-OTP GATE',
+          title: 'Claim Blocked: Authorized Agents Barred & 2-Seat Account Cap Enforced',
+          desc: 'Only individual Aadhaar-authenticated IRCTC accounts (with live OTP) can claim flagged seats, capped at 2 seats per train. Authorized travel agents and bulk scripts are blocked at the gateway without collecting raw co-passenger Aadhaar numbers.',
+          m1: 'ACCOUNT_TYPE: AGENT_BLOCKED',
+          m2: 'TRAIN_SEAT_CAP: MAX_2_PER_UID',
+          m3: 'ACTION: HTTP 403 REJECTED'
+        },
+        cutoff: {
+          badge: 'ERR_CHART_FREEZE_T1H • HANDHELD SYNC LOCKED',
+          title: 'Transfer Blocked: Boarding-Station T-1h Cutoff Passed (T-42m)',
+          desc: 'All flagged berth transfers and split-PNR assignments freeze 1 hour before boarding-station departure (30 mins prior to the T-30m Second/Final Chart) so CRIS pushes a complete offline manifest to the TTE Handheld Terminal.',
+          m1: 'WINDOW: T-42m (< T-60m CUTOFF)',
+          m2: 'HHT_MANIFEST: LOCKED_FOR_SYNC',
+          m3: 'ACTION: ROUTE TO CURRENT_BKG'
+        }
+      };
+
+      // DOM References
+      const scenarioBtns = Array.from(document.querySelectorAll('.scenario-btn'));
+      const scenarioStatusPill = document.getElementById('scenarioStatusPill');
+      const stepTabs = Array.from(document.querySelectorAll('.step-tab'));
+      const stepPanels = {
+        1: document.getElementById('step1Panel'),
+        2: document.getElementById('step2Panel'),
+        3: document.getElementById('step3Panel'),
+        4: document.getElementById('step4Panel')
+      };
+      const abuseLabPanel = document.getElementById('abuseLabPanel');
+      const stepperStage = document.getElementById('stepperStage');
+
+      // Step 1 UI
+      const stdRefundAmount = document.getElementById('stdRefundAmount');
+      const stdRefundNote = document.getElementById('stdRefundNote');
+      const poolRefundAmount = document.getElementById('poolRefundAmount');
+      const poolRefundNote = document.getElementById('poolRefundNote');
+      const refundProtectionBanner = document.getElementById('refundProtectionBanner');
+
+      // Step 3 UI
+      const upiCountdown = document.getElementById('upiCountdown');
+      const timerBox = document.getElementById('timerBox');
+      const timeoutAlertBanner = document.getElementById('timeoutAlertBanner');
+      const poolSupplyBadge = document.getElementById('poolSupplyBadge');
+      const partyNoticeBox = document.getElementById('partyNoticeBox');
+      const buyerTotalFare = document.getElementById('buyerTotalFare');
+      const payUpiBtn = document.getElementById('payUpiBtn');
+      const lowerBerthCheckbox = document.getElementById('lowerBerthCheckbox');
+
+      // Step 4 UI
+      const ledgerOrigCollected = document.getElementById('ledgerOrigCollected');
+      const ledgerBuyerPaid = document.getElementById('ledgerBuyerPaid');
+      const ledgerRailwaysRetains = document.getElementById('ledgerRailwaysRetains');
+      const ledgerFlaggerPayout = document.getElementById('ledgerFlaggerPayout');
+      const hhtPassengerLine = document.getElementById('hhtPassengerLine');
+
+      function formatCurrency(num) {
+        return '₹' + num.toLocaleString('en-IN');
+      }
+
+      function formatTimer(sec) {
+        const m = Math.floor(sec / 60);
+        const s = sec % 60;
+        return String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+      }
+
+      function stopTimer() {
+        if (state.timerInterval) {
+          clearInterval(state.timerInterval);
+          state.timerInterval = null;
+        }
+      }
+
+      function startTimer(initialSeconds = 180) {
+        stopTimer();
+        state.timerSeconds = initialSeconds;
+        state.timedOut = initialSeconds <= 0;
+        renderTimerUI();
+
+        if (state.timedOut) return;
+
+        state.timerInterval = setInterval(() => {
+          state.timerSeconds -= 1;
+          if (state.timerSeconds <= 0) {
+            state.timerSeconds = 0;
+            state.timedOut = true;
+            stopTimer();
+          }
+          renderTimerUI();
+        }, 1000);
+      }
+
+      function renderTimerUI() {
+        upiCountdown.textContent = formatTimer(state.timerSeconds);
+        if (state.timedOut) {
+          timerBox.className = 'flex items-center gap-2 px-3.5 py-2 rounded-xl bg-rose-50 border border-rose-300';
+          upiCountdown.className = 'font-mono text-base font-extrabold text-rose-700';
+          timeoutAlertBanner.classList.remove('hidden');
+          payUpiBtn.disabled = true;
+          payUpiBtn.className = 'px-6 py-3 rounded-xl bg-slate-300 text-slate-500 text-sm font-bold cursor-not-allowed';
+          payUpiBtn.textContent = 'Hold Expired • Re-Trigger Drop';
+        } else {
+          timerBox.className = 'flex items-center gap-2 px-3.5 py-2 rounded-xl bg-amber-50 border border-amber-300';
+          upiCountdown.className = 'font-mono text-base font-extrabold text-amber-900';
+          timeoutAlertBanner.classList.add('hidden');
+          const effectivePax = Math.min(state.partySize, state.poolSupply);
+          payUpiBtn.disabled = false;
+          payUpiBtn.className = 'px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold shadow-sm transition cursor-pointer';
+          payUpiBtn.textContent = effectivePax === 2 ? 'Pay Base Fare (2 Pax) via UPI →' : 'Pay Base Fare via UPI →';
+        }
+      }
+
+      function updateStep1UI() {
+        const mult = state.flagCount;
+        const baseTotal = 1450 * mult;
+        const feeTotal = 30 * mult;
+        const netPool = baseTotal - feeTotal;
+
+        if (state.ticketType === 'tatkal') {
+          stdRefundAmount.textContent = '₹0 Refund';
+          stdRefundNote.textContent = 'Confirmed Tatkal tickets yield ₹0 upon cancellation; seat often travels empty if cancelled late.';
+          poolRefundAmount.textContent = formatCurrency(netPool) + ' Net Payout';
+          poolRefundNote.textContent = `${formatCurrency(baseTotal)} base fare − ${formatCurrency(feeTotal)} fee (forfeiting ${formatCurrency(400 * mult)} Tatkal surcharge prevents buffer hoarding). Settled at T-30m 2nd Chart.`;
+          refundProtectionBanner.classList.add('hidden');
+        } else if (state.ticketType === 'post_chart') {
+          stdRefundAmount.textContent = '₹0 Refund';
+          stdRefundNote.textContent = 'After First Chart preparation (~8h prior), standard IRCTC cancellation returns ₹0.';
+          poolRefundAmount.textContent = formatCurrency(netPool) + ' Net Payout';
+          poolRefundNote.textContent = `${formatCurrency(baseTotal)} base fare − ${formatCurrency(feeTotal)} fee recovered cleanly once claimed by an urgent traveler.`;
+          refundProtectionBanner.classList.add('hidden');
+        } else {
+          const std75 = Math.round(baseTotal * 0.75);
+          stdRefundAmount.textContent = formatCurrency(std75) + ' (75% Refund)';
+          stdRefundNote.textContent = 'Standard cancellation (>12h prior) deducts 25% clerkage/cancellation fee immediately.';
+          poolRefundAmount.textContent = formatCurrency(netPool) + ' Net Payout';
+          poolRefundNote.textContent = `Full-route transfer beats standard cancellation by +${formatCurrency(netPool - std75)}.`;
+          refundProtectionBanner.classList.remove('hidden');
+        }
+      }
+
+      function updateStep3And4UI() {
+        const effectivePax = Math.min(state.partySize, state.poolSupply);
+        const baseFare = 1450 * effectivePax;
+        const fee = 30 * effectivePax;
+        const buyerPays = baseFare + fee;
+
+        poolSupplyBadge.textContent = state.poolSupply === 2
+          ? '2 FLAGGED BERTHS IN 3A'
+          : 'ONLY 1 FLAGGED BERTH IN 3A';
+        poolSupplyBadge.className = state.poolSupply === 2
+          ? 'px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-mono text-xs font-bold'
+          : 'px-3 py-1 rounded-full bg-amber-100 text-amber-800 font-mono text-xs font-bold';
+
+        if (state.partySize === 2 && state.poolSupply === 1) {
+          partyNoticeBox.className = 'p-3.5 rounded-xl bg-amber-50 border border-amber-300 text-xs text-amber-950';
+          partyNoticeBox.innerHTML = '<span class="font-bold">Only 1 Confirmed Berth Available in 3A:</span> Flagged inventory consists of discrete confirmed seats — IRCTC never invents fake RAC berths. You can claim 1 confirmed seat immediately at <span class="font-mono font-bold">₹1,480</span>.';
+        } else if (state.partySize === 2 && state.poolSupply === 2) {
+          partyNoticeBox.className = 'p-3.5 rounded-xl bg-blue-50 border border-blue-200 text-xs text-blue-950';
+          partyNoticeBox.innerHTML = '<span class="font-bold">2 Friends Confirmed in 3A:</span> Exact berths assigned at <span class="font-mono font-bold">T-1h</span>; berths may be in separate coaches. Both travelers should carry original photo ID.';
+        } else {
+          partyNoticeBox.className = 'p-3.5 rounded-xl bg-blue-50 border border-blue-200 text-xs text-blue-950';
+          partyNoticeBox.innerHTML = '<span class="font-bold">Confirmed Travel in 3A:</span> Exact coach &amp; berth assigned at <span class="font-mono font-bold">T-1h</span> (30 mins before Final Chart Freeze). Standard base fare applies — <span class="font-bold text-emerald-700">₹0 Tatkal surcharge</span>.';
+        }
+
+        if (state.lowerBerthOnly) {
+          partyNoticeBox.innerHTML += ' <span class="inline-block mt-1 font-semibold text-emerald-800">[Lower Berth Lock Active: Upper-berth auto-swaps disabled]</span>';
+        }
+
+        buyerTotalFare.textContent = formatCurrency(buyerPays);
+        renderTimerUI();
+
+        // Sync Step 4 Ledger
+        const isTatkal = state.ticketType === 'tatkal';
+        const origPerSeat = isTatkal ? 1850 : 1450;
+        const surchargePerSeat = isTatkal ? 400 : 0;
+        const origTotal = origPerSeat * effectivePax;
+        const surchargeTotal = surchargePerSeat * effectivePax;
+        const flaggerPayout = baseFare - fee;
+
+        ledgerOrigCollected.textContent = formatCurrency(origTotal);
+        ledgerBuyerPaid.textContent = formatCurrency(buyerPays);
+        ledgerRailwaysRetains.textContent = `${formatCurrency(surchargeTotal + fee)} (${formatCurrency(surchargeTotal)} + ${formatCurrency(fee)})`;
+        ledgerFlaggerPayout.textContent = formatCurrency(flaggerPayout);
+
+        const lbTag = state.lowerBerthOnly ? ' • LOWER BERTH LOCKED' : '';
+        hhtPassengerLine.textContent = `NEW PNR: 489-3102941 • ${effectivePax} PAX (AADHAAR-OTP VERIFIED)${lbTag}`;
+      }
+
+      function setStep(stepNum) {
+        state.step = stepNum;
+
+        // Update Stepper Tabs
+        stepTabs.forEach(tab => {
+          const s = Number(tab.dataset.step);
+          const badge = tab.querySelector('.step-badge');
+          if (s === stepNum) {
+            tab.className = 'step-tab flex items-center gap-2.5 p-2.5 rounded-xl border-2 border-blue-700 bg-blue-50 text-left transition cursor-pointer';
+            badge.className = 'step-badge w-6 h-6 rounded-lg bg-blue-700 text-white font-mono text-xs font-bold flex items-center justify-center shrink-0';
+          } else if (s < stepNum) {
+            tab.className = 'step-tab flex items-center gap-2.5 p-2.5 rounded-xl border border-emerald-300 bg-emerald-50/50 text-left transition cursor-pointer';
+            badge.className = 'step-badge w-6 h-6 rounded-lg bg-emerald-600 text-white font-mono text-xs font-bold flex items-center justify-center shrink-0';
+          } else {
+            tab.className = 'step-tab flex items-center gap-2.5 p-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-left transition cursor-pointer';
+            badge.className = 'step-badge w-6 h-6 rounded-lg bg-slate-200 text-slate-700 font-mono text-xs font-bold flex items-center justify-center shrink-0';
+          }
+        });
+
+        // Show Active Step Panel
+        Object.keys(stepPanels).forEach(k => {
+          if (Number(k) === stepNum) {
+            stepPanels[k].classList.remove('hidden');
+          } else {
+            stepPanels[k].classList.add('hidden');
+          }
+        });
+
+        if (stepNum === 3) {
+          startTimer(state.scenario === 'timeout' ? 4 : 180);
+        } else {
+          stopTimer();
+        }
+      }
+
+      function setScenario(mode) {
+        state.scenario = mode;
+
+        scenarioBtns.forEach(btn => {
+          const active = btn.dataset.scenario === mode;
+          if (active) {
+            const borderCol = mode === 'abuse' ? 'border-rose-600 bg-rose-50/50' : mode === 'timeout' ? 'border-amber-500 bg-amber-50/50' : 'border-blue-700 bg-blue-50/60';
+            btn.className = `scenario-btn text-left p-3 rounded-xl border-2 ${borderCol} transition cursor-pointer`;
+          } else {
+            btn.className = 'scenario-btn text-left p-3 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 transition cursor-pointer';
+          }
+        });
+
+        if (mode === 'happy') {
+          scenarioStatusPill.className = 'inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 w-fit';
+          scenarioStatusPill.innerHTML = '<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Mode: Happy Path (Urgent Travel)';
+          abuseLabPanel.classList.add('hidden');
+          stepperStage.classList.remove('hidden');
+          setStep(1);
+        } else if (mode === 'timeout') {
+          scenarioStatusPill.className = 'inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-200 w-fit';
+          scenarioStatusPill.innerHTML = '<span class="w-2 h-2 rounded-full bg-amber-500"></span> Mode: Edge Case (3-Min UPI Timeout)';
+          abuseLabPanel.classList.add('hidden');
+          stepperStage.classList.remove('hidden');
+          setStep(3);
+        } else if (mode === 'abuse') {
+          scenarioStatusPill.className = 'inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1 rounded-full bg-rose-50 text-rose-800 border border-rose-200 w-fit';
+          scenarioStatusPill.innerHTML = '<span class="w-2 h-2 rounded-full bg-rose-500"></span> Mode: Abuse & Cutoff Guardrails';
+          stopTimer();
+          stepperStage.classList.add('hidden');
+          abuseLabPanel.classList.remove('hidden');
+          selectAbuseVector('reflip');
+        }
+      }
+
+      function selectAbuseVector(key) {
+        const data = ABUSE_CASES[key];
+        if (!data) return;
+
+        document.querySelectorAll('.abuse-trigger').forEach(btn => {
+          if (btn.dataset.abuse === key) {
+            btn.className = 'abuse-trigger p-3.5 rounded-xl bg-white border-2 border-rose-600 text-left shadow-sm transition cursor-pointer';
+          } else {
+            btn.className = 'abuse-trigger p-3.5 rounded-xl bg-white border border-slate-200 hover:border-rose-300 text-left shadow-sm transition cursor-pointer';
+          }
+        });
+
+        document.getElementById('abuseBadge').textContent = data.badge;
+        document.getElementById('abuseTitle').textContent = data.title;
+        document.getElementById('abuseDesc').textContent = data.desc;
+        document.getElementById('abuseMeta1').textContent = data.m1;
+        document.getElementById('abuseMeta2').textContent = data.m2;
+        document.getElementById('abuseMeta3').textContent = data.m3;
+      }
+
+      // Event Bindings
+      scenarioBtns.forEach(btn => {
+        btn.addEventListener('click', () => setScenario(btn.dataset.scenario));
+      });
+
+      stepTabs.forEach(tab => {
+        tab.addEventListener('click', () => setStep(Number(tab.dataset.step)));
+      });
+
+      document.querySelectorAll('[data-goto]').forEach(btn => {
+        btn.addEventListener('click', () => setStep(Number(btn.dataset.goto)));
+      });
+
+      document.querySelectorAll('.flag-count-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.flagCount = Number(btn.dataset.flagCount);
+          document.querySelectorAll('.flag-count-btn').forEach(b => {
+            b.className = Number(b.dataset.flagCount) === state.flagCount
+              ? 'flag-count-btn px-3 py-1 rounded-lg text-xs font-bold bg-blue-700 text-white transition cursor-pointer'
+              : 'flag-count-btn px-3 py-1 rounded-lg text-xs font-bold text-slate-600 hover:text-slate-900 transition cursor-pointer';
+          });
+          updateStep1UI();
+        });
+      });
+
+      document.querySelectorAll('.ticket-type-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.ticketType = btn.dataset.ticketType;
+          document.querySelectorAll('.ticket-type-btn').forEach(b => {
+            b.className = b.dataset.ticketType === state.ticketType
+              ? 'ticket-type-btn p-3 rounded-xl border-2 border-blue-700 bg-blue-50/70 text-left transition cursor-pointer'
+              : 'ticket-type-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-left transition cursor-pointer';
+          });
+          updateStep1UI();
+          updateStep3And4UI();
+        });
+      });
+
+      document.querySelectorAll('.party-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.partySize = Number(btn.dataset.party);
+          document.querySelectorAll('.party-btn').forEach(b => {
+            b.className = Number(b.dataset.party) === state.partySize
+              ? 'party-btn p-2.5 rounded-xl border-2 border-blue-700 bg-blue-50 text-xs font-bold text-blue-900 cursor-pointer'
+              : 'party-btn p-2.5 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-700 cursor-pointer';
+          });
+          updateStep3And4UI();
+        });
+      });
+
+      document.querySelectorAll('.supply-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.poolSupply = Number(btn.dataset.supply);
+          document.querySelectorAll('.supply-btn').forEach(b => {
+            b.className = Number(b.dataset.supply) === state.poolSupply
+              ? 'supply-btn p-2.5 rounded-xl border-2 border-blue-700 bg-blue-50 text-xs font-bold text-blue-900 cursor-pointer'
+              : 'supply-btn p-2.5 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-700 cursor-pointer';
+          });
+          updateStep3And4UI();
+        });
+      });
+
+      lowerBerthCheckbox.addEventListener('change', (e) => {
+        state.lowerBerthOnly = e.target.checked;
+        updateStep3And4UI();
+      });
+
+      document.getElementById('toStep2Btn').addEventListener('click', () => setStep(2));
+      document.getElementById('toStep3Btn').addEventListener('click', () => setStep(3));
+      payUpiBtn.addEventListener('click', () => {
+        if (!state.timedOut) setStep(4);
+      });
+
+      document.getElementById('fastForwardTimeoutBtn').addEventListener('click', () => {
+        startTimer(0);
+      });
+
+      document.getElementById('reclaimDropBtn').addEventListener('click', () => {
+        startTimer(180);
+      });
+
+      document.querySelectorAll('.abuse-trigger').forEach(btn => {
+        btn.addEventListener('click', () => selectAbuseVector(btn.dataset.abuse));
+      });
+
+      document.getElementById('exitAbuseBtn').addEventListener('click', () => setScenario('happy'));
+      document.getElementById('testAbuseFromStep4Btn').addEventListener('click', () => setScenario('abuse'));
+
+      document.getElementById('replayFlowBtn').addEventListener('click', () => setScenario('happy'));
+      document.getElementById('resetPrototypeBtn').addEventListener('click', () => {
+        state.ticketType = 'tatkal';
+        state.flagCount = 1;
+        state.partySize = 1;
+        state.poolSupply = 2;
+        state.lowerBerthOnly = false;
+        lowerBerthCheckbox.checked = false;
+        updateStep1UI();
+        updateStep3And4UI();
+        setScenario('happy');
+      });
+
+      // v2 Roadmap Drawer Toggle
+      const v2DrawerToggle = document.getElementById('v2DrawerToggle');
+      const v2DrawerContent = document.getElementById('v2DrawerContent');
+      const v2DrawerChevron = document.getElementById('v2DrawerChevron');
+      v2DrawerToggle.addEventListener('click', () => {
+        const isOpen = !v2DrawerContent.classList.contains('hidden');
+        v2DrawerContent.classList.toggle('hidden', isOpen);
+        v2DrawerToggle.setAttribute('aria-expanded', String(!isOpen));
+        v2DrawerChevron.textContent = isOpen ? '+' : '−';
+      });
+
+      // Save HTML Download
+      document.getElementById('saveHtmlBtn').addEventListener('click', () => {
+        const blob = new Blob([PRISTINE_HTML], { type: 'text/html;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'irctc-prototype.html';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      });
+
+      // Initialize UI
+      updateStep1UI();
+      updateStep3And4UI();
+      setStep(1);
+    })();
+  </script></body></html>
